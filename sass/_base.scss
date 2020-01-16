@@ -1,0 +1,38 @@
+// body{
+//   font-size: $font-size;
+//   font-family: $font-family;
+//   color: $info;
+//   background-color:$default;
+// }
+ 
+
+// TODO:如何客製主要背景顏色，bg-主要、bg-次要 
+// 主要次要區塊太模糊，login主要區塊會是甚麼? 次要區塊會是甚麼?
+// 若社群帳號為主要區塊不就GG了
+// 區塊目的 -> 讓不同 inner-? 識別區塊
+// OOCSS  -> bg-? 、btn-大小 、btn-顏色 
+// SMACSS -> btn-primary 
+.primary-block{
+  color: white;
+  &__item{
+    @include responsive__title;
+  }
+}
+.secondary-block{
+  &__title{
+    @include responsive__title;
+  }
+  &__link{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__text{
+    @include responsive__text;
+  }
+}
+
+
+
+
+

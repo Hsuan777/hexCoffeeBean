@@ -1,0 +1,386 @@
+// TODO: SASS / CSS 架構管理檢核表 
+// 類別階層不超過四層為原則
+// 不使用 ID，一律使用 class
+// 使用 OOCSS 建立類別工具庫
+// 使用 SMACSS 來建立 Sass 結構
+// 排版結構以 BEM 來開發
+// 導入 BS4 的 Grid System
+// 使用 Sass for 來管理擴充元件
+// 一率採用小駝峰式命名
+// 導入第三方插件在 Sass import vendor
+// 使用 REM 單位
+// 佈局使用 flexbox 進行元件設計
+
+// TODO:檢視架構與命名
+// .inner-banner不同頁面可做圖片設定
+// 同一頁面只有一個主要區塊與多個次要區塊
+// 區塊在 base.scss預先處理子區域
+// 區塊子區域可無限擴增，若重複性高寫在 base.scss
+// .inner-banner{
+//   &__index{
+//     .primary-block{
+//       &__list{}
+//       &__item{}
+//       &__link{}
+//     }
+//   }
+//   &__product{}
+//   &__cart{}
+//   &__about{}
+// }
+// .inner-about{
+//   .secondary-block{
+//     &__title{}
+//     &__text{}
+//     &__img{}
+//     &__imgItem-1{}
+//     &__imgItem-2{}
+//     &__imgItem-2-1{}
+//   }
+// }
+.inner-banner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  &__index{
+    // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("https://bit.ly/2OhbMHr");
+    margin-bottom: 200px;
+    color: white;
+    @include md{
+      margin-bottom: 180px;
+    }
+    @include xs{
+      margin-bottom: 150px;
+    }
+  }
+  &__product{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    .section__title--after::after{
+      background-color:white ;
+    }
+  }
+  &__success{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  }
+  .primary-block{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50px;
+    transform: translateY(50px);
+    &__list{
+      transform: translateY(85%);
+      @include md{
+        transform: translateY(105%);
+      }
+    }
+    &__item{
+      //writing-mode也會改變方向軸
+      writing-mode:vertical-lr;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      transition: 0.3s;
+      z-index: -1;
+      &:nth-child(1){
+        // background-image: url("https://picsum.photos/800/600?random=1");
+        background-image: url("https://bit.ly/2zBDAxX");
+      }
+      &:nth-child(2){
+        // background-image: url("https://picsum.photos/800/600?random=2");
+        background-image: url("https://bit.ly/2R5tqwD");
+      }
+      &:nth-child(3){
+        // background-image: url("https://picsum.photos/800/600?random=3");
+        background-image: url("https://bit.ly/2Qodh3Z");
+      }
+      &__link{
+        -webkit-background-clip: text;
+        background-clip: text;
+        z-index: 9;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255,0.6);
+        transition: 0.3s;
+      }
+      &:hover{
+        text-decoration: none;
+        &::after{
+          background-color: rgba(255, 225, 128,0.5);
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+.inner-about, footer{
+  .secondary-block{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    @include md{
+      writing-mode:horizontal-tb;
+      padding-bottom: 60px;
+      margin-top: 25px;
+      margin-bottom: 80px;
+      background-color: transparent;
+    }
+    @include xs{
+      margin-bottom: 75px;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5%;
+      top: 0;
+      left: 0;
+      background-color:theme-color("light") ;
+      z-index: -1;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5%;
+      bottom: 0;
+      left: 0;
+      background-color:theme-color("light");
+      z-index: -1;
+    }
+    &__title{
+      writing-mode:vertical-lr;
+      position: relative;
+      line-height: 0;
+      transform: translateY(-20px);
+      @include md{
+        line-height: 1.2;
+        // transform: translate(70px,-20px);
+        writing-mode:horizontal-tb;
+      }
+      
+      // FIXME:別用 標籤 ，以 class取代，可重複使用
+      span{
+        writing-mode: horizontal-tb;
+        line-height: 1;
+      }
+      // FIXME:修飾符號，未想到更好的命名
+      &--after{
+        position: relative;
+        &::after{
+          position: absolute;
+          content: "";
+          width: 2px;
+          height: 70px;
+          background-color:theme-color("primary");
+          top: 0;
+          right:0;
+          transform: translate(70%, 20%);
+          @include md{
+            width: 50px;
+            height: 2px;
+            top: 50%;
+            right:-35px;
+            background-color:theme-color("secondary") ;
+          }
+        }
+      }
+    }
+    &__text{
+      writing-mode:vertical-rl;
+      line-height: 2.5;
+      max-height: 400px;
+      transform: translateY(20px);
+      @include md{
+        writing-mode:horizontal-tb;
+        color:$primary;
+        // background-color:rgba(255, 225, 128,0.3);
+        background-color:rgba(234, 240, 237,0.7);
+        border-radius: 50px 20px 50px 20px;
+      }
+    }
+    &__img{
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      transform: translateY(-50px);
+      border-radius: 10px ;
+      @include md{
+        width: 370px;
+        height: 370px;
+        transform: translateY(-20px);
+      }
+      
+    }
+    &__imgItem-1{
+      background-image: url("https://bit.ly/2xPn7Eq");
+    }
+    &__imgItem-2{
+      background-image: url("https://bit.ly/2zzAQS4");
+      right: 0;
+    }
+    &__imgItem-2-1{
+      background-image: url("https://bit.ly/2zzAQS4");
+    }
+    
+  }
+}
+
+
+
+
+
+
+.inner-product{
+  &__item{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "本日精選";
+      top: 0;
+      left: 20px;
+      width: 30px;
+      padding: 7px;
+      color: white;
+      background-color: rgba(63, 93, 69,0.8);
+      border-radius: 0 0 3px 3px;
+    }
+    &__text{
+      font-size: 24px; 
+      @include md{
+        font-size: 20px;
+      } 
+      @include sm{
+        font-size: 18px;
+      } 
+      
+    }
+  }
+  .item-coffee{
+    color: rgba(32, 22, 3,0.8)	;
+    &::before{
+      content: "本周咖啡";
+      background-color: rgba(32, 22, 3,0.8)	;
+    }
+  }
+} 
+
+.inner-cart{
+  &__item{
+    align-items:center;
+    padding-bottom: 15px;
+    + li.inner-cart__item {
+      padding-top: 15px;
+      border-top: 1px solid #dee2e6;
+    }
+    @include sm{
+      align-items:start;
+    }
+    &__img{
+      width: 200px;
+      height: 200px;
+      @include sm{
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+}
+
+.inner-login{
+  
+  .primary-block{
+    max-width:345px ;
+    transition: 0.3s;
+    &:hover{
+      // transform: translateY(-20px);
+      .primary-block__title::before,
+      .primary-block__title::after{
+        opacity: 1;
+      }
+    }
+    &__title{
+      position: relative;
+      &::before{
+        opacity: 0;
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: $secondary;
+        top: 55%;
+        left: 20px;
+      }
+      &::after{
+        opacity: 0;
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: $secondary;
+        top: 55%;
+        right: 20px;
+      }
+    }
+  }
+  .secondary-block{
+    max-width:345px ;
+    transition: 0.3s;
+    &:hover{
+      // transform: translateY(-20px);
+      .secondary-block__title::before,
+      .secondary-block__title::after{
+        opacity: 1;
+      }
+    }
+    &__title{
+      position: relative;
+      &::before{
+        opacity: 0;
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: $secondary;
+        top: 55%;
+        left: -12px;
+      }
+      &::after{
+        opacity: 0;
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: $secondary;
+        top: 55%;
+        right: -12px;
+      }
+    }
+  }
+}
+
+.inner-footer{
+  &__logo{
+    @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
+    
+  }
+  &__mail{
+    background-color: $primary;
+  }
+  &__info{
+    background-color: $secondary;
+  }
+}
+.navbar-brand{
+  @include hidden_text(220px,40px,url('../img/logo-all-dark.svg'));
+}

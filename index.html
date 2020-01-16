@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!--goole icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,35 +30,351 @@
 
 <body>
   <header>
-    <!-- TODO:head -->
-    
-    <p class="bg-primary">123</p>
-    <p class="bg-secondary">123</p>
-    <p class="bg-info">123</p>
-    <p class="bg-submit">123</p>
-    <p class="bg-danger">123</p>
-  <hr>
-    <p class="text-primary">123</p>
-    <p class="text-secondary">123</p>
-    <p class="text-info">123</p>
-    <p class="text-submit">123</p>
-    <p class="text-black">123</p>
-
-    <button type="button" class="btn btn-primary ">123</button>
-    <button type="button" class="btn btn-scecondary">123</button>
-    <button type="button" class="btn btn-info">123</button>
-    <button type="button" class="btn btn-submit ">123</button>
-    <button type="button" class="btn btn-danger">123</button>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          六角甜點
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="../product.html">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="../cart-coffee.html">甜點</a>
+            <a class="nav-item nav-link" href="../login.html">Login</a>
+            <a class="nav-item nav-link" target="_blank"
+              href="https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/grid">設計稿</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    
+    <div class="inner-banner inner-banner__index  ">
+      <div class="container">
+        <div class="primary-block p-3  w-75 rounded d-none d-md-block">
+          <h1 class="primary-block__title display-4">六角 X 甜點</h1>
+          <p class="lead">專業甜點師，做出滿滿的內餡，期待滿足你的胃。</p>
+        </div>
+        <div class="primary-block__list row  justify-content-center" id="myList" role="tablist">
+          <div class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center rounded-top">
+            <a href="#list-home" id="list-home-list"
+              class=" primary-block__item__link p-md-5 p-4 text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              role="tab">本日精選</a>
+          </div>
+          <div
+            class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center  mx-2 rounded-top">
+            <a href="#list-profile" id="list-profile-list"
+              class=" primary-block__item__link  p-md-5 p-4  text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              role="tab">人氣推薦</a>
+          </div>
+          <div class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center  rounded-top">
+            <a href="#list-messages" id="list-messages-list"
+              class="primary-block__item__link  p-md-5 p-4 text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              role="tab">新品上市</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- 商品區塊 -->
+    <section class="inner-product mb-5 ">
+      <div class="container">
+        <div class="tab-content" id="nav-tabContent">
+          <!-- 本日精選 -->
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="row justify-content-center">
+              <div class=" col-lg-3 mt-3 col-6">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">巧克力草莓崔芙</p>
+                      <button class="btn border-left text-nowrap">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 mt-3">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <button class="btn border-left text-nowrap">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class=" col-lg-3 col-6 mt-3">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">草莓塔</p>
+                      <button class="btn border-left text-nowrap">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class=" col-lg-3 col-6 mt-3">
+                <div class="card inner-product__item item-coffee">
+                  <img src="https://picsum.photos/800/600?random=4" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">耶加雪菲G1</p>
+                      <button class="btn  border-left text-nowrap">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 本日精選 END-->
+          <!-- 推薦商品 -->
+          <div class="tab-pane fade " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mt-3 col-6">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">巧克力</p>
+                      <button class="btn border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mt-3">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <button class="btn border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mt-3">
+                <div class="card inner-product__item item-coffee">
+                  <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
+                      <button class="btn  border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 推薦商品  END-->
+          <!-- 新品上市 -->
+          <div class="tab-pane fade " id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mt-3 col-6">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">草莓泡芙</p>
+                      <button class="btn border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mt-3">
+                <div class="card inner-product__item">
+                  <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <button class="btn border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-6 mt-3">
+                <div class="card inner-product__item item-coffee">
+                  <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
+                  <div class="card-body p-0 border-bottom">
+                    <div class="d-flex ">
+                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
+                      <button class="btn  border-left">詳細</button>
+                    </div>
+                  </div>
+                  <button class="btn btn-light py-2">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 新品上市  END-->
+    </section>
+
+
+
+
+
+    <div class="inner-about ">
+      <!-- 次要區塊一 -->
+      <section class="secondary-block d-none d-md-block ">
+        <div class="container" style="position: relative;">
+          <div class="row ">
+            <div class="secondary-block__img secondary-block__imgItem-1 col-5"> </div>
+            <div class="col-7 d-flex ml-auto ">
+              <h2 class="secondary-block__title order-2">為什麼<span class="secondary-block__title--after"></span></h2>
+              <h2 class="secondary-block__title order-1 mt-5"> 選擇了做甜點<span>? </span> </h2>
+              <div class="secondary-block__text ml-auto py-3 ">
+                <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+                <p>是非成敗轉頭空，</p>
+                <p>滾滾長江東逝水，白髮漁樵江渚上，</p>
+                <p>古今多少事，都付笑談中。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secondary-block d-sm-block d-md-none ">
+        <div class=" container" style="position: relative;">
+          <h2 class="secondary-block__title text-center mr-5 pr-3 ">為什麼<span
+              class="secondary-block__title--after"></span></h2>
+          <h2 class="secondary-block__title text-center "> 選擇了做甜點? </h2>
+          <div class="d-flex justify-content-center mt-3">
+            <div class="secondary-block__img secondary-block__imgItem-1"></div>
+            <div class="secondary-block__text text-center p-4 ">
+              <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+              <p>是非成敗轉頭空，</p>
+              <p>滾滾長江東逝水，白髮漁樵江渚上，</p>
+              <p>古今多少事，都付笑談中。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 次要區塊二 -->
+      <!-- RWD title文字跑版 fin.-->
+      <section class="secondary-block d-none d-md-block my-5">
+        <div class="container" style="position: relative;">
+          <div class="row ">
+            <div class="secondary-block__img secondary-block__imgItem-2 col-5 "> </div>
+            <div class="col-7 d-flex ml-n4 ml-md-n5">
+              <h2 class="secondary-block__title order-2">為什麼<span class="secondary-block__title--after"></span></h2>
+              <h2 class="secondary-block__title order-1 mt-5"> 一定要吃甜點<span>? </span> </h2>
+              <div class="secondary-block__text  py-3 ">
+                <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+                <p>是非成敗轉頭空，</p>
+                <p>滾滾長江東逝水，白髮漁樵江渚上，</p>
+                <p>古今多少事，都付笑談中。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secondary-block d-sm-block d-md-none mb-5">
+        <div class=" container" style="position: relative;">
+          <h2 class="secondary-block__title text-center mr-5 pr-3">為什麼<span
+              class="secondary-block__title--after"></span></h2>
+          <h2 class="secondary-block__title text-center "> 一定要吃甜點? </h2>
+          <div class="d-flex justify-content-center ">
+            <div class="secondary-block__img secondary-block__imgItem-2 d-none d-md-block"></div>
+            <div class="secondary-block__img secondary-block__imgItem-2-1 d-md-none d-xs-block"></div>
+            <div class="secondary-block__text text-center p-4 ">
+              <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
+              <p>是非成敗轉頭空，</p>
+              <p>滾滾長江東逝水，白髮漁樵江渚上，</p>
+              <p>古今多少事，都付笑談中。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 次要區塊三 -->
+      <section class=" d-none d-md-block pt-5 my-5">
+        <div class=" container">
+          <div class="  d-flex justify-content-center ">
+            <h2 class="secondary-block__title ml-4 order-1">吃甜點<span class="secondary-block__title--after"></span></h2>
+            <h2 class="secondary-block__title text-center mt-5"> 是不需要理由的。 </h2>
+          </div>
+        </div>
+      </section>
+      <section class=" d-sm-block d-md-none  ">
+        <div class=" container" style="position: relative;">
+          <h2 class="secondary-block__title text-center mr-5 pr-3">吃甜點<span
+              class="secondary-block__title--after"></span></h2>
+          <h2 class="secondary-block__title text-center "> 是不需要理由的。 </h2>
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
   <footer>
-    
+    <div class="inner-footer__mail bg-primary">
+      <div class="container ">
+        <div class="row justify-content-center p-3 ">
+          <a href="" class="h3 text-light text-decoration-none ">想吃甜點，不須理由<i
+              class="fab fa-facebook-square ml-1"></i></a>
+          <!-- <h3 class=" text-light">想吃甜點，不須理由</h3> -->
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="inner-footer__info mt-3">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-6 d-flex flex-column justify-content-between  ">
+            <h3 class="inner-footer__logo" style="background-image: url('../img/logotype-lg-dark.svg');">Bootstrap</h3>
+            <div class="text">
+              <p>07-1234-5678 800 </p>
+              <p>sweetaste@email.com</p>
+              <p>高雄市新興區幸福路 520 號</p>
+            </div>
+          </div>
+          <div class="col-6 d-md-block d-none mt-3">
+            <div class=" d-flex justify-content-end">
+              <h2 class=" secondary-block__title order-1">每天都是 <span class="secondary-block__title--after"></h2>
+              <h2 class="secondary-block__title  mt-3">吃甜點好日子。</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 ">
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+          <div class="col-md-6">
+            <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
+            <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
@@ -75,7 +391,32 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
-  
+  <script>
+    // FIXME: 切換商品淡入淡出
+    $('#list-home-list').on('click', function (e) {
+      e.preventDefault()
+      $('#list-home').addClass("show").addClass("active");
+      $('#list-profile').removeClass("show").removeClass("active");
+      $('#list-messages').removeClass("show").removeClass("active");
+    })
+    $('#list-profile-list').on('click', function (e) {
+      e.preventDefault()
+      $('#list-profile').addClass("show").addClass("active");
+      $('#list-home').removeClass("show").removeClass("active");
+      $('#list-messages').removeClass("show").removeClass("active");
+      // $(this).tab('show')
+    })
+    $('#list-messages-list').on('click', function (e) {
+      e.preventDefault()
+      $('#list-messages').addClass("show").addClass("active");
+      $('#list-home').removeClass("show").removeClass("active");
+      $('#list-profile').removeClass("show").removeClass("active");
+      // $(this).tab('show')
+    })
+  </script>
+
+  <!-- TODO: 字體統一控制 -->
+  <!-- 已在 mixin 新增 responsive__title、responsive__text -->
 
   
 
