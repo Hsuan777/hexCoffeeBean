@@ -16,7 +16,7 @@
 // 同一頁面只有一個主要區塊與多個次要區塊
 // 區塊在 base.scss預先處理子區域
 // 區塊子區域可無限擴增，若重複性高寫在 base.scss
-// .inner-banner{
+// .innerBanner{
 //   &__index{
 //     .primary-block{
 //       &__list{}
@@ -38,21 +38,67 @@
 //     &__imgItem-2-1{}
 //   }
 // }
-.inner-banner{
+.innerBanner{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
   &__index{
-    // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
     background-image: url("https://bit.ly/2OhbMHr");
     margin-bottom: 200px;
-    color: white;
-    @include md{
-      margin-bottom: 180px;
-    }
-    @include xs{
+    @include media-breakpoint-down(sm){
       margin-bottom: 150px;
+    }
+    .primary-block{
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 50px;
+      transform: translateY(50px);
+      &__list{
+        transform: translateY(85%);
+        @include md{
+          transform: translateY(105%);
+        }
+      }
+      &__item{
+        //writing-mode也會改變方向軸
+        writing-mode:vertical-lr;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        transition: 0.3s;
+        z-index: -1;
+        &:nth-child(1){
+          background-image: url("https://bit.ly/2zBDAxX");
+        }
+        &:nth-child(2){
+          background-image: url("https://bit.ly/2R5tqwD");
+        }
+        &:nth-child(3){
+          background-image: url("https://bit.ly/2Qodh3Z");
+        }
+        &__link{
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          z-index: 9;
+        }
+        &::after{
+          position: absolute;
+          content: "";
+          top: 0;
+          left:0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(255, 255, 255,0.6);
+          transition: 0.3s;
+        }
+        &:hover{
+          text-decoration: none;
+          &::after{
+            background-color: rgba(255, 225, 128,0.5);
+            transform: scale(0.8);
+          }
+        }
+      }
     }
   }
   &__product{
@@ -64,63 +110,10 @@
   &__success{
     background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
   }
-  .primary-block{
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 50px;
-    transform: translateY(50px);
-    &__list{
-      transform: translateY(85%);
-      @include md{
-        transform: translateY(105%);
-      }
-    }
-    &__item{
-      //writing-mode也會改變方向軸
-      writing-mode:vertical-lr;
-      background-size: cover;
-      background-position: center center;
-      position: relative;
-      transition: 0.3s;
-      z-index: -1;
-      &:nth-child(1){
-        // background-image: url("https://picsum.photos/800/600?random=1");
-        background-image: url("https://bit.ly/2zBDAxX");
-      }
-      &:nth-child(2){
-        // background-image: url("https://picsum.photos/800/600?random=2");
-        background-image: url("https://bit.ly/2R5tqwD");
-      }
-      &:nth-child(3){
-        // background-image: url("https://picsum.photos/800/600?random=3");
-        background-image: url("https://bit.ly/2Qodh3Z");
-      }
-      &__link{
-        -webkit-background-clip: text;
-        background-clip: text;
-        z-index: 9;
-      }
-      &::after{
-        position: absolute;
-        content: "";
-        top: 0;
-        left:0;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255,0.6);
-        transition: 0.3s;
-      }
-      &:hover{
-        text-decoration: none;
-        &::after{
-          background-color: rgba(255, 225, 128,0.5);
-          transform: scale(0.8);
-        }
-      }
-    }
-  }
 }
 
-.inner-about, footer{
+.innerAbout, footer{
+  // FIXME:若單獨在 inner-about 區塊，secondary-block應該是成為主要區塊
   .secondary-block{
     position: relative;
     margin-top: 100px;
@@ -155,6 +148,7 @@
       background-color:theme-color("light");
       z-index: -1;
     }
+    // FIXME:副標題如何獨立出來
     &__title{
       writing-mode:vertical-lr;
       position: relative;
@@ -188,7 +182,7 @@
             height: 2px;
             top: 50%;
             right:-35px;
-            background-color:theme-color("secondary") ;
+            background-color:theme-color("info") ;
           }
         }
       }
@@ -198,14 +192,15 @@
       line-height: 2.5;
       max-height: 400px;
       transform: translateY(20px);
-      @include md{
+      @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
-        color:$primary;
+        color:theme-color("primary");
         // background-color:rgba(255, 225, 128,0.3);
         background-color:rgba(234, 240, 237,0.7);
         border-radius: 50px 20px 50px 20px;
       }
     }
+    // FIXME:圖片需要重新規劃
     &__img{
       background-repeat: no-repeat;
       background-position: center center;
@@ -215,7 +210,7 @@
       height: 450px;
       transform: translateY(-50px);
       border-radius: 10px ;
-      @include md{
+      @include media-breakpoint-down(sm){
         width: 370px;
         height: 370px;
         transform: translateY(-20px);
@@ -224,10 +219,14 @@
     }
     &__imgItem-1{
       background-image: url("https://bit.ly/2xPn7Eq");
+      left: 15px;
+    }
+    &__imgItem-1-1{
+      background-image: url("https://bit.ly/2xPn7Eq");
     }
     &__imgItem-2{
       background-image: url("https://bit.ly/2zzAQS4");
-      right: 0;
+      right: 15px;
     }
     &__imgItem-2-1{
       background-image: url("https://bit.ly/2zzAQS4");
@@ -241,7 +240,7 @@
 
 
 
-.inner-product{
+.innerProduct{
   &__item{
     position: relative;
     &::before{
@@ -255,6 +254,7 @@
       background-color: rgba(63, 93, 69,0.8);
       border-radius: 0 0 3px 3px;
     }
+    // FIXME:RWD文字大小要修正
     &__text{
       font-size: 24px; 
       @include md{
@@ -263,10 +263,9 @@
       @include sm{
         font-size: 18px;
       } 
-      
     }
   }
-  .item-coffee{
+  &__coffee{
     color: rgba(32, 22, 3,0.8)	;
     &::before{
       content: "本周咖啡";
@@ -298,7 +297,6 @@
 }
 
 .inner-login{
-  
   .primary-block{
     max-width:345px ;
     transition: 0.3s;
@@ -369,16 +367,9 @@
   }
 }
 
-.inner-footer{
+.innerFooter{
   &__logo{
     @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
-    
-  }
-  &__mail{
-    background-color: $primary;
-  }
-  &__info{
-    background-color: $secondary;
   }
 }
 .navbar-brand{

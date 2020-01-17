@@ -32,7 +32,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           六角甜點
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -41,9 +41,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="../product.html">HOME<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="../cart-coffee.html">甜點</a>
-            <a class="nav-item nav-link" href="../login.html">Login</a>
+            <a class="nav-item nav-link active" href="product.html">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="cart-coffee.html">甜點</a>
+            <a class="nav-item nav-link" href="login.html">Login</a>
+            <a class="nav-item nav-link" href="checkout.html">checkout</a>
+            <a class="nav-item nav-link" href="checkout-2.html">checkout-2</a>
+            <a class="nav-item nav-link" href="checkout-success.html">checkout-success</a>
             <a class="nav-item nav-link" target="_blank"
               href="https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/grid">設計稿</a>
           </div>
@@ -53,27 +56,27 @@
   </header>
 
   <main>
-    <div class="inner-banner inner-banner__index  ">
+    <div class="innerBanner innerBanner__index  ">
       <div class="container">
-        <div class="primary-block p-3  w-75 rounded d-none d-md-block">
+        <div class="primary-block p-3  w-75 rounded d-none d-md-block text-light">
           <h1 class="primary-block__title display-4">六角 X 甜點</h1>
           <p class="lead">專業甜點師，做出滿滿的內餡，期待滿足你的胃。</p>
         </div>
         <div class="primary-block__list row  justify-content-center" id="myList" role="tablist">
           <div class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center rounded-top">
             <a href="#list-home" id="list-home-list"
-              class=" primary-block__item__link p-md-5 p-4 text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              class=" primary-block__item__link p-md-5 p-4 text-nowrap text-decoration-none " data-toggle="list"
               role="tab">本日精選</a>
           </div>
           <div
             class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center  mx-2 rounded-top">
             <a href="#list-profile" id="list-profile-list"
-              class=" primary-block__item__link  p-md-5 p-4  text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              class=" primary-block__item__link  p-md-5 p-4  text-nowrap text-decoration-none " data-toggle="list"
               role="tab">人氣推薦</a>
           </div>
           <div class="primary-block__item col-3 col-lg-2 d-flex justify-content-center align-items-center  rounded-top">
             <a href="#list-messages" id="list-messages-list"
-              class="primary-block__item__link  p-md-5 p-4 text-nowrap text-decoration-none text-primary-ex" data-toggle="list"
+              class="primary-block__item__link  p-md-5 p-4 text-nowrap text-decoration-none " data-toggle="list"
               role="tab">新品上市</a>
           </div>
         </div>
@@ -88,58 +91,59 @@
 
 
     <!-- 商品區塊 -->
-    <section class="inner-product mb-5 ">
+    <section class="innerProduct mb-5 ">
       <div class="container">
         <div class="tab-content" id="nav-tabContent">
           <!-- 本日精選 -->
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="tab-pane fade show active text-info" id="list-home" role="tabpanel"
+            aria-labelledby="list-home-list">
             <div class="row justify-content-center">
               <div class=" col-lg-3 mt-3 col-6">
-                <div class="card inner-product__item">
+                <div class="innerProduct__item  card ">
                   <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">巧克力草莓崔芙</p>
-                      <button class="btn border-left text-nowrap">詳細</button>
+                      <p class="innerProduct__item__text  card-text pt-3 px-2 mx-auto  text-truncate">巧克力草莓崔芙</p>
+                      <button class="btn btn-light border-left text-nowrap ">詳細</button>
                     </div>
                   </div>
-                  <button class="btn btn-light py-2">加入購物車</button>
+                  <button class="btn btn-secondary py-2">加入購物車</button>
                 </div>
               </div>
               <div class="col-lg-3 col-6 mt-3">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
-                      <button class="btn border-left text-nowrap">詳細</button>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <button class="btn  btn-light border-left text-nowrap">詳細</button>
                     </div>
                   </div>
-                  <button class="btn btn-light py-2">加入購物車</button>
+                  <button class="btn btn-secondary py-2">加入購物車</button>
                 </div>
               </div>
               <div class=" col-lg-3 col-6 mt-3">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">草莓塔</p>
-                      <button class="btn border-left text-nowrap">詳細</button>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">草莓塔</p>
+                      <button class="btn btn-light border-left text-nowrap">詳細</button>
                     </div>
                   </div>
-                  <button class="btn btn-light py-2">加入購物車</button>
+                  <button class="btn btn-secondary py-2">加入購物車</button>
                 </div>
               </div>
               <div class=" col-lg-3 col-6 mt-3">
-                <div class="card inner-product__item item-coffee">
+                <div class="innerProduct__item innerProduct__coffee card  ">
                   <img src="https://picsum.photos/800/600?random=4" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">耶加雪菲G1</p>
-                      <button class="btn  border-left text-nowrap">詳細</button>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto text-truncate">耶加雪菲G1</p>
+                      <button class="btn btn-light  border-left text-nowrap">詳細</button>
                     </div>
                   </div>
-                  <button class="btn btn-light py-2">加入購物車</button>
+                  <button class="btn btn-secondary py-2">加入購物車</button>
                 </div>
               </div>
             </div>
@@ -149,11 +153,11 @@
           <div class="tab-pane fade " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
             <div class="row justify-content-center">
               <div class="col-md-4 mt-3 col-6">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">巧克力</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto text-truncate">巧克力</p>
                       <button class="btn border-left">詳細</button>
                     </div>
                   </div>
@@ -161,11 +165,11 @@
                 </div>
               </div>
               <div class="col-md-4 col-6 mt-3">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
                       <button class="btn border-left">詳細</button>
                     </div>
                   </div>
@@ -173,11 +177,11 @@
                 </div>
               </div>
               <div class="col-md-4 col-6 mt-3">
-                <div class="card inner-product__item item-coffee">
+                <div class="card innerProduct__item item-coffee">
                   <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
                       <button class="btn  border-left">詳細</button>
                     </div>
                   </div>
@@ -192,11 +196,11 @@
           <div class="tab-pane fade " id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
             <div class="row justify-content-center">
               <div class="col-md-4 mt-3 col-6">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto text-truncate">草莓泡芙</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto text-truncate">草莓泡芙</p>
                       <button class="btn border-left">詳細</button>
                     </div>
                   </div>
@@ -204,11 +208,11 @@
                 </div>
               </div>
               <div class="col-md-4 col-6 mt-3">
-                <div class="card inner-product__item">
+                <div class="card innerProduct__item">
                   <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">起司藍莓塔</p>
                       <button class="btn border-left">詳細</button>
                     </div>
                   </div>
@@ -216,11 +220,11 @@
                 </div>
               </div>
               <div class="col-md-4 col-6 mt-3">
-                <div class="card inner-product__item item-coffee">
+                <div class="card innerProduct__item item-coffee">
                   <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class="inner-product__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
+                      <p class="innerProduct__item__text card-text pt-3 px-2 mx-auto  text-truncate">耶加雪菲G1</p>
                       <button class="btn  border-left">詳細</button>
                     </div>
                   </div>
@@ -238,15 +242,15 @@
 
 
 
-    <div class="inner-about ">
+    <div class="innerAbout">
       <!-- 次要區塊一 -->
       <section class="secondary-block d-none d-md-block ">
         <div class="container" style="position: relative;">
           <div class="row ">
-            <div class="secondary-block__img secondary-block__imgItem-1 col-5"> </div>
+            <div class="secondary-block__img secondary-block__imgItem-1  col-5"> </div>
             <div class="col-7 d-flex ml-auto ">
-              <h2 class="secondary-block__title order-2">為什麼<span class="secondary-block__title--after"></span></h2>
-              <h2 class="secondary-block__title order-1 mt-5"> 選擇了做甜點<span>? </span> </h2>
+              <h2 class="secondary-block__title order-2 text-primary">為什麼<span class="secondary-block__title--after"></span></h2>
+              <h2 class="secondary-block__title order-1 text-primary mt-5"> 選擇了做甜點<span>? </span> </h2>
               <div class="secondary-block__text ml-auto py-3 ">
                 <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
                 <p>是非成敗轉頭空，</p>
@@ -263,7 +267,7 @@
               class="secondary-block__title--after"></span></h2>
           <h2 class="secondary-block__title text-center "> 選擇了做甜點? </h2>
           <div class="d-flex justify-content-center mt-3">
-            <div class="secondary-block__img secondary-block__imgItem-1"></div>
+            <div class="secondary-block__img secondary-block__imgItem-1-1"></div>
             <div class="secondary-block__text text-center p-4 ">
               <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
               <p>是非成敗轉頭空，</p>
@@ -281,8 +285,8 @@
           <div class="row ">
             <div class="secondary-block__img secondary-block__imgItem-2 col-5 "> </div>
             <div class="col-7 d-flex ml-n4 ml-md-n5">
-              <h2 class="secondary-block__title order-2">為什麼<span class="secondary-block__title--after"></span></h2>
-              <h2 class="secondary-block__title order-1 mt-5"> 一定要吃甜點<span>? </span> </h2>
+              <h2 class="secondary-block__title text-primary order-2">為什麼<span class="secondary-block__title--after"></span></h2>
+              <h2 class="secondary-block__title text-primary order-1 mt-5"> 一定要吃甜點<span>? </span> </h2>
               <div class="secondary-block__text  py-3 ">
                 <p>一壺濁酒喜相逢，浪花淘盡英雄。</p>
                 <p>是非成敗轉頭空，</p>
@@ -315,8 +319,8 @@
       <section class=" d-none d-md-block pt-5 my-5">
         <div class=" container">
           <div class="  d-flex justify-content-center ">
-            <h2 class="secondary-block__title ml-4 order-1">吃甜點<span class="secondary-block__title--after"></span></h2>
-            <h2 class="secondary-block__title text-center mt-5"> 是不需要理由的。 </h2>
+            <h2 class="secondary-block__title text-primary ml-4 order-1">吃甜點<span class="secondary-block__title--after"></span></h2>
+            <h2 class="secondary-block__title text-primary text-center mt-5"> 是不需要理由的。 </h2>
           </div>
         </div>
       </section>
@@ -333,45 +337,39 @@
   </main>
 
   <footer>
-    <div class="inner-footer__mail bg-primary">
-      <div class="container ">
-        <div class="row justify-content-center p-3 ">
-          <a href="" class="h3 text-light text-decoration-none ">想吃甜點，不須理由<i
-              class="fab fa-facebook-square ml-1"></i></a>
-          <!-- <h3 class=" text-light">想吃甜點，不須理由</h3> -->
+    <div class="container-fluid bg-primary mb-3">
+      <div class="d-flex justify-content-center ">
+        <a href="" class="h3 py-3 text-light text-decoration-none ">想吃甜點，不須理由<i
+            class="fab fa-facebook-square ml-1"></i></a>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row ">
+        <div class="col-6 d-flex flex-column justify-content-between  ">
+          <h3 class="innerFooter__logo my-auto ">Bootstrap</h3>
+          <div class="d-flex flex-column py-3">
+            <p class="">07-1234-5678 800 </p>
+            <p>sweetaste@email.com</p>
+            <p>高雄市新興區幸福路 520 號</p>
+
+          </div>
+        </div>
+        <div class="col-6 d-md-block d-none mt-3">
+          <div class=" d-flex justify-content-end">
+            <h2 class="secondary-block__title text-primary order-1">每天都是 <span class="secondary-block__title--after"></h2>
+            <h2 class="secondary-block__title text-primary mt-3">吃甜點好日子。</h2>
+          </div>
         </div>
       </div>
-
-    </div>
-    </div>
-    <div class="inner-footer__info mt-3">
-      <div class="container ">
-        <div class="row ">
-          <div class="col-6 d-flex flex-column justify-content-between  ">
-            <h3 class="inner-footer__logo" style="background-image: url('../img/logotype-lg-dark.svg');">Bootstrap</h3>
-            <div class="text">
-              <p>07-1234-5678 800 </p>
-              <p>sweetaste@email.com</p>
-              <p>高雄市新興區幸福路 520 號</p>
-            </div>
-          </div>
-          <div class="col-6 d-md-block d-none mt-3">
-            <div class=" d-flex justify-content-end">
-              <h2 class=" secondary-block__title order-1">每天都是 <span class="secondary-block__title--after"></h2>
-              <h2 class="secondary-block__title  mt-3">吃甜點好日子。</h2>
-            </div>
-          </div>
+      <div class="row mt-5">
+        <div class="col-md-6 ">
+          <i class="fab fa-youtube fa-2x"></i>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-6 ">
-            <i class="fab fa-youtube fa-2x"></i>
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-          </div>
-          <div class="col-md-6">
-            <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
-            <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
-          </div>
+        <div class="col-md-6">
+          <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
+          <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
         </div>
       </div>
     </div>
@@ -418,7 +416,7 @@
   <!-- TODO: 字體統一控制 -->
   <!-- 已在 mixin 新增 responsive__title、responsive__text -->
 
-  
+
 
 
 
