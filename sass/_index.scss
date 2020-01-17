@@ -20,15 +20,16 @@
 //   &__index{
 //     .primary-block{
 //       &__list{}
-//       &__item{}
-//       &__link{}
+//       &__item{
+//         &__link{}
+//       }
 //     }
 //   }
 //   &__product{}
 //   &__cart{}
 //   &__about{}
 // }
-// .inner-about{
+// .innerAbout{
 //   .secondary-block{
 //     &__title{}
 //     &__text{}
@@ -46,6 +47,9 @@
   &__index{
     background-image: url("https://bit.ly/2OhbMHr");
     margin-bottom: 200px;
+    @include media-breakpoint-down(md){
+      margin-bottom: 220px;
+    }
     @include media-breakpoint-down(sm){
       margin-bottom: 150px;
     }
@@ -55,13 +59,14 @@
       transform: translateY(50px);
       &__list{
         transform: translateY(85%);
-        @include md{
+        @include media-breakpoint-down(md){
           transform: translateY(105%);
         }
       }
       &__item{
         //writing-mode也會改變方向軸
         writing-mode:vertical-lr;
+        @include responsiveFontsize__title;
         background-size: cover;
         background-position: center center;
         position: relative;
@@ -77,8 +82,6 @@
           background-image: url("https://bit.ly/2Qodh3Z");
         }
         &__link{
-          // -webkit-background-clip: text;
-          // background-clip: text;
           z-index: 9;
         }
         &::after{
@@ -112,21 +115,20 @@
   }
 }
 
+
+
+
+
+
 .innerAbout, footer{
   // FIXME:若單獨在 inner-about 區塊，secondary-block應該是成為主要區塊
   .secondary-block{
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
-    @include md{
+    @include media-breakpoint-down(md){
       writing-mode:horizontal-tb;
-      padding-bottom: 60px;
-      margin-top: 25px;
-      margin-bottom: 80px;
       background-color: transparent;
-    }
-    @include xs{
-      margin-bottom: 75px;
     }
     &::before{
       position: absolute;
@@ -154,7 +156,8 @@
       position: relative;
       line-height: 0;
       transform: translateY(-20px);
-      @include md{
+      @include responsiveFontsize__title;
+      @include media-breakpoint-down(sm){
         line-height: 1.2;
         // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
@@ -177,7 +180,7 @@
           top: 0;
           right:0;
           transform: translate(70%, 20%);
-          @include md{
+          @include media-breakpoint-down(sm){
             width: 50px;
             height: 2px;
             top: 50%;
@@ -190,8 +193,8 @@
     &__text{
       writing-mode:vertical-rl;
       line-height: 2.5;
-      max-height: 400px;
       transform: translateY(20px);
+      @include responsiveFontsize__info;
       @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
         color:theme-color("primary");
@@ -208,8 +211,14 @@
       position: absolute;
       width: 450px;
       height: 450px;
-      transform: translateY(-50px);
+      transform: translateY(-10px);
       border-radius: 10px ;
+      transition: 0.3s;
+      @include media-breakpoint-down(md){
+        width: 400px;
+        height: 400px;
+        transform: translateY(-10px);
+      }
       @include media-breakpoint-down(sm){
         width: 370px;
         height: 370px;
@@ -241,11 +250,14 @@
 
 
 .innerProduct{
+  margin-bottom: 100px;
   &__item{
     position: relative;
+    @include responsiveFontsize__info;
     &::before{
       position: absolute;
       content: "本日精選";
+      font-size: 1rem;
       top: 0;
       left: 20px;
       width: 30px;
@@ -253,16 +265,6 @@
       color: white;
       background-color: rgba(63, 93, 69,0.8);
       border-radius: 0 0 3px 3px;
-    }
-    // FIXME:RWD文字大小要修正
-    &__text{
-      font-size: 24px; 
-      @include md{
-        font-size: 20px;
-      } 
-      @include sm{
-        font-size: 18px;
-      } 
     }
   }
   &__coffee{
@@ -282,19 +284,24 @@
       padding-top: 15px;
       border-top: 1px solid #dee2e6;
     }
-    @include sm{
+    @include media-breakpoint-down(sm){
       align-items:start;
     }
     &__img{
       width: 200px;
       height: 200px;
-      @include sm{
+      @include media-breakpoint-down(sm){
         width: 130px;
         height: 130px;
       }
     }
   }
 }
+
+
+
+
+
 
 .inner-login{
   .primary-block{
@@ -366,6 +373,11 @@
     }
   }
 }
+
+
+
+
+
 
 .innerFooter{
   &__logo{
