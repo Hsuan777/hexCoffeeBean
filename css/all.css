@@ -11138,7 +11138,6 @@ a.text-coffee:hover, a.text-coffee:focus {
 }
 
 body {
-  font-size: 1rem;
   color: #8DA291;
   background-color: #f8f9fa;
 }
@@ -11167,30 +11166,30 @@ body {
   }
 }
 
-.innerBanner__index .primary-block {
+.innerBanner__index__title {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
 
-.innerBanner__index .primary-block__list {
+.innerBanner__index__list {
   -webkit-transform: translateY(85%);
           transform: translateY(85%);
 }
 
 @media (max-width: 991.98px) {
-  .innerBanner__index .primary-block__list {
+  .innerBanner__index__list {
     -webkit-transform: translateY(105%);
             transform: translateY(105%);
   }
 }
 
-.innerBanner__index .primary-block__item {
+.innerBanner__index__item {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 2rem;
+  font-size: 1.1rem;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -11200,28 +11199,40 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .innerBanner__index .primary-block__item {
-    font-size: 1.6rem;
+  .innerBanner__index__item {
+    font-size: 1rem;
   }
 }
 
-.innerBanner__index .primary-block__item:nth-child(1) {
+@media (max-width: 767.98px) {
+  .innerBanner__index__item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .innerBanner__index__item {
+    font-size: 0.8rem;
+  }
+}
+
+.innerBanner__index__item:nth-child(1) {
   background-image: url("https://bit.ly/2zBDAxX");
 }
 
-.innerBanner__index .primary-block__item:nth-child(2) {
+.innerBanner__index__item:nth-child(2) {
   background-image: url("https://bit.ly/2R5tqwD");
 }
 
-.innerBanner__index .primary-block__item:nth-child(3) {
+.innerBanner__index__item:nth-child(3) {
   background-image: url("https://bit.ly/2Qodh3Z");
 }
 
-.innerBanner__index .primary-block__item__link {
+.innerBanner__index__item__link {
   z-index: 9;
 }
 
-.innerBanner__index .primary-block__item::after {
+.innerBanner__index__item::after {
   position: absolute;
   content: "";
   top: 0;
@@ -11233,11 +11244,11 @@ body {
   transition: 0.3s;
 }
 
-.innerBanner__index .primary-block__item:hover {
+.innerBanner__index__item:hover {
   text-decoration: none;
 }
 
-.innerBanner__index .primary-block__item:hover::after {
+.innerBanner__index__item:hover::after {
   background-color: rgba(255, 225, 128, 0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -11259,6 +11270,7 @@ body {
   position: relative;
   margin-top: 100px;
   margin-bottom: 150px;
+  background-image: linear-gradient(-120deg, #EAF0ED, transparent 50%);
 }
 
 @media (max-width: 991.98px) {
@@ -11268,6 +11280,18 @@ body {
             writing-mode: horizontal-tb;
     background-color: transparent;
   }
+}
+
+.innerAbout .secondary-block:nth-child(2), footer .secondary-block:nth-child(2) {
+  background-image: linear-gradient(-120deg, #EAF0ED, transparent 50%);
+}
+
+.innerAbout .secondary-block:nth-child(3), footer .secondary-block:nth-child(3) {
+  background-image: linear-gradient(120deg, #EAF0ED, transparent 50%);
+}
+
+.innerAbout .secondary-block:nth-child(4), footer .secondary-block:nth-child(4) {
+  background-image: linear-gradient(120deg, #EAF0ED, transparent 50%);
 }
 
 .innerAbout .secondary-block::before, footer .secondary-block::before {
@@ -11358,24 +11382,24 @@ body {
   line-height: 2.5;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991.98px) {
   .innerAbout .secondary-block__text, footer .secondary-block__text {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .innerAbout .secondary-block__text, footer .secondary-block__text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .innerAbout .secondary-block__text, footer .secondary-block__text {
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 }
 
@@ -11446,24 +11470,24 @@ body {
 
 .innerProduct__item {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991.98px) {
   .innerProduct__item {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .innerProduct__item {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .innerProduct__item {
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 }
 
@@ -11474,7 +11498,7 @@ body {
   top: 0;
   left: 20px;
   width: 30px;
-  padding: 7px;
+  padding: 5px;
   color: white;
   background-color: rgba(63, 93, 69, 0.8);
   border-radius: 0 0 3px 3px;

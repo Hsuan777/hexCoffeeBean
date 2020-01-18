@@ -53,56 +53,59 @@
     @include media-breakpoint-down(sm){
       margin-bottom: 150px;
     }
-    .primary-block{
+    &__title{
       background-color: rgba(0,0,0,0.2);
       border-radius: 50px;
       transform: translateY(50px);
-      &__list{
-        transform: translateY(85%);
-        @include media-breakpoint-down(md){
-          transform: translateY(105%);
-        }
+    }
+    &__list{
+      transform: translateY(85%);
+      @include media-breakpoint-down(md){
+        transform: translateY(105%);
       }
-      &__item{
-        //writing-mode也會改變方向軸
-        writing-mode:vertical-lr;
-        @include responsiveFontsize__title;
-        background-size: cover;
-        background-position: center center;
-        position: relative;
+    }
+    &__item{
+      //writing-mode也會改變方向軸
+      writing-mode:vertical-lr;
+      @include responsiveFontSize__info;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      transition: 0.3s;
+      z-index: -1;
+      &:nth-child(1){
+        background-image: url("https://bit.ly/2zBDAxX");
+      }
+      &:nth-child(2){
+        background-image: url("https://bit.ly/2R5tqwD");
+      }
+      &:nth-child(3){
+        background-image: url("https://bit.ly/2Qodh3Z");
+      }
+      &__link{
+        z-index: 9;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255,0.6);
         transition: 0.3s;
-        z-index: -1;
-        &:nth-child(1){
-          background-image: url("https://bit.ly/2zBDAxX");
-        }
-        &:nth-child(2){
-          background-image: url("https://bit.ly/2R5tqwD");
-        }
-        &:nth-child(3){
-          background-image: url("https://bit.ly/2Qodh3Z");
-        }
-        &__link{
-          z-index: 9;
-        }
+      }
+      &:hover{
+        text-decoration: none;
         &::after{
-          position: absolute;
-          content: "";
-          top: 0;
-          left:0;
-          bottom: 0;
-          right: 0;
-          background-color: rgba(255, 255, 255,0.6);
-          transition: 0.3s;
-        }
-        &:hover{
-          text-decoration: none;
-          &::after{
-            background-color: rgba(255, 225, 128,0.5);
-            transform: scale(0.8);
-          }
+          background-color: rgba(255, 225, 128,0.5);
+          transform: scale(0.8);
         }
       }
     }
+    // .primary-block{
+      
+    // }
   }
   &__product{
     background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
@@ -126,9 +129,19 @@
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
+    background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
     @include media-breakpoint-down(md){
       writing-mode:horizontal-tb;
       background-color: transparent;
+    }
+    &:nth-child(2){
+      background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
+    }
+    &:nth-child(3){
+      background-image:linear-gradient(120deg,theme-color("secondary") , transparent 50%);
+    }
+    &:nth-child(4){
+      background-image:linear-gradient(120deg,theme-color("secondary") , transparent 50%);
     }
     &::before{
       position: absolute;
@@ -156,7 +169,7 @@
       position: relative;
       line-height: 0;
       transform: translateY(-20px);
-      @include responsiveFontsize__title;
+      @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
         line-height: 1.2;
         // transform: translate(70px,-20px);
@@ -194,7 +207,7 @@
       writing-mode:vertical-rl;
       line-height: 2.5;
       transform: translateY(20px);
-      @include responsiveFontsize__info;
+      @include responsiveFontSize__info;
       @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
         color:theme-color("primary");
@@ -253,7 +266,7 @@
   margin-bottom: 100px;
   &__item{
     position: relative;
-    @include responsiveFontsize__info;
+    @include responsiveFontSize__info;
     &::before{
       position: absolute;
       content: "本日精選";
@@ -261,7 +274,7 @@
       top: 0;
       left: 20px;
       width: 30px;
-      padding: 7px;
+      padding: 5px;
       color: white;
       background-color: rgba(63, 93, 69,0.8);
       border-radius: 0 0 3px 3px;
