@@ -125,7 +125,7 @@
 
 .innerAbout, footer{
   // FIXME:若單獨在 inner-about 區塊，secondary-block應該是成為主要區塊
-  .secondary-block{
+  &__item{
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
@@ -175,9 +175,7 @@
         // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
       }
-      
-      // FIXME:別用 標籤 ，以 class取代，可重複使用
-      span{
+      &__punctuation{
         writing-mode: horizontal-tb;
         line-height: 1;
       }
@@ -188,16 +186,15 @@
           position: absolute;
           content: "";
           width: 2px;
-          height: 70px;
+          height: 50px;
           background-color:theme-color("primary");
-          top: 0;
-          right:0;
-          transform: translate(70%, 20%);
+          top: 25px;
+          left:50%;
           @include media-breakpoint-down(sm){
             width: 50px;
             height: 2px;
             top: 50%;
-            right:-35px;
+            left:25px;
             background-color:theme-color("info") ;
           }
         }
@@ -205,7 +202,7 @@
     }
     &__text{
       writing-mode:vertical-rl;
-      line-height: 2.5;
+      line-height: 2;
       transform: translateY(20px);
       @include responsiveFontSize__info;
       @include media-breakpoint-down(sm){
