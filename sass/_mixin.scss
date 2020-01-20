@@ -1,3 +1,5 @@
+
+// 圖片取代文字
 @mixin hidden_text($width, $height, $bg_url) {
   width: $width;
   height: $height;
@@ -20,6 +22,7 @@
 //   z-index: 99;
 // }
 
+// 圓形進度條
 .progress-round{
   &__list{
     li{
@@ -64,9 +67,10 @@
   }
 }
 
-//@media
 
 
+
+// RWD文字大小__標題
 @mixin responsiveFontSize__title{
   font-size: 2rem;
   @include media-breakpoint-down(md){
@@ -74,6 +78,7 @@
   }
 }
 
+// RWD文字大小__通用文字
 @mixin responsiveFontSize__info{
   font-size: 1.1rem;
   @include media-breakpoint-down(md){

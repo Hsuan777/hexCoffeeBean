@@ -51,10 +51,10 @@
   </header>
 
   <main>
-    <section class="inner-login">
+    <section class="innerLogin">
       <div class="container my-5">
         <div class="row no-gutters justify-content-center">
-          <div class="col d-sm-block d-md-none  mb-3">
+          <div class="col-sm-block d-md-none  mb-3">
             <div class="secondary-block m-auto ">
               <div class="text-center d-flex justify-content-center">
                 <a href="https://facebook.com" class="secondary-block__link p-4 bg-light ">FACEBOOK</a>
@@ -64,9 +64,9 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="primary-block bg-primary mb-3 mx-auto ">
+            <div class="innerLogin__item bg-primary mb-3">
               <form>
-                <h2 class="primary-block__title text-center py-3">會員登入</h2>
+                <h2 class="innerLogin__item__title text-center py-3">會員登入</h2>
                 <div class="form-group ">
                   <div class="input-group-prepend px-3">
                     <label for="user" class="input-group-text rounded-0 border-0 bg-light"><i
@@ -83,21 +83,22 @@
                       data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>使用者密碼</em>" required>
                   </div>
                 </div>
-                <div class="form-group form-check ml-3">
+                <div class="form-group form-check ml-3 ">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label text-light" for="exampleCheck1">記住我</label>
                 </div>
-                <button type="submit" class="btn border-0 rounded-0 w-100 py-3 bg-warning ">登入帳號</button>
+                <button type="submit" class="btn btn-submit rounded-0 w-100 py-3 ">登入帳號</button>
               </form>
             </div>
           </div>
+          <!-- FIXME:高度不一致 -->
           <div class=" col-md-6 d-none d-md-block ">
-            <div class="secondary-block mb-3 px-5 ">
-              <h2 class="secondary-block__title text-center py-3 ">社群帳號</h2>
+            <div class="innerLogin__item bg-secondary mb-3 px-3">
+              <h2 class="innerLogin__item__title text-center py-3 ">社群帳號</h2>
               <div class="list-group text-center">
-                <a href="https://facebook.com" class="secondary-block__link p-3 bg-light ">FACEBOOK</a>
-                <a href="https://google.com" class="secondary-block__link p-3 bg-light my-3">GOOGLE</a>
-                <a href="https://tw.yahoo.com" class="secondary-block__link p-3 bg-light ">YAHOO!</a>
+                <a href="https://facebook.com" class="innerLogin__item__link p-3 bg-light ">FACEBOOK</a>
+                <a href="https://google.com" class="innerLogin__item__link p-3 bg-light my-3">GOOGLE</a>
+                <a href="https://tw.yahoo.com" class="innerLogin__item__link p-3 bg-light mb-2">YAHOO!</a>
               </div>
             </div>
           </div>

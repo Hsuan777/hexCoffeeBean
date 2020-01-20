@@ -18,19 +18,17 @@
 // 區塊子區域可無限擴增，若重複性高寫在 base.scss
 // .innerBanner{
 //   &__index{
-//     .primary-block{
 //       &__list{}
 //       &__item{
 //         &__link{}
 //       }
-//     }
 //   }
 //   &__product{}
 //   &__cart{}
 //   &__about{}
 // }
 // .innerAbout{
-//   .secondary-block{
+//   .item{
 //     &__title{}
 //     &__text{}
 //     &__img{}
@@ -103,9 +101,6 @@
         }
       }
     }
-    // .primary-block{
-      
-    // }
   }
   &__product{
     background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
@@ -123,13 +118,44 @@
 
 
 
-.innerAbout, footer{
+.innerProduct{
+  margin-bottom: 100px;
+  &__item{
+    position: relative;
+    @include responsiveFontSize__info;
+    &::before{
+      position: absolute;
+      content: "本日精選";
+      font-size: 1rem;
+      top: 0;
+      left: 20px;
+      width: 30px;
+      padding: 5px;
+      color: white;
+      background-color: rgba(63, 93, 69,0.8);
+      border-radius: 0 0 3px 3px;
+    }
+  }
+  &__coffee{
+    color: rgba(32, 22, 3,0.8)	;
+    &::before{
+      content: "本周咖啡";
+      background-color: rgba(32, 22, 3,0.8)	;
+    }
+  }
+} 
+
+
+
+
+
+.innerAbout{
   // FIXME:若單獨在 inner-about 區塊，secondary-block應該是成為主要區塊
   &__item{
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
-    background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
+    // background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
     @include media-breakpoint-down(md){
       writing-mode:horizontal-tb;
       background-color: transparent;
@@ -172,30 +198,28 @@
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
         line-height: 1.2;
-        // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
       }
       &__punctuation{
         writing-mode: horizontal-tb;
         line-height: 1;
-      }
-      // FIXME:修飾符號，未想到更好的命名
-      &--after{
-        position: relative;
-        &::after{
-          position: absolute;
-          content: "";
-          width: 2px;
-          height: 50px;
-          background-color:theme-color("primary");
-          top: 25px;
-          left:50%;
-          @include media-breakpoint-down(sm){
-            width: 50px;
-            height: 2px;
-            top: 50%;
-            left:25px;
-            background-color:theme-color("info") ;
+        &--dash{
+          position: relative;
+          &::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 50px;
+            background-color:theme-color("primary");
+            top: 25px;
+            left:50%;
+            @include media-breakpoint-down(sm){
+              width: 50px;
+              height: 2px;
+              top: 50%;
+              left:25px;
+              background-color:theme-color("info") ;
+            }
           }
         }
       }
@@ -259,32 +283,7 @@
 
 
 
-.innerProduct{
-  margin-bottom: 100px;
-  &__item{
-    position: relative;
-    @include responsiveFontSize__info;
-    &::before{
-      position: absolute;
-      content: "本日精選";
-      font-size: 1rem;
-      top: 0;
-      left: 20px;
-      width: 30px;
-      padding: 5px;
-      color: white;
-      background-color: rgba(63, 93, 69,0.8);
-      border-radius: 0 0 3px 3px;
-    }
-  }
-  &__coffee{
-    color: rgba(32, 22, 3,0.8)	;
-    &::before{
-      content: "本周咖啡";
-      background-color: rgba(32, 22, 3,0.8)	;
-    }
-  }
-} 
+
 
 .inner-cart{
   &__item{
@@ -313,14 +312,15 @@
 
 
 
-.inner-login{
-  .primary-block{
+.innerLogin{
+  &__item{
     max-width:345px ;
+    // height: auto;
     transition: 0.3s;
     &:hover{
       // transform: translateY(-20px);
-      .primary-block__title::before,
-      .primary-block__title::after{
+      .innerLogin__item__title::before,
+      .innerLogin__item__title::after{
         opacity: 1;
       }
     }
@@ -332,7 +332,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary;
+        background-color:theme-color("secondary");
         top: 55%;
         left: 20px;
       }
@@ -342,46 +342,54 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary;
+        background-color: theme-color("secondary");
         top: 55%;
         right: 20px;
       }
     }
-  }
-  .secondary-block{
-    max-width:345px ;
-    transition: 0.3s;
-    &:hover{
-      // transform: translateY(-20px);
-      .secondary-block__title::before,
-      .secondary-block__title::after{
-        opacity: 1;
-      }
-    }
-    &__title{
-      position: relative;
-      &::before{
-        opacity: 0;
-        position: absolute;
-        content: "";
-        width: 35px;
-        height: 2px;
-        background-color: $secondary;
-        top: 55%;
-        left: -12px;
-      }
-      &::after{
-        opacity: 0;
-        position: absolute;
-        content: "";
-        width: 35px;
-        height: 2px;
-        background-color: $secondary;
-        top: 55%;
-        right: -12px;
+    &:nth-child(2){
+      &__title{
+        &::before, &::after{
+          background-color:theme-color("primary");
+        }
+        
       }
     }
   }
+  // .secondary-block{
+  //   max-width:345px ;
+  //   transition: 0.3s;
+  //   &:hover{
+  //     // transform: translateY(-20px);
+  //     .secondary-block__title::before,
+  //     .secondary-block__title::after{
+  //       opacity: 1;
+  //     }
+  //   }
+  //   &__title{
+  //     position: relative;
+  //     &::before{
+  //       opacity: 0;
+  //       position: absolute;
+  //       content: "";
+  //       width: 35px;
+  //       height: 2px;
+  //       background-color: $secondary;
+  //       top: 55%;
+  //       left: -12px;
+  //     }
+  //     &::after{
+  //       opacity: 0;
+  //       position: absolute;
+  //       content: "";
+  //       width: 35px;
+  //       height: 2px;
+  //       background-color: $secondary;
+  //       top: 55%;
+  //       right: -12px;
+  //     }
+  //   }
+  // }
 }
 
 
