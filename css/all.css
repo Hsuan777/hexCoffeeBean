@@ -11319,6 +11319,7 @@ body {
   position: relative;
   margin-top: 100px;
   margin-bottom: 150px;
+  background-image: linear-gradient(-120deg, #EAF0ED, transparent 50%);
 }
 
 @media (max-width: 991.98px) {
