@@ -11563,7 +11563,7 @@ body {
   content: "";
   width: 35px;
   height: 2px;
-  background-color: #EAF0ED;
+  background-color: #8DA291;
   top: 55%;
   left: 20px;
 }
@@ -11574,13 +11574,14 @@ body {
   content: "";
   width: 35px;
   height: 2px;
-  background-color: #EAF0ED;
+  background-color: #8DA291;
   top: 55%;
   right: 20px;
 }
 
-.innerLogin__item:nth-child(2)__title::before, .innerLogin__item:nth-child(2)__title::after {
-  background-color: #3F5D45;
+.innerLogin__item button[type="submit"] {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .innerFooter__logo {

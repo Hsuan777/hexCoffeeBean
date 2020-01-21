@@ -315,6 +315,7 @@
 .innerLogin{
   &__item{
     max-width:345px ;
+    // max-height:284px ;
     // height: auto;
     transition: 0.3s;
     &:hover{
@@ -332,7 +333,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color:theme-color("secondary");
+        background-color:theme-color("info");
         top: 55%;
         left: 20px;
       }
@@ -342,19 +343,15 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: theme-color("secondary");
+        background-color: theme-color("info");
         top: 55%;
         right: 20px;
       }
     }
-    &:nth-child(2){
-      &__title{
-        &::before, &::after{
-          background-color:theme-color("primary");
-        }
-        
-      }
+    button[type="submit"]{
+      transform: translateY(10px);
     }
+    
   }
   // .secondary-block{
   //   max-width:345px ;
