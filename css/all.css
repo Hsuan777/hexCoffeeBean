@@ -11138,6 +11138,7 @@ a.text-coffee:hover, a.text-coffee:focus {
 }
 
 body {
+  font-family: 'Zhi Mang Xing', cursive;
   color: #8DA291;
   background-color: #f8f9fa;
 }
@@ -11151,18 +11152,18 @@ body {
 
 .innerBanner__index {
   background-image: url("https://bit.ly/2OhbMHr");
-  margin-bottom: 200px;
+  margin-bottom: 230px;
 }
 
 @media (max-width: 991.98px) {
   .innerBanner__index {
-    margin-bottom: 220px;
+    margin-bottom: 250px;
   }
 }
 
 @media (max-width: 767.98px) {
   .innerBanner__index {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
 }
 
@@ -11189,7 +11190,7 @@ body {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 1.1rem;
+  font-size: 2rem;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -11200,19 +11201,7 @@ body {
 
 @media (max-width: 991.98px) {
   .innerBanner__index__item {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .innerBanner__index__item {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .innerBanner__index__item {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -11232,6 +11221,10 @@ body {
   z-index: 9;
 }
 
+.innerBanner__index__item__link:hover {
+  color: black;
+}
+
 .innerBanner__index__item::after {
   position: absolute;
   content: "";
@@ -11244,12 +11237,8 @@ body {
   transition: 0.3s;
 }
 
-.innerBanner__index__item:hover {
-  text-decoration: none;
-}
-
 .innerBanner__index__item:hover::after {
-  background-color: rgba(255, 225, 128, 0.5);
+  background-color: rgba(253, 11, 11, 0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
