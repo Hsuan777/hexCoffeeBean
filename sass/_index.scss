@@ -368,3 +368,29 @@
 .navbar-brand{
   @include hidden_text(220px,40px,url('../img/logo-all-dark.svg'));
 }
+
+
+.newYear{
+  width: 90px;
+  height:90px;
+  color: black;
+  font-family: 'Zhi Mang Xing', cursive;
+  position: relative;
+  &__title{
+    transform: rotate(180deg);
+
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+
+
+  }
+}
