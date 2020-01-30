@@ -63,7 +63,65 @@
           <div class="col-md-8">
             <div class="">
               <h2 class="innerCart__item__title bg-primary text-light text-center py-3 border mb-0">您的購物車</h2>
-              <ul class="list-unstyled p-3 border-right bg-secondary border-left border-bottom">
+              <table class="table table-hover table-borderless">
+                <thead >
+                  <tr class="border-bottom text-nowrap">
+                    <th scope="col">商品</th>
+                    <th scope="col">單價</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">小計</th>
+                    <th scope="col" class="d-none d-md-block">操作</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr class="innerCaet__item border-bottom">
+                    <th scope="row" class="d-flex align-items-center mt-3 ">
+                      <img src="https://picsum.photos/400/300?random=2" alt="" class="innerCart__item__img mr-2">
+                      <p>天堂鳥</p>
+                    </th>
+                    <td class="align-middle">NT. 300</td>
+                    <td class="align-middle ">
+                      <nav aria-label="..." class="  ">
+                        <ul class="pagination  mt-3">
+                          <li class="page-item"><a class="page-link">-</a></li>
+                          <li class="page-item"><a class="page-link disabled">2</a></li>
+                          <li class="page-item"><a class="page-link">+</a></li>
+                        </ul>
+                      </nav>
+                    </td>
+                    <td class="align-middle">NT. 600</td>
+                    <td class="align-middle">
+                      <button class="btn btn-sm d-none d-md-block">
+                        <i class="far fa-trash-alt fa"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="innerCaet__item">
+                    <th scope="row" class="d-flex align-items-center mt-3 ">
+                      <img src="https://picsum.photos/400/300?random=2" alt="" class="innerCart__item__img img-fluid mr-2">
+                      <p>天堂鳥</p>
+                    </th>
+                    <td class="align-middle">NT. 300</td>
+                    <td class="align-middle mt-3">
+                      <nav aria-label="..." class="  ">
+                        <ul class="pagination  ">
+                          <li class="page-item"><a class="page-link">-</a></li>
+                          <li class="page-item"><a class="page-link disabled">2</a></li>
+                          <li class="page-item"><a class="page-link">+</a></li>
+                        </ul>
+                      </nav>
+                    </td>
+                    <td class="align-middle">NT. 600</td>
+                    <td class="align-middle ">
+                      <button class="btn btn-sm d-none d-md-block">
+                        <i class="far fa-trash-alt fa"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <!-- <ul class="list-unstyled p-3 border-right bg-secondary border-left border-bottom">
                 <li class="innerCart__item media">
                   <img src="https://picsum.photos/400/300?random=2"
                     class="innerCart__item__img mr-3 mr-sm-5  img-fluid  img-thumbnail " alt="...">
@@ -145,7 +203,7 @@
                     </div>
                   </div>
                 </li>
-              </ul>
+              </ul> -->
 
             </div>
           </div>
@@ -208,7 +266,8 @@
         </div>
         <div class="col-6 d-md-block d-none mt-3">
           <div class=" d-flex justify-content-end">
-            <h2 class="innerAbout__item__title text-primary order-1">每天都是 <span class="innerAbout__item__title__punctuation--dash"></h2>
+            <h2 class="innerAbout__item__title text-primary order-1">每天都是 <span
+                class="innerAbout__item__title__punctuation--dash"></h2>
             <h2 class="innerAbout__item__title text-primary mt-3">吃甜點好日子。</h2>
           </div>
         </div>
