@@ -101,9 +101,8 @@
       }
       &:hover{
         &::after{
-          // background-color: rgba(255, 225, 128,0.5);
-          background-color: rgba(253, 11, 11, 0.5);
-          // transform: rotate(45deg);
+          background-color: rgba(255, 225, 128,0.5);
+          // background-color: rgba(253, 11, 11, 0.5);
           transform: scale(0.8);
         }
       }
@@ -157,7 +156,6 @@
 
 
 .innerAbout{
-  // FIXME:若單獨在 inner-about 區塊，secondary-block應該是成為主要區塊
   &__item{
     position: relative;
     margin-top: 100px;
@@ -295,17 +293,17 @@
 .innerCart{
   &__item{
     align-items:center;
-    padding-bottom: 15px;
-    + li.innerCart__item {
-      padding-top: 15px;
+    // padding-bottom: 15px;
+    + tr.innerCart__item {
+      // padding-top: 15px;
       border-top: 1px solid #dee2e6;
     }
     @include media-breakpoint-down(sm){
       align-items:start;
     }
     &__img{
-      width: 80px;
-      height: 60px;
+      width: 120px;
+      height: 90px;
       // @include media-breakpoint-down(sm){
       //   width: 130px;
       //   height: 130px;
@@ -377,27 +375,27 @@
 }
 
 
-.newYear{
-  width: 90px;
-  height:90px;
-  color: black;
-  font-family: 'Zhi Mang Xing', cursive;
-  position: relative;
-  &__title{
-    transform: rotate(180deg);
+// .newYear{
+//   width: 90px;
+//   height:90px;
+//   color: black;
+//   font-family: 'Zhi Mang Xing', cursive;
+//   position: relative;
+//   &__title{
+//     transform: rotate(180deg);
 
-  }
-  &::before{
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 90px;
-    background-color: red;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: rotate(45deg);
+//   }
+//   &::before{
+//     position: absolute;
+//     content: "";
+//     width: 90px;
+//     height: 90px;
+//     background-color: red;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     transform: rotate(45deg);
 
 
-  }
-}
+//   }
+// }
