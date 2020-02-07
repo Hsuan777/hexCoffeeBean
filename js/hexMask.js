@@ -8,7 +8,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.marker([25.0489946,121.2077829]).addTo(map)
-    .bindPopup('測試目標')
+    .bindPopup('測試目標-超商')
     .openPopup();
 
 
