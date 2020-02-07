@@ -1,3 +1,23 @@
+// var map = L.map('map').setView([25.0469108,121.2075245], 16);
+var map = L.map('map', {
+    center: [25.0469108,121.2075245],
+    zoom: 16
+});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([25.0489946,121.2077829]).addTo(map)
+    .bindPopup('測試目標')
+    .openPopup();
+
+
+
+
+
+
+
+
 // var xhr = new XMLHttpRequest();
 
 // xhr.open('get','https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json?fbclid=IwAR0HV1nBB2_3JOSpa7X9CUZ6gNonmLYXQPF2vP6mjmTKGpBKEEbFCdBEt4A', true);

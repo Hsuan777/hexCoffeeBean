@@ -22,25 +22,28 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 
-  <!-- fontawesome
-  <script src="https://kit.fontawesome.com/74aada8adf.js"></script> -->
+  <!-- leaflet 2u4 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
-  <link rel="stylesheet" href="css/all.css">
+  <!-- <link rel="stylesheet" href="css/all.css"> -->
   <title>hexMask</title>
+
+  <style>
+    html, body {
+      width: 90%;
+      height: 90%;
+    }
+    #map {
+      width: 90%;
+      height: 90%;
+    }
+  </style>
 </head>
 
->
-  <header>
-    
-  </header>
+<body>
 
-  <main>
-   
-
-  </main>
-
-  
-
+  <div id="map"></div>
 
 
   <!-- Optional JavaScript -->
@@ -55,12 +58,17 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
-  
+
   <script src="js/hexMask.js"></script>
 
-  
 
-  
+  <!-- 1.MarkerCluster.css
+2.MarkerCluster.Default.css (not needed if you use your own iconCreateFunction instead of the default one)
+3.leaflet.markercluster.js -->
+  <!-- 
+  geolocation
+  HTML5 geolocation api -->
+
 
 
 
