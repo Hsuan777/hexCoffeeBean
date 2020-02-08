@@ -22,28 +22,81 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 
-  <!-- leaflet 2u4 -->
+  <!-- leaflet 圖資框架 -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+  <!-- 增強大頭針效能 markercluster -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css">
+  </link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css">
+  </link>
 
   <!-- <link rel="stylesheet" href="css/all.css"> -->
-  <title>hexMask</title>
-
   <style>
-    html, body {
+    html,
+    body {
       width: 90%;
       height: 90%;
     }
+
     #map {
       width: 90%;
       height: 90%;
     }
+    /* 借用一下，測試 */
+    .marker-cluster-small {
+      background-color: rgba(181, 226, 140, 0.6);
+    }
+
+    .marker-cluster-small div {
+      background-color: rgba(110, 204, 57, 0.6);
+    }
+
+    .marker-cluster-medium {
+      background-color: rgba(241, 211, 87, 0.6);
+    }
+
+    .marker-cluster-medium div {
+      background-color: rgba(240, 194, 12, 0.6);
+    }
+
+    .marker-cluster-large {
+      background-color: rgba(253, 156, 115, 0.6);
+    }
+
+    .marker-cluster-large div {
+      background-color: rgba(241, 128, 23, 0.6);
+    }
+
+    .marker-cluster {
+      background-clip: padding-box;
+      border-radius: 20px;
+    }
+
+    .marker-cluster div {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
+      margin-top: 5px;
+
+      text-align: center;
+      border-radius: 15px;
+      font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    .marker-cluster span {
+      line-height: 30px;
+    }
   </style>
+
+  <title>hexMask</title>
+
 </head>
 
 <body>
 
   <div id="map"></div>
+
 
 
   <!-- Optional JavaScript -->
@@ -58,7 +111,8 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
-
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
   <script src="js/hexMask.js"></script>
 
 
