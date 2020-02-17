@@ -11150,7 +11150,7 @@ body {
 }
 
 .innerBanner__index {
-  background-image: url("https://bit.ly/2OhbMHr");
+  background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash.jpg");
   margin-bottom: 230px;
 }
 
@@ -11205,15 +11205,15 @@ body {
 }
 
 .innerBanner__index__item:nth-child(1) {
-  background-image: url("https://bit.ly/2zBDAxX");
+  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash.jpg");
 }
 
 .innerBanner__index__item:nth-child(2) {
-  background-image: url("https://bit.ly/2R5tqwD");
+  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
 }
 
 .innerBanner__index__item:nth-child(3) {
-  background-image: url("https://bit.ly/2Qodh3Z");
+  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash.jpg");
 }
 
 .innerBanner__index__item__link {
