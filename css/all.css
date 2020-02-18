@@ -11140,6 +11140,7 @@ a.text-coffee:hover, a.text-coffee:focus {
 body {
   color: #17a2b8;
   background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
+  background-position: center center;
   background-size: contain;
 }
 
