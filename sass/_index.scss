@@ -90,9 +90,10 @@
       }
       &__link{
         z-index: 9;
-        &:hover{
-          color: black;
-        }
+        color: white;
+        // &:hover{
+        //   color: black;
+        // }
       }
       &::after{
         position: absolute;
@@ -101,13 +102,16 @@
         left:0;
         bottom: 0;
         right: 0;
-        background-color: rgba(255, 255, 255,0.6);
+        border-radius: 95px;
+        // background-color: rgba(255, 255, 255,0.8);
+        background-color: rgba(165, 92, 27,0.3);
+        
         transition: 0.3s;
       }
       &:hover{
         &::after{
-          background-color: rgba(255, 225, 128,0.5);
-          // background-color: rgba(253, 11, 11, 0.5);
+          // background-color: rgba(255, 225, 128,0.5);
+          background-color: rgba(255, 255, 255,0.8);
           transform: scale(0.8);
         }
       }
@@ -140,8 +144,8 @@
       font-size: 1rem;
       top: 0;
       left: 20px;
-      width: 30px;
-      padding: 5px;
+      width: 26px;
+      padding:5px;
       color: white;
       background-color: rgba(63, 93, 69,0.8);
       border-radius: 0 0 3px 3px;
@@ -150,7 +154,7 @@
   &__coffee{
     color: rgba(32, 22, 3,0.8)	;
     &::before{
-      content: "本周咖啡";
+      content: "本日精選";
       background-color: rgba(32, 22, 3,0.8)	;
     }
   }
@@ -165,40 +169,40 @@
     position: relative;
     margin-top: 100px;
     margin-bottom: 150px;
-    background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
+    background-image:linear-gradient(135deg,theme-color("dark") , transparent 90%);
     @include media-breakpoint-down(md){
       writing-mode:horizontal-tb;
       background-color: transparent;
     }
     &:nth-child(2){
-      background-image:linear-gradient(-120deg,theme-color("secondary") , transparent 50%);
+      background-image:linear-gradient(45deg,theme-color("dark") , transparent 90%);
     }
     &:nth-child(3){
-      background-image:linear-gradient(120deg,theme-color("secondary") , transparent 50%);
+      background-image:linear-gradient(-135deg,theme-color("dark") , transparent 90%);
     }
     &:nth-child(4){
-      background-image:linear-gradient(120deg,theme-color("secondary") , transparent 50%);
+      background-image:linear-gradient(-45deg,theme-color("dark") , transparent 90%);
     }
-    &::before{
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 5%;
-      top: 0;
-      left: 0;
-      background-color:theme-color("light") ;
-      z-index: -1;
-    }
-    &::after{
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 5%;
-      bottom: 0;
-      left: 0;
-      background-color:theme-color("light");
-      z-index: -1;
-    }
+    // &::before{
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   height: 5%;
+    //   top: 0;
+    //   left: 0;
+    //   background-color:theme-color("light") ;
+    //   z-index: -1;
+    // }
+    // &::after{
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   height: 5%;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color:theme-color("light");
+    //   z-index: -1;
+    // }
     // FIXME:副標題如何獨立出來
     &__title{
       writing-mode:vertical-lr;
@@ -228,7 +232,7 @@
               height: 2px;
               top: 50%;
               left:25px;
-              background-color:theme-color("info") ;
+              background-color:theme-color("primary") ;
             }
           }
         }
@@ -255,8 +259,9 @@
       position: absolute;
       width: 450px;
       height: 450px;
-      transform: translateY(-10px);
+      transform: translateY(-30px);
       border-radius: 10px ;
+      border: 1px solid white;
       transition: 0.3s;
       @include media-breakpoint-down(md){
         width: 400px;
@@ -371,14 +376,14 @@
 
 
 
-.innerFooter{
-  &__logo{
-    @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
-  }
-}
-.navbar-brand{
-  @include hidden_text(220px,40px,url('../img/logo-all-dark.svg'));
-}
+// .innerFooter{
+//   &__logo{
+//     @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
+//   }
+// }
+// .navbar-brand{
+//   @include hidden_text(220px,40px,url('../img/tina-guina-obV_LM0KjxY-unsplash.jpg'));
+// }
 
 
 // .newYear{

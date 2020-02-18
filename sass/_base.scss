@@ -1,9 +1,14 @@
 body{
-  // font-size: 1rem;
-  // font-family: 'Zhi Mang Xing', cursive;
   color:theme-color("info");
-  // background-color:theme-color("light");
-  background-image:linear-gradient(#c8a579 , transparent 50%);
+  // background-color: #a55c1b;
+  // background-image: linear-gradient( #a55c1b 10%, #000000 60%);
+  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
+  background-size: contain;
+  
+    // background-image:url("../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  
 }
  
 
