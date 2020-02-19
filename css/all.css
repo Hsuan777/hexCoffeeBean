@@ -11302,16 +11302,40 @@ body {
 }
 
 .innerAbout__item__imgItem-1-1 {
+  position: relative;
   background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
 }
 
+.innerAbout__item__imgItem-1-1::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .innerAbout__item__imgItem-2 {
-  background-image: url("../img/tyler-nix-qGxki8WJ1S0-unsplash.jpg");
+  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
   right: 15px;
 }
 
 .innerAbout__item__imgItem-2-1 {
-  background-image: url("../img/tyler-nix-qGxki8WJ1S0-unsplash.jpg");
+  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
+  position: relative;
+}
+
+.innerAbout__item__imgItem-2-1::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .innerCart__item {
