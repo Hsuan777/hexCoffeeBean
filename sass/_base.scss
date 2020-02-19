@@ -1,10 +1,13 @@
 body{
-  color:theme-color("info");
+  color:theme-color("secondary");
   background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
   background-position: center center;
   background-size: contain;
 }
- 
+.punctuation{
+  writing-mode: horizontal-tb;
+  line-height: 1;
+}
 
 // 如何客製主要背景顏色，bg-主要、bg-次要 ? --已完成
 // 主要次要區塊太模糊，login主要區塊會是甚麼? 次要區塊會是甚麼?

@@ -20,7 +20,6 @@
 
   <!--goole font-family -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
 
   <!-- fontawesome -->
@@ -62,31 +61,41 @@
   <main>
     <div class="innerBanner innerBanner__index  ">
       <div class="container">
-        <!-- <div class="innerBanner__index__title p-3 text-white w-75 rounded d-none d-lg-block">
-          <div class="d-flex">
-            <h2 class="newYear newYear__title text-center display-4">春</h2>
-            <h1 class=" display-4 mx-5">六角 X 甜點</h1>
-            <h2 class="newYear newYear__title text-center display-4">春</h2>
-          </div>
-          <p class="lead text-center mr-5 ">專業甜點師，做出滿滿的內餡，期待滿足你的胃。</p>
-        </div> -->
         <div class="innerBanner__index__title p-4 text-white rounded ">
           <h1 class=" display-4 mr-5 ">六角</br>咖啡店</h1>
           <p class="lead text-right d-none d-lg-block ml-5">烘出幸福的味道~</p>
         </div>
 
-        <div class="innerBanner__index__list row  justify-content-center" id="myList" role="tablist">
-          <div
-            class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center rounded-pill">
-            <a href="#" class=" innerBanner__index__item__link p-md-5 p-4 text-nowrap text-decoration-none ">本日精選</a>
-          </div>
-          <div
-            class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center  mx-2 rounded-pill">
-            <a href="#" class=" innerBanner__index__item__link  p-md-5 p-4  text-nowrap text-decoration-none ">人氣推薦</a>
-          </div>
-          <div
-            class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center  rounded-pill">
-            <a href="#" class="innerBanner__index__item__link  p-md-5 p-4 text-nowrap text-decoration-none ">新品上市</a>
+        <div class="innerBanner__index__list">
+          <div class="row justify-content-center no-gutter">
+            <!-- <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center ">
+              <a class="p-5 rounded-pill ">
+                本日精選
+              </a>
+            </div>
+            <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center rounded-pill  mx-2">
+              <a class=" p-5   ">
+                人氣推薦
+              </a>
+            </div>
+            <div class="col-3 col-lg-2 d-flex justify-content-center">
+              <a class="innerBanner__index__item p-5 rounded-pill ">
+                新品上市
+              </a>
+            </div> -->
+            <div
+              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center rounded-pill">
+              <a href="#" class=" innerBanner__index__item__link p-md-5 p-4 text-nowrap text-decoration-none ">本日精選</a>
+            </div>
+            <div
+              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center  mx-2 rounded-pill">
+              <a href="#"
+                class=" innerBanner__index__item__link  p-md-5 p-4  text-nowrap text-decoration-none ">人氣推薦</a>
+            </div>
+            <div
+              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center  rounded-pill">
+              <a href="#" class="innerBanner__index__item__link  p-md-5 p-4 text-nowrap text-decoration-none ">新品上市</a>
+            </div>
           </div>
         </div>
 
@@ -161,16 +170,17 @@
 
     <div class="innerAbout ">
       <!-- 次要區塊一 -->
+      
       <section class="innerAbout__item  d-none d-md-block ">
         <div class="container" style="position: relative;">
           <div class="row ">
             <div class="innerAbout__item__img innerAbout__item__imgItem-1  col-5"> </div>
-            <div class="col-7 d-flex ml-auto ">
+            <div class="col-7 d-flex ml-auto">
               <h2 class="innerAbout__item__title order-2 text-primary">為什麼
-                <span class="innerAbout__item__title__punctuation--dash"></span>
+                <span class="innerAbout__item__title--dash"></span>
               </h2>
               <h2 class="innerAbout__item__title order-1 text-primary mt-5"> 選擇了烘咖啡
-                <span class="innerAbout__item__title__punctuation">? </span>
+                <span class="punctuation">? </span>
               </h2>
               <div class="innerAbout__item__text ml-auto py-3 ">
                 <p>當你喝到咖啡時，剎那間露出的微笑，</p>
@@ -180,16 +190,17 @@
           </div>
         </div>
       </section>
+
       <section class="innerAbout__item d-sm-block d-md-none text-primary">
-        <div class=" container" style="position: relative;">
-          <h2 class="innerAbout__item__title text-center mr-5 pr-3 ">為什麼<span
-              class="innerAbout__item__title--after"></span></h2>
-          <h2 class="innerAbout__item__title text-center "> 選擇了烘咖啡 ? </h2>
-          <div class="d-flex justify-content-center mt-3">
-            <div class="innerAbout__item__img innerAbout__item__imgItem-1-1"></div>
-            <div class="innerAbout__item__text text-center p-4 text-white">
+        <div class=" container-fluid innerAbout__item__img innerAbout__item__imgItem-1-1 text-center " style="position: relative;">
+          <h2 class="innerAbout__item__title mt-5 mr-5 pr-3 ">為什麼<span
+              class="innerAbout__item__title--dash"></span></h2>
+          <h2 class="innerAbout__item__title "> 選擇了烘咖啡 ? </h2>
+          <div class="d-flex justify-content-center ">
+            <div class=""></div>
+            <div class="innerAbout__item__text p-4 text-white">
               <p>當你喝到咖啡時，剎那間露出的微笑，</p>
-              <p>就是我的選擇。</p>
+              <p class=" ml-5">就是我的選擇。</p>
 
             </div>
           </div>
@@ -197,17 +208,16 @@
       </section>
 
       <!-- 次要區塊二 -->
-      <!-- RWD title文字跑版 fin.-->
       <section class="innerAbout__item  d-none d-md-block my-5 ">
         <div class="container" style="position: relative;">
           <div class="row ">
             <div class="innerAbout__item__img innerAbout__item__imgItem-2 col-5  "> </div>
             <div class="col-7 d-flex ml-n4 ml-md-n5">
               <h2 class="innerAbout__item__title text-primary order-2">為什麼
-                <span class="innerAbout__item__title__punctuation--dash"></span>
+                <span class="innerAbout__item__title--dash"></span>
               </h2>
               <h2 class="innerAbout__item__title text-primary order-1 mt-5"> 要喝咖啡
-                <span class="innerAbout__item__title__punctuation">? </span>
+                <span class="punctuation">? </span>
               </h2>
               <div class="innerAbout__item__text ml-5 py-3 ">
                 <p>咖啡能轉化成任何東西，</p>
@@ -220,14 +230,12 @@
         </div>
       </section>
       <section class="innerAbout__item d-sm-block d-md-none text-primary">
-        <div class=" container" style="position: relative;">
-          <h2 class="innerAbout__item__title text-center mr-5 pr-3 ">為什麼<span
-              class="innerAbout__item__title--after"></span></h2>
-          <h2 class="innerAbout__item__title text-center "> 要喝咖啡 ? </h2>
+        <div class=" container-fluid innerAbout__item__img innerAbout__item__imgItem-2-1 text-center" style="position: relative;">
+          <h2 class="innerAbout__item__title  mt-5 mr-5 pr-3 ">為什麼<span
+              class="innerAbout__item__title--dash"></span></h2>
+          <h2 class="innerAbout__item__title  "> 要喝咖啡 ? </h2>
           <div class="d-flex justify-content-center ">
-            <div class="innerAbout__item__img innerAbout__item__imgItem-2 d-none d-md-block"></div>
-            <div class="innerAbout__item__img innerAbout__item__imgItem-2-1 d-md-none d-xs-block"></div>
-            <div class="innerAbout__item__text text-center p-4 text-white">
+            <div class="innerAbout__item__text  p-4 text-white">
               <p>咖啡能轉化成任何東西，</p>
               <p>可能是想法，</p>
               <p>可能是文字，</p>
@@ -241,17 +249,17 @@
       <section class=" d-none d-md-block pt-5 my-5">
         <div class=" container">
           <div class="  d-flex justify-content-center ">
-            <h2 class="innerAbout__item__title text-primary ml-4 order-1">喝咖啡<span
-                class="innerAbout__item__title--after"></span></h2>
+            <h2 class="innerAbout__item__title text-primary ml-4 order-1">喝咖啡
+              <span class="innerAbout__item__title--dash"></span></h2>
             <h2 class="innerAbout__item__title text-primary text-center mt-5"> 是不需要理由的。 </h2>
           </div>
         </div>
       </section>
       <section class=" d-sm-block d-md-none  my-5 text-primary">
-        <div class=" container" style="position: relative;">
-          <h2 class="innerAbout__item__title text-center mr-5 pr-3">喝咖啡<span
-              class="innerAbout__item__title--after"></span></h2>
-          <h2 class="innerAbout__item__title text-center "> 是不需要理由的。 </h2>
+        <div class=" container text-center" style="position: relative;">
+          <h2 class="innerAbout__item__title  mr-5 pr-3">喝咖啡<span
+              class="innerAbout__item__title--dash"></span></h2>
+          <h2 class="innerAbout__item__title  "> 是不需要理由的。 </h2>
         </div>
       </section>
 
@@ -279,8 +287,9 @@
         </div>
         <div class="col-6 d-md-block d-none mt-3">
           <div class=" d-flex justify-content-end">
-            <h2 class="innerAbout__item__title text-primary order-1">每天都是 <span
-                class="innerAbout__item__title__punctuation--dash"></h2>
+            <h2 class="innerAbout__item__title text-primary order-1">每天都是
+              <span class="innerAbout__item__title__punctuation--dash"></span>
+            </h2>
             <h2 class="innerAbout__item__title text-primary mt-3">喝咖啡的好日子。</h2>
           </div>
         </div>
@@ -292,8 +301,8 @@
           <i class="fab fa-instagram fa-2x"></i>
         </div>
         <div class="col-md-6">
-          <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
-          <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
+          <p class="d-none d-md-block text-right">© 2020 H.C.B All Rights Reserved</p>
+          <p class="d-md-none">© 2020 H.C.B All Rights Reserved</p>
         </div>
       </div>
     </div>

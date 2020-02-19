@@ -43,25 +43,21 @@
   background-size: cover;
   position: relative;
   &__index{
-    // background-image: url("https://bit.ly/2OhbMHr");
     background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash.jpg");
-    // margin-bottom: 200px;
     margin-bottom: 230px;
     @include media-breakpoint-down(md){
-      // margin-bottom: 220px;
       margin-bottom: 250px;
     }
     @include media-breakpoint-down(sm){
-      // margin-bottom: 150px;
       margin-bottom: 200px;
     }
     &__title{
       background-color: rgba(0,0,0,0.2);
-      border-radius: 50px;
+      
       transform: translateY(50px);
     }
     &__list{
-      transform: translateY(85%);
+      transform: translateY(60%);
       @include media-breakpoint-down(md){
         transform: translateY(105%);
       }
@@ -73,8 +69,8 @@
       background-size: cover;
       background-position: center center;
       position: relative;
+      
       transition: 0.3s;
-      z-index: -1;
       // Thank you All Author of Unsplash 
       &:nth-child(1){
         // background-image: url("https://bit.ly/2zBDAxX");
@@ -91,9 +87,6 @@
       &__link{
         z-index: 9;
         color: white;
-        // &:hover{
-        //   color: black;
-        // }
       }
       &::after{
         position: absolute;
@@ -104,13 +97,11 @@
         right: 0;
         border-radius: 95px;
         // background-color: rgba(255, 255, 255,0.8);
-        background-color: rgba(165, 92, 27,0.3);
-        
+        background-color: rgba(165, 92, 27,0.6);
         transition: 0.3s;
       }
       &:hover{
         &::after{
-          // background-color: rgba(255, 225, 128,0.5);
           background-color: rgba(255, 255, 255,0.8);
           transform: scale(0.7);
         }
@@ -168,72 +159,51 @@
   &__item{
     position: relative;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
     @include media-breakpoint-down(md){
       writing-mode:horizontal-tb;
       background-color: transparent;
+      
     }
     &:nth-child(2){
-      background-image:linear-gradient(-60deg,theme-color("primary") , transparent 20%);
+      background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
     }
     &:nth-child(3){
       background-image:linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
     }
     &:nth-child(4){
-      background-image:linear-gradient(60deg,theme-color("primary") , transparent 20%);
+      background-image:linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
     }
-    // &::before{
-    //   position: absolute;
-    //   content: "";
-    //   width: 100%;
-    //   height: 5%;
-    //   top: 0;
-    //   left: 0;
-    //   background-color:theme-color("light") ;
-    //   z-index: -1;
-    // }
-    // &::after{
-    //   position: absolute;
-    //   content: "";
-    //   width: 100%;
-    //   height: 5%;
-    //   bottom: 0;
-    //   left: 0;
-    //   background-color:theme-color("light");
-    //   z-index: -1;
-    // }
-    // FIXME:副標題如何獨立出來
+    
     &__title{
       writing-mode:vertical-lr;
       position: relative;
       line-height: 0;
-      // transform: translateY(-20px);
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
         line-height: 1.2;
         writing-mode:horizontal-tb;
       }
-      &__punctuation{
-        writing-mode: horizontal-tb;
-        line-height: 1;
-        &--dash{
-          position: relative;
-          &::after{
-            position: absolute;
-            content: "";
-            width: 2px;
-            height: 50px;
-            background-color:theme-color("primary");
-            top: 25px;
-            left:50%;
-            @include media-breakpoint-down(sm){
-              width: 50px;
-              height: 2px;
-              top: 50%;
-              left:25px;
-              background-color:theme-color("primary") ;
-            }
+      &--dash{
+        position: relative;
+        &::after{
+          position: absolute;
+          content: "";
+          width: 2px;
+          height: 50px;
+          background-color:theme-color("primary");
+          top: 25px;
+          left:50%;
+          @include media-breakpoint-down(sm){
+            width: 50px;
+            height: 2px;
+            top: 50%;
+            left:25px;
+            background-color:theme-color("primary") ;
           }
         }
       }
@@ -245,10 +215,9 @@
       @include responsiveFontSize__info;
       @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
-        color:theme-color("primary");
-        // background-color:rgba(255, 225, 128,0.3);
-        background-color:rgba(234, 240, 237,0.7);
-        border-radius: 50px 20px 50px 20px;
+        color:theme-color("info");
+        
+        
       }
     }
     // FIXME:圖片需要重新規劃
@@ -269,9 +238,9 @@
         transform: translateY(-10px);
       }
       @include media-breakpoint-down(sm){
-        width: 370px;
-        height: 370px;
-        transform: translateY(-20px);
+        // width: 370px;
+        // height: 370px;
+        // transform: translateY(-20px);
       }
       
     }
