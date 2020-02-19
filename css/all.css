@@ -11047,6 +11047,12 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .innerBanner__index__item {
+    font-size: 1.8rem;
+  }
+}
+
 .innerBanner__index__item:nth-child(1) {
   background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash.jpg");
 }
@@ -11101,24 +11107,24 @@ body {
 
 .innerProduct__item {
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 991.98px) {
   .innerProduct__item {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .innerProduct__item {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .innerProduct__item {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -11167,12 +11173,12 @@ body {
   background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
 }
 
-.innerAbout__item:nth-child(3) {
+.innerAbout__item:nth-child(3), .innerAbout__item:nth-child(4) {
   background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
 }
 
-.innerAbout__item:nth-child(4) {
-  background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
+.innerAbout__item:nth-child(5), .innerAbout__item:nth-child(6) {
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%), linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
 }
 
 .innerAbout__item__title {
@@ -11187,6 +11193,12 @@ body {
 @media (max-width: 991.98px) {
   .innerAbout__item__title {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .innerAbout__item__title {
+    font-size: 1.8rem;
   }
 }
 
@@ -11230,24 +11242,24 @@ body {
   line-height: 2;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 991.98px) {
   .innerAbout__item__text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .innerAbout__item__text {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .innerAbout__item__text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

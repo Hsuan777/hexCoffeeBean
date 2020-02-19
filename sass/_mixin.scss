@@ -76,19 +76,22 @@
   @include media-breakpoint-down(md){
     font-size: 1.6rem;
   }
+  @include media-breakpoint-down(sm){
+    font-size: 1.8rem;
+  }
 }
 
 // RWD文字大小__通用文字
 @mixin responsiveFontSize__info{
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   @include media-breakpoint-down(md){
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   @include media-breakpoint-down(sm){
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   @include media-breakpoint-down(xs){
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
