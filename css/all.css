@@ -10974,10 +10974,21 @@ a.text-submit:hover, a.text-submit:focus {
 }
 
 body {
-  color: #a18367;
   background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
   background-position: center center;
   background-size: contain;
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(248, 248, 248, 0.6);
+  z-index: -1;
 }
 
 .punctuation {
@@ -11090,15 +11101,11 @@ body {
 }
 
 .innerBanner__product {
-  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-}
-
-.innerBanner__product .section__title--after::after {
-  background-color: white;
+  background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
 }
 
 .innerBanner__success {
-  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
 }
 
 .innerProduct {
@@ -11137,16 +11144,25 @@ body {
   width: 26px;
   padding: 5px;
   color: white;
-  background-color: rgba(63, 93, 69, 0.8);
+  background-color: rgba(32, 22, 3, 0.8);
   border-radius: 0 0 3px 3px;
 }
 
-.innerProduct__coffee {
+.innerProduct__item__popularity {
   color: rgba(32, 22, 3, 0.8);
 }
 
-.innerProduct__coffee::before {
-  content: "本日精選";
+.innerProduct__item__popularity::before {
+  content: "人氣推薦";
+  background-color: rgba(32, 22, 3, 0.8);
+}
+
+.innerProduct__item__new {
+  color: rgba(32, 22, 3, 0.8);
+}
+
+.innerProduct__item__new::before {
+  content: "新品上市";
   background-color: rgba(32, 22, 3, 0.8);
 }
 
@@ -11154,38 +11170,29 @@ body {
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 50%);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
-}
-
-@media (max-width: 991.98px) {
-  .innerAbout__item {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-    background-color: transparent;
-  }
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
 .innerAbout__item:nth-child(2) {
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
 .innerAbout__item:nth-child(3), .innerAbout__item:nth-child(4) {
-  background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
+  background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
+}
+
+.innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
+  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
 }
 
 .innerAbout__item:nth-child(5), .innerAbout__item:nth-child(6) {
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%), linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%), linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
 .innerAbout__item__title {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  position: relative;
   line-height: 0;
   font-size: 2rem;
 }
@@ -11204,7 +11211,8 @@ body {
 
 @media (max-width: 767.98px) {
   .innerAbout__item__title {
-    line-height: 1.2;
+    z-index: -1;
+    line-height: 1.5;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
@@ -11240,8 +11248,6 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   line-height: 2;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
   font-size: 1.3rem;
 }
 
@@ -11268,83 +11274,32 @@ body {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
-    color: #17a2b8;
   }
 }
 
 .innerAbout__item__img {
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: absolute;
-  width: 450px;
-  height: 450px;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  width: 100%;
+  min-height: 450px;
   border-radius: 10px;
   border: 1px solid white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-@media (max-width: 991.98px) {
-  .innerAbout__item__img {
-    width: 400px;
-    height: 400px;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-}
-
-.innerAbout__item__imgItem-1 {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-  left: 15px;
-}
-
-.innerAbout__item__imgItem-1-1 {
   position: relative;
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-}
-
-.innerAbout__item__imgItem-1-1::after {
-  position: absolute;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.innerAbout__item__imgItem-2 {
-  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
-  right: 15px;
-}
-
-.innerAbout__item__imgItem-2-1 {
-  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
-  position: relative;
-}
-
-.innerAbout__item__imgItem-2-1::after {
-  position: absolute;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
 }
 
 .innerCart__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 15px;
 }
 
-.innerCart__item + tr.innerCart__item {
+.innerCart__item + tr.innerCart__item, .innerCart__item + li.innerCart__item {
+  padding-top: 15px;
   border-top: 1px solid #dee2e6;
 }
 
@@ -11357,7 +11312,7 @@ body {
 }
 
 .innerCart__item__img {
-  width: 120px;
+  max-width: 100%;
   height: 90px;
 }
 

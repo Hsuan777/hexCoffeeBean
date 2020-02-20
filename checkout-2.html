@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 
   <!--goole icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,12 +20,13 @@
 
   <!--goole font-family -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/74aada8adf.js"></script>
 
   <link rel="stylesheet" href="css/all.css">
-  <title>HexSchool BS4 Fin. HOMEWROK | Biker X Coffee </title>
+  <title>HexCoffeeBean | HexSchool BS4 Fin. HOMEWORK </title>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          六角甜點
+          HexCoffeeBean
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +42,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="product.html">甜點<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="cart.html">購物車</a>
+            <a class="nav-item nav-link " href="product.html">看豆子</a>
             <a class="nav-item nav-link" href="login.html">Login</a>
-            <a class="nav-item nav-link" href="checkout.html">checkout</a>
-            <a class="nav-item nav-link" href="checkout-2.html">checkout-2</a>
-            <a class="nav-item nav-link" href="checkout-success.html">checkout-success</a>
-            <a class="nav-item nav-link" target="_blank"
-              href="https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/grid">設計稿</a>
+            <a class="nav-item nav-link" href="cart.html">購物車</a>
           </div>
         </div>
       </div>
@@ -61,8 +57,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-7 mb-3 ">
-            <div class="bg-primary">
-              <form class="">
+              <form class="bg-primary rounded">
                 <div class="p-3 d-flex justify-content-between">
                   <h2 class="">付款</h2>
                   <ol class="progress-round__list list-unstyled d-flex justify-content-center mt-3">
@@ -71,6 +66,8 @@
                     <li class=""></li>
                   </ol>
                 </div>
+
+                <!-- 資料輸入 -->
                 <div class="form-row px-3">
                   <div class="form-group col-12">
                     <label for="inputPassword4">信用卡卡號</label>
@@ -81,9 +78,7 @@
                         <span class="input-group-text bg-white border-0" id="basic-addon2"><i
                             class="far fa-credit-card"></i></span>
                       </div>
-
                     </div>
-
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">持卡人姓名</label>
@@ -116,74 +111,41 @@
                     <input type="text"" class=" form-control" id="inputEmail4" placeholder="末三碼">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-submit border-0 rounded-0 w-100 py-3  font-weight-bold"><span
+                <a href="checkout-success.html" class="btn btn-submit border-0 rounded-0 w-100 py-3 font-weight-bold" >
+                  <span class="h3">下一步</span>
+                </a>
+                <!-- <button type="submit" class="btn btn-submit border-0 rounded-0 w-100 py-3  font-weight-bold"><span
                     class="h3">下一步</span>
-                </button>
+                </button> -->
               </form>
-            </div>
           </div>
+          
+          <!-- 訂單摘要 -->
           <div class="col-md-5">
-            <div class="secondary-block mb-3">
-              <form action="" class="border ">
-                <h2 class="secondary-block__title border-bottom text-center py-3 mb-0">訂單摘要</h2>
-                <table class="table table-borderless secondary-block__body mb-0">
-                  <tbody>
-                    <tr>
-                      <th scope="row" class="font-weight-lighter pl-4">小計</th>
-                      <td class="text-right font-weight-lighter pr-4">NT$ 2,700</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="font-weight-lighter pl-4">運費</th>
-                      <td class="text-right font-weight-lighter pr-4">NT$ 60</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="font-weight-bold h4 pl-4">總計</th>
-                      <td class="text-right font-weight-bold h4 pr-4">NT$ 2,760</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </form>
+            <div class="border rounded bg-secondary mb-5">
+              <h2 class=" text-center  py-3 border-bottom  mb-0">訂單摘要</h2>
+              <table class="table table-borderless ">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="font-weight-lighter pl-4">小計</th>
+                    <td class="text-right font-weight-lighter pr-4">NT$ 2,700</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-lighter pl-4">運費</th>
+                    <td class="text-right font-weight-lighter pr-4">NT$ 60</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-bold h4 pl-4">總計</th>
+                    <td class="text-right font-weight-bold h4 pr-4">NT$ 2,760</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="secondary-block border">
+
+            <!-- 購物清單 -->
+            <div class="bg-secondary border rounded">
               <h2 class="secondary-block__title text-center py-3 mb-0 border-bottom">購物清單</h2>
-              <ul class="list-unstyled p-3 secondary-block__body mb-0">
-                <li class="media inner-cart__item ">
-                  <img src="https://picsum.photos/400/300?random=2"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="media pt-3 inner-cart__item my-3">
-                  <img src="https://picsum.photos/400/300?random=3"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="media pt-3 inner-cart__item ">
-                  <img src="https://picsum.photos/400/300?random=4"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <!-- TODO:重新架構清單 2 -->
             </div>
           </div>
         </div>
@@ -199,17 +161,17 @@
     <aside></aside>
   </main>
 
-  <footer>
+  <footer class="bg-light">
     <div class="container-fluid bg-primary mb-3">
       <div class="d-flex justify-content-center ">
-        <a href="" class="h3 py-3 text-light text-decoration-none ">想吃甜點，不須理由<i
+        <a href="" class="h3 py-3 text-white text-decoration-none ">想喝咖啡，不須理由<i
             class="fab fa-facebook-square ml-1"></i></a>
       </div>
     </div>
     <div class="container ">
       <div class="row ">
-        <div class="col-6 d-flex flex-column justify-content-between  ">
-          <h3 class="innerFooter__logo my-auto ">Bootstrap</h3>
+        <div class="col-6 d-flex flex-column justify-content-between  text-primary">
+          <h3 class="my-auto ">H.C.B</h3>
           <div class="d-flex flex-column py-3">
             <p class="">07-1234-5678 800 </p>
             <p>sweetaste@email.com</p>
@@ -219,20 +181,22 @@
         </div>
         <div class="col-6 d-md-block d-none mt-3">
           <div class=" d-flex justify-content-end">
-            <h2 class="innerAbout__item__title text-primary order-1">每天都是 <span class="innerAbout__item__title__punctuation--dash"></h2>
-            <h2 class="innerAbout__item__title text-primary mt-3">吃甜點好日子。</h2>
+            <h2 class="innerAbout__item__title text-primary order-1">每天都是
+              <span class="innerAbout__item__title__punctuation--dash"></span>
+            </h2>
+            <h2 class="innerAbout__item__title text-primary mt-3">喝咖啡的好日子。</h2>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 text-primary">
         <div class="col-md-6 ">
           <i class="fab fa-youtube fa-2x"></i>
           <i class="fab fa-facebook-square fa-2x"></i>
           <i class="fab fa-instagram fa-2x"></i>
         </div>
         <div class="col-md-6">
-          <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
-          <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
+          <p class="d-none d-md-block text-right">© 2020 H.C.B All Rights Reserved</p>
+          <p class="d-md-none">© 2020 H.C.B All Rights Reserved</p>
         </div>
       </div>
     </div>

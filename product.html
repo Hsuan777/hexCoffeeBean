@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 
   <!--goole icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,12 +20,13 @@
 
   <!--goole font-family -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/74aada8adf.js"></script>
 
   <link rel="stylesheet" href="css/all.css">
-  <title>HexSchool BS4 Fin. HOMEWROK | Biker X Coffee </title>
+  <title>HexCoffeeBean | HexSchool BS4 Fin. HOMEWORK </title>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          六角甜點
+          HexCoffeeBean
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +42,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="product.html">甜點<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="cart.html">購物車</a>
+            <a class="nav-item nav-link " href="product.html">看豆子</a>
             <a class="nav-item nav-link" href="login.html">Login</a>
-            <a class="nav-item nav-link" href="checkout.html">checkout</a>
-            <a class="nav-item nav-link" href="checkout-2.html">checkout-2</a>
-            <a class="nav-item nav-link" href="checkout-success.html">checkout-success</a>
-            <a class="nav-item nav-link" target="_blank"
-              href="https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/grid">設計稿</a>
+            <a class="nav-item nav-link" href="cart.html">購物車</a>
           </div>
         </div>
       </div>
@@ -56,104 +52,117 @@
   </header>
 
   <main>
-    <div class="inner-banner inner-banner__product jumbotron jumbotron-fluid">
+    <div class="innerBanner innerBanner__product ">
       <div class="container">
-        <div class="d-flex justify-content-end">
-          <h1 class="display-4 section__title order-1 text-light">騎車<span class="section__title--after"></span></h1>
-          <h2 class="section__title text-light pt-5">是不需要理由的 <span>!</span> </h2>
+        <div class="text-light py-5">
+          <h1 class="display-4 ">各式咖啡豆</h1>
+          <p class="lead ml-2">期待滿足您的味蕾~ </p>
         </div>
       </div>
     </div>
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-md-3 mt-3">
             <div class="list-group text-center" id="list-tab" role="tablist">
-              <p class="list-group-item bg-info text-light">景點區域</p>
-              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-                href="#list-home" role="tab" aria-controls="home">北部<span class="badge badge-success badge-pill ml-3">14</span></a>
-              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-                href="#list-profile" role="tab" aria-controls="profile">中部<span class="badge badge-success badge-pill ml-3">7</span></a>
-              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-                href="#list-messages" role="tab" aria-controls="messages">南部<span class="badge badge-success badge-pill ml-3">10</span></a>
-              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-                href="#list-settings" role="tab" aria-controls="settings">東部<span class="badge badge-success badge-pill ml-3">8</span></a>
+              <p class="list-group-item bg-secondary h4">咖啡豆</p>
+              <a class="list-group-item list-group-item-action active h5" id="list-home-list" data-toggle="list"
+                href="#list-home" role="tab" aria-controls="home">本日精選<span
+                  class="badge badge-secondary badge-pill ml-3">14</span></a>
+              <a class="list-group-item list-group-item-action h5" id="list-profile-list" data-toggle="list"
+                href="#list-profile" role="tab" aria-controls="profile">人氣推薦<span
+                  class="badge badge-secondary badge-pill ml-3">7</span></a>
+              <a class="list-group-item list-group-item-action h5" id="list-messages-list" data-toggle="list"
+                href="#list-messages" role="tab" aria-controls="messages">新品上市<span
+                  class="badge badge-secondary badge-pill ml-3">10</span></a>
             </div>
           </div>
           <div class="col-md-9">
-            <div class="tab-content inner-porduct" id="nav-tabContent">
+            <div class="tab-content innerProduct" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                 <div class="row justify-content-center">
-                  <div class="col-md-4 mt-3">
-                    <div class="card inner-porduct__item">
-                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
-                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">不厭亭</p>
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">肯亞AA</p>
                           <button class="btn border-left">詳細</button>
                         </div>
                       </div>
-                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                      <botton class="btn  btn-primary py-2">加入購物車</botton>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card inner-porduct__item">
-                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
-                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">不厭亭</p>
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">巴西‧喜拉朵</p>
                           <button class="btn border-left">詳細</button>
                         </div>
                       </div>
-                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                      <botton class="btn btn-primary py-2">加入購物車</botton>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-0 border-bottom">
+                        <div class="d-flex ">
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">耶加雪菲G1</p>
+                          <button class="btn border-left">詳細</button>
+                        </div>
+                      </div>
+                      <botton class="btn btn-primary py-2">加入購物車</botton>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                 <div class="row justify-content-center">
-                  <div class="col-md-4 mt-3">
-                    <div class="card inner-porduct__item">
-                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item innerProduct__item__popularity">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
-                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">武嶺</p>
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">耶加雪菲G1</p>
                           <button class="btn border-left">詳細</button>
                         </div>
                       </div>
-                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                      <botton class="btn  btn-primary py-2">加入購物車</botton>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
                 <div class="row justify-content-center">
-                  <div class="col-md-4 mt-3">
-                    <div class="card inner-porduct__item">
-                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item innerProduct__item__new">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
-                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">墾丁</p>
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">耶加雪菲G1</p>
                           <button class="btn border-left">詳細</button>
                         </div>
                       </div>
-                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                      <botton class="btn  btn-primary py-2">加入購物車</botton>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
                 <div class="row justify-content-center">
-                  <div class="col-md-4 mt-3">
-                    <div class="card inner-porduct__item">
-                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                  <div class="col-lg-4 col-6 mt-3">
+                    <div class="card innerProduct__item">
+                      <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
-                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">太麻里</p>
+                          <p class="card-text pt-3 mx-auto innerProduct__item__text">肯亞AA</p>
                           <button class="btn border-left">詳細</button>
                         </div>
                       </div>
-                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                      <botton class="btn  btn-primary py-2">加入購物車</botton>
                     </div>
                   </div>
                 </div>
@@ -163,15 +172,15 @@
               <nav aria-label="Page navigation example ">
                 <ul class="pagination pagination-lg">
                   <li class="page-item ">
-                    <a class="page-link text-success" href="#" aria-label="Previous">
+                    <a class="page-link text-secondary" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-secondary" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
                   <li class="page-item">
-                    <a class="page-link text-success" href="#" aria-label="Next">
+                    <a class="page-link text-secondary" href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
                     </a>
                   </li>
@@ -192,17 +201,17 @@
     <aside></aside>
   </main>
 
-  <footer>
+  <footer class="bg-light">
     <div class="container-fluid bg-primary mb-3">
       <div class="d-flex justify-content-center ">
-        <a href="" class="h3 py-3 text-light text-decoration-none ">想吃甜點，不須理由<i
+        <a href="" class="h3 py-3 text-white text-decoration-none ">想喝咖啡，不須理由<i
             class="fab fa-facebook-square ml-1"></i></a>
       </div>
     </div>
     <div class="container ">
       <div class="row ">
-        <div class="col-6 d-flex flex-column justify-content-between  ">
-          <h3 class="innerFooter__logo my-auto ">Bootstrap</h3>
+        <div class="col-6 d-flex flex-column justify-content-between  text-primary">
+          <h3 class="my-auto ">H.C.B</h3>
           <div class="d-flex flex-column py-3">
             <p class="">07-1234-5678 800 </p>
             <p>sweetaste@email.com</p>
@@ -212,20 +221,22 @@
         </div>
         <div class="col-6 d-md-block d-none mt-3">
           <div class=" d-flex justify-content-end">
-            <h2 class="innerAbout__item__title text-primary order-1">每天都是 <span class="innerAbout__item__title__punctuation--dash"></h2>
-            <h2 class="innerAbout__item__title text-primary mt-3">吃甜點好日子。</h2>
+            <h2 class="innerAbout__item__title text-primary order-1">每天都是
+              <span class="innerAbout__item__title__punctuation--dash"></span>
+            </h2>
+            <h2 class="innerAbout__item__title text-primary mt-3">喝咖啡的好日子。</h2>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 text-primary">
         <div class="col-md-6 ">
           <i class="fab fa-youtube fa-2x"></i>
           <i class="fab fa-facebook-square fa-2x"></i>
           <i class="fab fa-instagram fa-2x"></i>
         </div>
         <div class="col-md-6">
-          <p class="d-none d-md-block text-right">© 2019 Sweetaste* All Rights Reserved</p>
-          <p class="d-md-none">© 2019 Sweetaste* All Rights Reserved</p>
+          <p class="d-none d-md-block text-right">© 2020 H.C.B All Rights Reserved</p>
+          <p class="d-md-none">© 2020 H.C.B All Rights Reserved</p>
         </div>
       </div>
     </div>

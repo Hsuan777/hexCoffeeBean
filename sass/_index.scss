@@ -16,27 +16,7 @@
 // 同一頁面只有一個主要區塊與多個次要區塊
 // 區塊在 base.scss預先處理子區域
 // 區塊子區域可無限擴增，若重複性高寫在 base.scss
-// .innerBanner{
-//   &__index{
-//       &__list{}
-//       &__item{
-//         &__link{}
-//       }
-//   }
-//   &__product{}
-//   &__cart{}
-//   &__about{}
-// }
-// .innerAbout{
-//   .item{
-//     &__title{}
-//     &__text{}
-//     &__img{}
-//     &__imgItem-1{}
-//     &__imgItem-2{}
-//     &__imgItem-2-1{}
-//   }
-// }
+
 .innerBanner{
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,13 +89,11 @@
     }
   }
   &__product{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    .section__title--after::after{
-      background-color:white ;
-    }
+    background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+    
   }
   &__success{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
   }
 }
 
@@ -138,15 +116,22 @@
       width: 26px;
       padding:5px;
       color: white;
-      background-color: rgba(63, 93, 69,0.8);
+      background-color: rgba(32, 22, 3,0.8);
       border-radius: 0 0 3px 3px;
     }
-  }
-  &__coffee{
-    color: rgba(32, 22, 3,0.8)	;
-    &::before{
-      content: "本日精選";
-      background-color: rgba(32, 22, 3,0.8)	;
+    &__popularity{
+      color: rgba(32, 22, 3,0.8)	;
+      &::before{
+        content: "人氣推薦";
+        background-color: rgba(32, 22, 3,0.8)	;
+      }
+    }
+    &__new{
+      color: rgba(32, 22, 3,0.8)	;
+      &::before{
+        content: "新品上市";
+        background-color: rgba(32, 22, 3,0.8)	;
+      }
     }
   }
 } 
@@ -160,36 +145,28 @@
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 50%);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
-    @include media-breakpoint-down(md){
-      writing-mode:horizontal-tb;
-      background-color: transparent;
-      
-    }
+    background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
     &:nth-child(2){
-      background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
+      background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
     }
     &:nth-child(3),&:nth-child(4){
-      background-image:linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
+      background-image:linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
+      .innerAbout__item__img{
+        background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
+      }
     }
     &:nth-child(5),&:nth-child(6){
       background-image:
-      linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%),
-      linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.3),transparent 30%);
+      linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%),
+      linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
     }
-    
-    
-    
     &__title{
       writing-mode:vertical-lr;
-      position: relative;
       line-height: 0;
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
-        line-height: 1.2;
+        z-index: -1;
+        line-height: 1.5;
         writing-mode:horizontal-tb;
       }
       &--dash{
@@ -215,75 +192,35 @@
     &__text{
       writing-mode:vertical-rl;
       line-height: 2;
-      transform: translateY(20px);
       @include responsiveFontSize__info;
       @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
-        color:theme-color("info");
-        
-        
       }
     }
-    // FIXME:圖片需要重新規劃
     &__img{
+      background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      position: absolute;
-      width: 450px;
-      height: 450px;
-      transform: translateY(-30px);
+      width: 100%;
+      min-height: 450px;
       border-radius: 10px ;
       border: 1px solid white;
       transition: 0.3s;
-      @include media-breakpoint-down(md){
-        width: 400px;
-        height: 400px;
-        transform: translateY(-10px);
-      }
-      @include media-breakpoint-down(sm){
-        // width: 370px;
-        // height: 370px;
-        // transform: translateY(-20px);
-      }
+      position: relative;
+      // @include media-breakpoint-down(sm){
+      //   &::after{
+      //     position: absolute;
+      //     content: "";
+      //     background-color: rgba(255,255,255, 0.2);
+      //     top: 0;
+      //     left: 0;
+      //     bottom: 0;
+      //     right: 0;
+      //     border-radius: 10px;
+      //   }
+      // }
       
-    }
-    &__imgItem-1{
-      // background-image: url("https://bit.ly/2xPn7Eq");
-      background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-      left: 15px;
-    }
-    &__imgItem-1-1{
-      position: relative;
-      background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-      &::after{
-        position: absolute;
-        content: "";
-        background-color: rgba(0,0,0, 0.3);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-      }
-    }
-    &__imgItem-2{
-      background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
-      right: 15px;
-    }
-    &__imgItem-2-1{
-      background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
-      position: relative;
-      &::after{
-        position: absolute;
-        content: "";
-        background-color: rgba(0,0,0, 0.3);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-      }
     }
     
   }
@@ -293,27 +230,21 @@
 
 
 
-
-
-
 .innerCart{
   &__item{
     align-items:center;
-    // padding-bottom: 15px;
-    + tr.innerCart__item {
-      // padding-top: 15px;
+    padding-bottom: 15px;
+    + tr.innerCart__item,+ li.innerCart__item {
+      padding-top: 15px;
       border-top: 1px solid #dee2e6;
     }
     @include media-breakpoint-down(sm){
       align-items:start;
     }
     &__img{
-      width: 120px;
+      max-width: 100%;
       height: 90px;
-      // @include media-breakpoint-down(sm){
-      //   width: 130px;
-      //   height: 130px;
-      // }
+      
     }
   }
 }
@@ -381,27 +312,3 @@
 // }
 
 
-// .newYear{
-//   width: 90px;
-//   height:90px;
-//   color: black;
-//   font-family: 'Zhi Mang Xing', cursive;
-//   position: relative;
-//   &__title{
-//     transform: rotate(180deg);
-
-//   }
-//   &::before{
-//     position: absolute;
-//     content: "";
-//     width: 90px;
-//     height: 90px;
-//     background-color: red;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-//     transform: rotate(45deg);
-
-
-//   }
-// }
