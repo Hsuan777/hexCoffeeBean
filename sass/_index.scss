@@ -109,10 +109,8 @@
     }
   }
   &__product{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    .section__title--after::after{
-      background-color:white ;
-    }
+    background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+    
   }
   &__success{
     background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
@@ -138,15 +136,22 @@
       width: 26px;
       padding:5px;
       color: white;
-      background-color: rgba(63, 93, 69,0.8);
+      background-color: rgba(32, 22, 3,0.8);
       border-radius: 0 0 3px 3px;
     }
-  }
-  &__coffee{
-    color: rgba(32, 22, 3,0.8)	;
-    &::before{
-      content: "本日精選";
-      background-color: rgba(32, 22, 3,0.8)	;
+    &__popularity{
+      color: rgba(32, 22, 3,0.8)	;
+      &::before{
+        content: "人氣推薦";
+        background-color: rgba(32, 22, 3,0.8)	;
+      }
+    }
+    &__new{
+      color: rgba(32, 22, 3,0.8)	;
+      &::before{
+        content: "新品上市";
+        background-color: rgba(32, 22, 3,0.8)	;
+      }
     }
   }
 } 
