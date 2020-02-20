@@ -11154,7 +11154,7 @@ body {
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 30%);
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.3), transparent 50%);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
