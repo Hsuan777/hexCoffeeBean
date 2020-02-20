@@ -11105,7 +11105,7 @@ body::before {
 }
 
 .innerBanner__success {
-  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
 }
 
 .innerProduct {
@@ -11211,6 +11211,7 @@ body::before {
 
 @media (max-width: 767.98px) {
   .innerAbout__item__title {
+    z-index: -1;
     line-height: 1.5;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
@@ -11247,8 +11248,6 @@ body::before {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   line-height: 2;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
   font-size: 1.3rem;
 }
 
@@ -11279,36 +11278,17 @@ body::before {
 }
 
 .innerAbout__item__img {
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: absolute;
   width: 100%;
   min-height: 450px;
   border-radius: 10px;
   border: 1px solid white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.innerAbout__item__img:nth-child(1) {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-}
-
-.innerAbout__item__img--cover {
   position: relative;
-}
-
-.innerAbout__item__img--cover::after {
-  position: absolute;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 10px;
 }
 
 .innerCart__item {
@@ -11330,7 +11310,7 @@ body::before {
 }
 
 .innerCart__item__img {
-  width: 120px;
+  max-width: 100%;
   height: 90px;
 }
 

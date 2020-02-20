@@ -57,8 +57,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-7 mb-3 ">
-            <div class="bg-primary">
-              <form class="">
+              <form class="bg-primary rounded">
                 <div class="p-3 d-flex justify-content-between">
                   <h2 class="">付款</h2>
                   <ol class="progress-round__list list-unstyled d-flex justify-content-center mt-3">
@@ -67,6 +66,8 @@
                     <li class=""></li>
                   </ol>
                 </div>
+
+                <!-- 資料輸入 -->
                 <div class="form-row px-3">
                   <div class="form-group col-12">
                     <label for="inputPassword4">信用卡卡號</label>
@@ -77,9 +78,7 @@
                         <span class="input-group-text bg-white border-0" id="basic-addon2"><i
                             class="far fa-credit-card"></i></span>
                       </div>
-
                     </div>
-
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">持卡人姓名</label>
@@ -112,74 +111,41 @@
                     <input type="text"" class=" form-control" id="inputEmail4" placeholder="末三碼">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-submit border-0 rounded-0 w-100 py-3  font-weight-bold"><span
+                <a href="checkout-success.html" class="btn btn-submit border-0 rounded-0 w-100 py-3 font-weight-bold" >
+                  <span class="h3">下一步</span>
+                </a>
+                <!-- <button type="submit" class="btn btn-submit border-0 rounded-0 w-100 py-3  font-weight-bold"><span
                     class="h3">下一步</span>
-                </button>
+                </button> -->
               </form>
-            </div>
           </div>
+          
+          <!-- 訂單摘要 -->
           <div class="col-md-5">
-            <div class="secondary-block mb-3">
-              <form action="" class="border ">
-                <h2 class="secondary-block__title border-bottom text-center py-3 mb-0">訂單摘要</h2>
-                <table class="table table-borderless secondary-block__body mb-0">
-                  <tbody>
-                    <tr>
-                      <th scope="row" class="font-weight-lighter pl-4">小計</th>
-                      <td class="text-right font-weight-lighter pr-4">NT$ 2,700</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="font-weight-lighter pl-4">運費</th>
-                      <td class="text-right font-weight-lighter pr-4">NT$ 60</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="font-weight-bold h4 pl-4">總計</th>
-                      <td class="text-right font-weight-bold h4 pr-4">NT$ 2,760</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </form>
+            <div class="border rounded bg-secondary mb-5">
+              <h2 class=" text-center  py-3 border-bottom  mb-0">訂單摘要</h2>
+              <table class="table table-borderless ">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="font-weight-lighter pl-4">小計</th>
+                    <td class="text-right font-weight-lighter pr-4">NT$ 2,700</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-lighter pl-4">運費</th>
+                    <td class="text-right font-weight-lighter pr-4">NT$ 60</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-bold h4 pl-4">總計</th>
+                    <td class="text-right font-weight-bold h4 pr-4">NT$ 2,760</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="secondary-block border">
+
+            <!-- 購物清單 -->
+            <div class="bg-secondary border rounded">
               <h2 class="secondary-block__title text-center py-3 mb-0 border-bottom">購物清單</h2>
-              <ul class="list-unstyled p-3 secondary-block__body mb-0">
-                <li class="media inner-cart__item ">
-                  <img src="https://picsum.photos/400/300?random=2"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="media pt-3 inner-cart__item my-3">
-                  <img src="https://picsum.photos/400/300?random=3"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="media pt-3 inner-cart__item ">
-                  <img src="https://picsum.photos/400/300?random=4"
-                    class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                  <div class="media-body row align-items-center">
-                    <div class="col">
-                      <div class="inner-cart__item__title">
-                        <h4 class="">天堂鳥 (2)</h4>
-                        <p class="h4">NT$ 900</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <!-- TODO:重新架構清單 2 -->
             </div>
           </div>
         </div>

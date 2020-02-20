@@ -16,27 +16,7 @@
 // 同一頁面只有一個主要區塊與多個次要區塊
 // 區塊在 base.scss預先處理子區域
 // 區塊子區域可無限擴增，若重複性高寫在 base.scss
-// .innerBanner{
-//   &__index{
-//       &__list{}
-//       &__item{
-//         &__link{}
-//       }
-//   }
-//   &__product{}
-//   &__cart{}
-//   &__about{}
-// }
-// .innerAbout{
-//   .item{
-//     &__title{}
-//     &__text{}
-//     &__img{}
-//     &__imgItem-1{}
-//     &__imgItem-2{}
-//     &__imgItem-2-1{}
-//   }
-// }
+
 .innerBanner{
   background-repeat: no-repeat;
   background-position: center center;
@@ -113,7 +93,7 @@
     
   }
   &__success{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
   }
 }
 
@@ -185,6 +165,7 @@
       line-height: 0;
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
+        z-index: -1;
         line-height: 1.5;
         writing-mode:horizontal-tb;
       }
@@ -211,40 +192,37 @@
     &__text{
       writing-mode:vertical-rl;
       line-height: 2;
-      transform: translateY(20px);
       @include responsiveFontSize__info;
       @include media-breakpoint-down(sm){
         writing-mode:horizontal-tb;
       }
     }
     &__img{
+      background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      position: absolute;
       width: 100%;
       min-height: 450px;
       border-radius: 10px ;
       border: 1px solid white;
       transition: 0.3s;
-      &:nth-child(1){
-        background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
-      }
-    }
-    &__img--cover{
       position: relative;
-      &::after{
-        position: absolute;
-        content: "";
-        background-color: rgba(0,0,0, 0.3);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        border-radius: 10px;
-      }
+      // @include media-breakpoint-down(sm){
+      //   &::after{
+      //     position: absolute;
+      //     content: "";
+      //     background-color: rgba(255,255,255, 0.2);
+      //     top: 0;
+      //     left: 0;
+      //     bottom: 0;
+      //     right: 0;
+      //     border-radius: 10px;
+      //   }
+      // }
+      
     }
+    
   }
 }
 
@@ -264,12 +242,9 @@
       align-items:start;
     }
     &__img{
-      width: 120px;
+      max-width: 100%;
       height: 90px;
-      // @include media-breakpoint-down(sm){
-      //   width: 130px;
-      //   height: 130px;
-      // }
+      
     }
   }
 }
@@ -337,27 +312,3 @@
 // }
 
 
-// .newYear{
-//   width: 90px;
-//   height:90px;
-//   color: black;
-//   font-family: 'Zhi Mang Xing', cursive;
-//   position: relative;
-//   &__title{
-//     transform: rotate(180deg);
-
-//   }
-//   &::before{
-//     position: absolute;
-//     content: "";
-//     width: 90px;
-//     height: 90px;
-//     background-color: red;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-//     transform: rotate(45deg);
-
-
-//   }
-// }
