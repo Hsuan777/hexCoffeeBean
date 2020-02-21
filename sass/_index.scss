@@ -110,7 +110,7 @@
     &::before{
       position: absolute;
       content: "本日精選";
-      font-size: 1rem;
+      // font-size: 1rem;
       top: 0;
       left: 20px;
       width: 26px;
@@ -118,6 +118,11 @@
       color: white;
       background-color: rgba(32, 22, 3,0.8);
       border-radius: 0 0 3px 3px;
+      // TODO:修改RWD文字大小
+      // @include media-breakpoint-down(sm){
+      //   width: 26px;
+      // }
+
     }
     &__popularity{
       color: rgba(32, 22, 3,0.8)	;
@@ -131,6 +136,14 @@
       &::before{
         content: "新品上市";
         background-color: rgba(32, 22, 3,0.8)	;
+      }
+    }
+    &__like{
+      position: absolute;
+      top: 0;
+      right: 0;
+      &:hover{
+        color: red;
       }
     }
   }

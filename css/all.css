@@ -10974,9 +10974,6 @@ a.text-submit:hover, a.text-submit:focus {
 }
 
 body {
-  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
-  background-position: center center;
-  background-size: contain;
   position: relative;
 }
 
@@ -10984,7 +10981,20 @@ body::before {
   position: absolute;
   content: "";
   top: 0;
-  bottom: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
+  background-position: center center;
+  background-size: contain;
+  z-index: -1;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
   background-color: rgba(248, 248, 248, 0.6);
@@ -11138,7 +11148,6 @@ body::before {
 .innerProduct__item::before {
   position: absolute;
   content: "本日精選";
-  font-size: 1rem;
   top: 0;
   left: 20px;
   width: 26px;
@@ -11164,6 +11173,16 @@ body::before {
 .innerProduct__item__new::before {
   content: "新品上市";
   background-color: rgba(32, 22, 3, 0.8);
+}
+
+.innerProduct__item__like {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.innerProduct__item__like:hover {
+  color: red;
 }
 
 .innerAbout__item {
