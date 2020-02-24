@@ -11354,7 +11354,8 @@ body::after {
 }
 
 .innerLogin__item button[type="submit"] {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
+  border-radius: 0 0 0 5px;
 }
 /*# sourceMappingURL=all.css.map */

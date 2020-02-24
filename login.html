@@ -55,73 +55,42 @@
     <section class="innerLogin">
       <div class="container my-5">
         <div class="row no-gutters justify-content-center">
-          <!-- mobile -->
-          <div class="d-sm-block d-md-none ">
-            <div class="innerLogin__item bg-primary mb-3  ml-auto  ">
+          <!-- PC -->
+          <div class="col-md-6 d-none d-md-block ">
+            <div class="innerLogin__item bg-primary mb-3  ml-auto rounded-left h-100">
               <form class="">
                 <h2 class="innerLogin__item__title text-light text-center py-3">會員登入</h2>
-                <div class="form-group ">
-                  <div class="input-group-prepend px-3">
-                    <label for="user" class="input-group-text  border-0 bg-light"><i
-                        class="fas fa-user-alt "></i></label>
-                    <input type="text" class="form-control  border-0 bg-light" id="user" placeholder=""
-                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>">
+
+                <div class="input-group px-3 ">
+                  <div class="input-group-append">
+                    <label for="user" class="input-group-text bg-light rounded-left border-right-0">
+                      <i class="fas fa-user-alt "></i>
+                    </label>
                   </div>
+                  <input type="text" class="form-control bg-light border-left-0" id="user" placeholder=""
+                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>" required>
                 </div>
-                <div class="form-group">
-                  <div class="input-group-prepend px-3">
-                    <label for="password" class="input-group-text rounded-0 border-0 bg-light"><i
-                        class="fas fa-key"></i></label>
-                    <input type="text" class="form-control rounded-0 border-0 bg-light " id="password"
-                      data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>使用者密碼</em>" required>
+                <div class="input-group px-3 my-3">
+                  <div class="input-group-append">
+                    <label for="password" class="input-group-text bg-light rounded-left border-right-0">
+                      <i class="fas fa-key"></i>
+                    </label>
                   </div>
+                  <input type="text" class="form-control bg-light border-left-0" id="password" placeholder=""
+                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>使用者密碼</em>" required>
                 </div>
-                <div class="form-group form-check ml-3 ">
+
+                <div class="form-group form-check ml-3 mb-0">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label text-light" for="exampleCheck1">記住我</label>
                 </div>
-                <button type="submit" class="btn btn-submit  w-100 py-3 ">登入帳號</button>
+                <button type="submit" class="btn btn-submit w-100 py-3 ">登入帳號</button>
               </form>
             </div>
-            <h4 class="text-center py-3 border-bottom border-submit mb-3">或</h4>
-            <div class="text-center d-flex ">
-              <a href="https://google.com" class="p-4 badge  badge-pill badge-secondary ">GOOGLE</a>
-              <a href="https://facebook.com" class="p-4 mx-1 badge  badge-pill badge-secondary ">FACEBOOK</a>
-              <a href="https://tw.yahoo.com" class="p-4 badge  badge-pill badge-secondary ">YAHOO!</a>
-            </div>
           </div>
 
-          <!-- PC -->
-          <div class="col-md-6 d-none d-md-block">
-            <form class="innerLogin__item bg-primary ml-auto py-2">
-              <h2 class="innerLogin__item__title text-light text-center py-3">會員登入</h2>
-              <div class="form-group ">
-                <div class="input-group-prepend px-3">
-                  <label for="user" class="input-group-text rounded-0 border-0 bg-light"><i
-                      class="fas fa-user-alt "></i></label>
-                  <input type="text" class="form-control rounded-0 border-0 bg-light" id="user" placeholder=""
-                    data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group-prepend px-3">
-                  <label for="password" class="input-group-text rounded-0 border-0 bg-light"><i
-                      class="fas fa-key"></i></label>
-                  <input type="text" class="form-control rounded-0 border-0 bg-light " id="password"
-                    data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>使用者密碼</em>" required>
-                </div>
-              </div>
-              <div class="form-group form-check ml-3 ">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label text-light" for="exampleCheck1">記住我</label>
-              </div>
-              <button type="submit" class="btn btn-submit rounded-0 w-100 py-3 ">登入帳號</button>
-            </form>
-          </div>
-
-          <!-- FIXME:輸入框高度不一致 -->
           <div class=" col-md-6  d-none d-md-block ">
-            <div class="innerLogin__item bg-secondary px-3 py-2">
+            <div class="innerLogin__item bg-secondary px-3 h-100 rounded-right">
               <h2 class="innerLogin__item__title text-center text-light py-3 ">社群帳號</h2>
               <div class="list-group text-center">
                 <a href="https://facebook.com"
@@ -131,6 +100,46 @@
                 <a href="https://tw.yahoo.com"
                   class="innerLogin__item__link p-3  btn btn-light border-0 mb-2 text-decoration-none">YAHOO!</a>
               </div>
+            </div>
+          </div>
+
+          <!-- mobile -->
+          <div class="d-sm-block d-md-none ">
+            <div class="innerLogin__item bg-primary mb-3  ml-auto rounded ">
+              <form class="">
+                <h2 class="innerLogin__item__title text-light text-center py-3">會員登入</h2>
+
+                <div class="input-group px-3 ">
+                  <div class="input-group-append">
+                    <label for="user_mobile" class="input-group-text bg-light rounded-left border-right-0">
+                      <i class="fas fa-user-alt "></i>
+                    </label>
+                  </div>
+                  <input type="text" class="form-control bg-light border-left-0" id="user_mobile" placeholder=""
+                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>" required>
+                </div>
+                <div class="input-group px-3 my-3">
+                  <div class="input-group-append">
+                    <label for="password_mobile" class="input-group-text bg-light rounded-left border-right-0">
+                      <i class="fas fa-key"></i>
+                    </label>
+                  </div>
+                  <input type="text" class="form-control bg-light border-left-0" id="password_mobile" placeholder=""
+                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>使用者密碼</em>" required>
+                </div>
+
+                <div class="form-group form-check ml-3 ">
+                  <input type="checkbox" class="form-check-input" id="checkbox_mobile">
+                  <label class="form-check-label text-light" for="checkbox_mobile">記住我</label>
+                </div>
+                <button type="submit" class="btn btn-submit w-100 py-3 ">登入帳號</button>
+              </form>
+            </div>
+            <h4 class="text-center py-3 border-bottom border-submit mb-3">或</h4>
+            <div class="text-center d-flex ">
+              <a href="https://google.com" class="p-4 badge  badge-pill badge-secondary ">GOOGLE</a>
+              <a href="https://facebook.com" class="p-4 mx-1 badge  badge-pill badge-secondary ">FACEBOOK</a>
+              <a href="https://tw.yahoo.com" class="p-4 badge  badge-pill badge-secondary ">YAHOO!</a>
             </div>
           </div>
         </div>

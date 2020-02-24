@@ -300,7 +300,9 @@
       }
     }
     button[type="submit"]{
-      transform: translateY(10px);
+      transform: translateY(24px);
+      // border-top-right-radius:0px ;
+      border-radius: 0 0 0 5px;
     }
     
   }
