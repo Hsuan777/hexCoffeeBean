@@ -55,17 +55,16 @@
     <section class="innerLogin">
       <div class="container my-5">
         <div class="row no-gutters justify-content-center">
-          <div class="col-sm-block d-md-none ">
-
-
-            <div class="innerLogin__item bg-primary mb-3  ml-auto rounded">
-              <form>
-                <h2 class="innerLogin__item__title text-center py-3">會員登入</h2>
+          <!-- mobile -->
+          <div class="d-sm-block d-md-none ">
+            <div class="innerLogin__item bg-primary mb-3  ml-auto  ">
+              <form class="">
+                <h2 class="innerLogin__item__title text-light text-center py-3">會員登入</h2>
                 <div class="form-group ">
                   <div class="input-group-prepend px-3">
-                    <label for="user" class="input-group-text rounded-0 border-0 bg-light"><i
+                    <label for="user" class="input-group-text  border-0 bg-light"><i
                         class="fas fa-user-alt "></i></label>
-                    <input type="text" class="form-control rounded-0 border-0 bg-light" id="user" placeholder=""
+                    <input type="text" class="form-control  border-0 bg-light" id="user" placeholder=""
                       data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>">
                   </div>
                 </div>
@@ -81,19 +80,21 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label text-light" for="exampleCheck1">記住我</label>
                 </div>
-                <button type="submit" class="btn btn-submit rounded-0 w-100 py-3 ">登入帳號</button>
+                <button type="submit" class="btn btn-submit  w-100 py-3 ">登入帳號</button>
               </form>
             </div>
-            <h4 class="text-center py-3 border-bottom mb-3">或</h4>
+            <h4 class="text-center py-3 border-bottom border-submit mb-3">或</h4>
             <div class="text-center d-flex ">
               <a href="https://google.com" class="p-4 badge  badge-pill badge-secondary ">GOOGLE</a>
               <a href="https://facebook.com" class="p-4 mx-1 badge  badge-pill badge-secondary ">FACEBOOK</a>
               <a href="https://tw.yahoo.com" class="p-4 badge  badge-pill badge-secondary ">YAHOO!</a>
             </div>
           </div>
+
+          <!-- PC -->
           <div class="col-md-6 d-none d-md-block">
             <form class="innerLogin__item bg-primary ml-auto py-2">
-              <h2 class="innerLogin__item__title text-center py-3">會員登入</h2>
+              <h2 class="innerLogin__item__title text-light text-center py-3">會員登入</h2>
               <div class="form-group ">
                 <div class="input-group-prepend px-3">
                   <label for="user" class="input-group-text rounded-0 border-0 bg-light"><i
@@ -117,10 +118,11 @@
               <button type="submit" class="btn btn-submit rounded-0 w-100 py-3 ">登入帳號</button>
             </form>
           </div>
-          <!-- FIXME:輸入框高度不一致，用maskmap輸入框 -->
+
+          <!-- FIXME:輸入框高度不一致 -->
           <div class=" col-md-6  d-none d-md-block ">
             <div class="innerLogin__item bg-secondary px-3 py-2">
-              <h2 class="innerLogin__item__title text-center py-3 ">社群帳號</h2>
+              <h2 class="innerLogin__item__title text-center text-light py-3 ">社群帳號</h2>
               <div class="list-group text-center">
                 <a href="https://facebook.com"
                   class="innerLogin__item__link p-3  btn btn-light border-0 text-decoration-none">FACEBOOK</a>
@@ -135,14 +137,7 @@
       </div>
     </section>
 
-
-
-    <section></section>
-    <article></article>
-    <figure>
-      <figcaption></figcaption>
-    </figure>
-    <aside></aside>
+    
   </main>
 
   <footer class="bg-light">

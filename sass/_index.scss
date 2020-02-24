@@ -106,11 +106,9 @@
   margin-bottom: 100px;
   &__item{
     position: relative;
-    @include responsiveFontSize__info;
     &::before{
       position: absolute;
       content: "本日精選";
-      // font-size: 1rem;
       top: 0;
       left: 20px;
       width: 26px;
@@ -118,11 +116,11 @@
       color: white;
       background-color: rgba(32, 22, 3,0.8);
       border-radius: 0 0 3px 3px;
-      // TODO:修改RWD文字大小
-      // @include media-breakpoint-down(sm){
-      //   width: 26px;
-      // }
-
+      @include media-breakpoint-down(sm){
+        font-size: 0.8rem;
+        width: 19px;
+        padding: 3px;
+      }
     }
     &__popularity{
       color: rgba(32, 22, 3,0.8)	;
@@ -251,9 +249,7 @@
       padding-top: 15px;
       border-top: 1px solid #dee2e6;
     }
-    @include media-breakpoint-down(sm){
-      align-items:start;
-    }
+    
     &__img{
       max-width: 100%;
       height: 90px;
@@ -288,7 +284,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color:theme-color("info");
+        background-color:theme-color("submit");
         top: 55%;
         left: 20px;
       }
@@ -298,7 +294,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: theme-color("info");
+        background-color: theme-color("submit");
         top: 55%;
         right: 20px;
       }
