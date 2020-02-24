@@ -10933,7 +10933,7 @@ a.text-submit:hover, a.text-submit:focus {
   position: relative;
   width: 15px;
   height: 15px;
-  font-size: 9px;
+  font-size: 10px;
   color: white;
   border-radius: 50%;
   border: 1px solid #a55c1b;
@@ -10946,8 +10946,8 @@ a.text-submit:hover, a.text-submit:focus {
   position: absolute;
   content: "";
   top: 50%;
-  left: -60px;
-  width: 58px;
+  left: -48px;
+  width: 46px;
   height: 1px;
   border: 1px solid #a18367;
   background-color: #a18367;
@@ -10965,12 +10965,12 @@ a.text-submit:hover, a.text-submit:focus {
 
 .progress-round__list li.check {
   border: none;
-  color: #007bff;
+  color: #a55c1b;
 }
 
 .progress-round__list li.check .fa-check {
-  -webkit-transform: translate(2px, -1px);
-          transform: translate(2px, -1px);
+  -webkit-transform: translate(2px, 1px);
+          transform: translate(2px, 1px);
 }
 
 body {
