@@ -11372,8 +11372,22 @@ body::after {
 }
 
 .innerLogin__item button[type="submit"] {
-  -webkit-transform: translateY(24px);
-          transform: translateY(24px);
-  border-radius: 0 0 0 5px;
+  -webkit-transform: translateY(18px);
+          transform: translateY(18px);
+  border-radius: 0 0 0 3px;
+}
+
+@media (max-width: 767.98px) {
+  .innerLogin__item button[type="submit"] {
+    border-radius: 0 0 3px 3px;
+  }
+}
+
+.btn-submit, .btn-primary {
+  border-radius: 0 0 3px 3px;
+}
+
+footer .btn-submit {
+  border-radius: 0 3px 3px 0;
 }
 /*# sourceMappingURL=all.css.map */
