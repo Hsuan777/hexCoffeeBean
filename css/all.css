@@ -10984,7 +10984,7 @@ body::before {
   bottom: 0px;
   left: 0;
   right: 0;
-  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
+  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash-md.jpg");
   background-position: center center;
   background-size: contain;
   z-index: -1;
@@ -11016,7 +11016,7 @@ body::after {
 }
 
 .innerBanner__index {
-  background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash.jpg");
+  background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-md.jpg");
   margin-bottom: 230px;
 }
 
@@ -11058,6 +11058,7 @@ body::after {
   background-size: cover;
   background-position: center center;
   position: relative;
+  border-radius: 120px 120px  100px 100px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -11074,16 +11075,28 @@ body::after {
   }
 }
 
-.innerBanner__index__item:nth-child(1) {
-  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash.jpg");
+.innerBanner__index__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-position: center center;
+  border-radius: 120px 120px  100px 100px;
 }
 
-.innerBanner__index__item:nth-child(2) {
-  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
+.innerBanner__index__item:nth-child(1)::before {
+  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-md.jpg");
 }
 
-.innerBanner__index__item:nth-child(3) {
-  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash.jpg");
+.innerBanner__index__item:nth-child(2)::before {
+  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-md.jpg");
+}
+
+.innerBanner__index__item:nth-child(3)::before {
+  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-md.jpg");
 }
 
 .innerBanner__index__item__link {
@@ -11098,10 +11111,15 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  border-radius: 95px;
-  background-color: rgba(165, 92, 27, 0.6);
+  border-radius: 120px 120px  100px 100px;
+  background-color: rgba(214, 163, 116, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.innerBanner__index__item:hover::before {
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .innerBanner__index__item:hover::after {
@@ -11111,11 +11129,11 @@ body::after {
 }
 
 .innerBanner__product {
-  background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-md.jpg");
 }
 
 .innerBanner__success {
-  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
+  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-md.jpg");
 }
 
 .innerProduct {
@@ -11190,7 +11208,7 @@ body::after {
 }
 
 .innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
-  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash.jpg");
+  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash-md.jpg");
 }
 
 .innerAbout__item:nth-child(5), .innerAbout__item:nth-child(6) {
@@ -11286,7 +11304,7 @@ body::after {
 }
 
 .innerAbout__item__img {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-md.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
