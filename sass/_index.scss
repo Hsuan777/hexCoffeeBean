@@ -58,8 +58,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
+        background-repeat: no-repeat;
         border-radius:120px 120px  100px 100px;
         // -webkit-filter:blur(1px);
       }

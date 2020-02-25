@@ -45,9 +45,6 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link " href="product.html">看豆子</a>
-            <a class="nav-item nav-link" href="checkout.html">checkout</a>
-            <a class="nav-item nav-link" href="checkout-2.html">checkout-2</a>
-            <a class="nav-item nav-link" href="checkout-success.html">checkout-success</a>
             <a class="nav-item nav-link" target="_blank"
               href="https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/grid">設計稿</a>
             <a class="nav-item nav-link" target="_blank" href="https://unsplash.com/">素材圖片</a>
@@ -70,38 +67,13 @@
 
         <div class="innerBanner__index__list">
           <div class="row justify-content-center no-gutter">
-            <!-- <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center ">
-              <a class="p-5 rounded-pill ">
-                本日精選
-              </a>
-            </div>
-            <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center rounded-pill  mx-2">
-              <a class=" p-5   ">
-                人氣推薦
-              </a>
-            </div>
-            <div class="col-3 col-lg-2 d-flex justify-content-center">
-              <a class="innerBanner__index__item p-5 rounded-pill ">
-                新品上市
-              </a>
-            </div> -->
-            <!-- <div class="col-3 col-lg-2">
-              <div class="innerBanner__index__item">
-
-              </div>
-            </div> -->
-
-            <div
-              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center ">
+            <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center ">
               <a href="#" class=" innerBanner__index__item__link p-md-5 p-4 text-nowrap text-decoration-none ">本日精選</a>
             </div>
-            <div
-              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center mx-2">
-              <a href="#"
-                class=" innerBanner__index__item__link  p-md-5 p-4 text-nowrap text-decoration-none ">人氣推薦</a>
+            <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center mx-2">
+              <a href="#" class=" innerBanner__index__item__link  p-md-5 p-4 text-nowrap text-decoration-none ">人氣推薦</a>
             </div>
-            <div
-              class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center ">
+            <div class="innerBanner__index__item col-3 col-lg-2 d-flex justify-content-center align-items-center ">
               <a href="#" class="innerBanner__index__item__link  p-md-5 p-4 text-nowrap text-decoration-none ">新品上市</a>
             </div>
           </div>
@@ -131,10 +103,40 @@
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
                       <p class=" card-text pt-3 px-2 mx-auto  text-truncate">肯亞AA</p>
-                      <button class="btn  btn-light border-left text-nowrap">詳細</button>
+                      <button class="btn  btn-light  text-nowrap" data-toggle="modal"
+                        data-target="#exampleModalCenter">詳細</button>
                     </div>
                   </div>
                   <button class="btn btn-primary py-2">加入購物車</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header ">
+                        <h5 class="modal-title text-primary" id="exampleModalCenterTitle">肯亞AA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li>產    區：恩布(Embu)</li>
+                          <li>生 產 者：祈福處理廠</li>
+                          <li>品    種： SL28，SL34</li>
+                          <li>海    拔： 1400-1600M</li>
+                          <li>等    級： Peaberry</li>
+                          <li>處 理 法：水洗</li>
+                          <li>風味特色：蜜餞、李子、杏桃、奶油與甜水果調、水果香氣濃郁、果汁甜感佳、尾韻長而綿密</li>
+                          <li>烘 焙 度： ●●●○○</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class=" col-lg-4 col-6 mt-3">
@@ -146,7 +148,7 @@
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
                       <p class="card-text pt-3 px-2 mx-auto  text-truncate">巴西‧喜拉朵</p>
-                      <button class="btn btn-light border-left text-nowrap">詳細</button>
+                      <button class="btn btn-light  text-nowrap">詳細</button>
                     </div>
                   </div>
                   <button class="btn  btn-primary py-2">加入購物車</button>
@@ -162,7 +164,7 @@
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
                       <p class="card-text pt-3 px-2 mx-auto text-truncate">耶加雪菲G1</p>
-                      <button class="btn btn-light  border-left text-nowrap">詳細</button>
+                      <button class="btn btn-light   text-nowrap">詳細</button>
                     </div>
                   </div>
                   <button class="btn  btn-primary py-2">加入購物車</button>
