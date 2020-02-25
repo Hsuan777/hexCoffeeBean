@@ -11128,6 +11128,13 @@ body::after {
           transform: scale(0.7);
 }
 
+@media (max-width: 767.98px) {
+  .innerBanner__index__item:hover::after {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+
 .innerBanner__product {
   background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-md.jpg");
 }
@@ -11170,7 +11177,6 @@ body::after {
 
 .innerProduct__item__popularity::before {
   content: "人氣推薦";
-  background-color: rgba(32, 22, 3, 0.8);
 }
 
 .innerProduct__item__new {
@@ -11179,13 +11185,13 @@ body::after {
 
 .innerProduct__item__new::before {
   content: "新品上市";
-  background-color: rgba(32, 22, 3, 0.8);
 }
 
 .innerProduct__item__like {
   position: absolute;
   top: 0;
   right: 0;
+  color: #f8f9fa;
 }
 
 .innerProduct__item__like:hover {
