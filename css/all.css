@@ -11150,6 +11150,8 @@ body::after {
 
 .innerProduct__item {
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .innerProduct__item::before {
@@ -11172,16 +11174,13 @@ body::after {
   }
 }
 
-.innerProduct__item__popularity {
-  color: rgba(32, 22, 3, 0.8);
+.innerProduct__item:hover {
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .innerProduct__item__popularity::before {
   content: "人氣推薦";
-}
-
-.innerProduct__item__new {
-  color: rgba(32, 22, 3, 0.8);
 }
 
 .innerProduct__item__new::before {
@@ -11206,20 +11205,12 @@ body::after {
   background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
-.innerAbout__item:nth-child(2) {
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
-}
-
 .innerAbout__item:nth-child(3), .innerAbout__item:nth-child(4) {
   background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
 .innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
   background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash-md.jpg");
-}
-
-.innerAbout__item:nth-child(5), .innerAbout__item:nth-child(6) {
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%), linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
 .innerAbout__item__title {

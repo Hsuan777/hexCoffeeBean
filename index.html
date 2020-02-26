@@ -28,7 +28,7 @@
   <script src="https://kit.fontawesome.com/74aada8adf.js"></script>
 
   <link rel="stylesheet" href="css/all.css">
-  <title>HexCoffeeBean | HexSchool BS4 Fin. HOMEWORK </title>
+  <title>HexCoffeeBean | HexSchool BS4 Fin. todayWORK </title>
 </head>
 
 <body>
@@ -91,9 +91,8 @@
       <div class="container">
         <div class="tab-content" id="nav-tabContent">
           <!-- 本日精選 -->
-          <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="tab-pane fade show active " id="list-today" role="tabpanel" aria-labelledby="list-today-list">
             <div class="row justify-content-center">
-
               <div class="col-lg-4 col-6 mt-3">
                 <div class="innerProduct__item  innerProduct__coffee card">
                   <button type="button" class="btn btn-link innerProduct__item__like border-0 ">
@@ -102,35 +101,61 @@
                   <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
-                      <p class=" card-text pt-3 px-2 mx-auto  text-truncate">肯亞AA</p>
-                      <button class="btn  btn-light  text-nowrap" data-toggle="modal"
-                        data-target="#exampleModalCenter">詳細</button>
+                      <p class=" card-text pt-3 px-2 mx-auto  text-truncate">肯亞 恩布產區</p>
+                      <button class="btn  btn-light  text-nowrap text-secondary" data-toggle="modal"
+                        data-target="#kenyaEmbu">詳細</button>
                     </div>
                   </div>
                   <button class="btn btn-primary py-2">加入購物車</button>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="kenyaEmbu" tabindex="-1" role="dialog"
+                  aria-labelledby="kenyaEmbuTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header ">
-                        <h5 class="modal-title text-primary" id="exampleModalCenterTitle">肯亞AA</h5>
+                        <h5 class="modal-title text-primary" id="kenyaEmbuTitle">肯亞 恩布產區</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <ul>
-                          <li>產    區：恩布(Embu)</li>
-                          <li>生 產 者：祈福處理廠</li>
-                          <li>品    種： SL28，SL34</li>
-                          <li>海    拔： 1400-1600M</li>
-                          <li>等    級： Peaberry</li>
-                          <li>處 理 法：水洗</li>
-                          <li>風味特色：蜜餞、李子、杏桃、奶油與甜水果調、水果香氣濃郁、果汁甜感佳、尾韻長而綿密</li>
-                          <li>烘 焙 度： ●●●○○</li>
-                        </ul>
+                        <table class="table table-borderless">
+                          <tbody >
+                            <tr>
+                              <th scope="row" class="text-right" width="150px">產區:</th>
+                              <td>恩布(Embu)</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">生產者：</th>
+                              <td>祈福處理廠</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">品種：</th>
+                              <td>SL28，SL34</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">海拔：</th>
+                              <td> 1400 ~ 1600 M</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">等級：</th>
+                              <td>Peaberry</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">處理法：</th>
+                              <td>水洗</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">風味特色：</th>
+                              <td>蜜餞、李子、杏桃、奶油與甜水果調、水果香氣濃郁、果汁甜感佳、尾韻長而綿密</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">烘焙度：</th>
+                              <td>●●●○○</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -148,10 +173,62 @@
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
                       <p class="card-text pt-3 px-2 mx-auto  text-truncate">巴西‧喜拉朵</p>
-                      <button class="btn btn-light  text-nowrap">詳細</button>
+                      <button class="btn btn-light  text-nowrap text-secondary" data-toggle="modal"
+                      data-target="#cerrado">詳細</button>
                     </div>
                   </div>
                   <button class="btn  btn-primary py-2">加入購物車</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="cerrado" tabindex="-1" role="dialog"
+                  aria-labelledby="cerradoTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header ">
+                        <h5 class="modal-title text-primary" id="cerradoTitle">巴西‧喜拉朵</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-borderless">
+                          <tbody >
+                            <tr>
+                              <th scope="row" class="text-right" width="150px">產區:</th>
+                              <td>MinasGerais州、Cerrado地區</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">品種：</th>
+                              <td>波旁 Bourbon</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">海拔：</th>
+                              <td> 900 ~ 1,350 M</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">等級：</th>
+                              <td>17/18目</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">處理法：</th>
+                              <td>日曬</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">風味特色：</th>
+                              <td>堅果可可風味、甜香中略帶點柑橘果酸</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">烘焙度：</th>
+                              <td>●●●○○</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class=" col-lg-4 col-6 mt-3">
@@ -164,18 +241,74 @@
                   <div class="card-body p-0 border-bottom">
                     <div class="d-flex ">
                       <p class="card-text pt-3 px-2 mx-auto text-truncate">耶加雪菲G1</p>
-                      <button class="btn btn-light   text-nowrap">詳細</button>
+                      <button class="btn btn-light text-nowrap text-secondary" data-toggle="modal"
+                      data-target="#yirgacheffe">詳細</button>
                     </div>
                   </div>
                   <button class="btn  btn-primary py-2">加入購物車</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="yirgacheffe" tabindex="-1" role="dialog"
+                  aria-labelledby="yirgacheffeTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header ">
+                        <h5 class="modal-title text-primary" id="yirgacheffeTitle">衣索比亞 水洗耶加雪菲G1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-borderless">
+                          <tbody >
+                            <tr>
+                              <th scope="row" class="text-right" width="150px">產區:</th>
+                              <td> 
+                                <p>SNNPR Region / 歌迪歐(Gedeo Zone) /</p> 
+                                <p class="m-0">科洽雷(Kochere) / 班可 (Banko Kebele)</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">生產者：</th>
+                              <td>貝內費加 (Beyene Figa)</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">品種：</th>
+                              <td>當地古優原生種 (Heirloom) </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">海拔：</th>
+                              <td> 1900 ~ 2100 M</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">等級：</th>
+                              <td>G1</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">處理法：</th>
+                              <td>水洗，非洲式棚架乾燥</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">風味特色：</th>
+                              <td>清新迷人的咖啡花帶有檸檬的甜香，一入口除了可以感受到優酪乳的酸酸甜甜滋味，柑橘、新鮮萊姆、佛手柑、荔枝等勾勒著整個輪廓，中段出現橙花及水蜜桃點綴其中，尾韻則帶有香料感、花香及伯爵茶氣息。</td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-right">烘焙度：</th>
+                              <td>●●●○○</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- 本日精選 END-->
-
-
-
     </section>
 
 
@@ -292,7 +425,7 @@
         <div class="d-flex align-items-center">
           <label for="" class="h3 text-white m-0 p-0 ml-auto">訂閱我們，活動享優惠</label>
           <div class="input-group py-3 mx-auto w-50 p-0 m-0">
-            <input type="text" class="form-control" placeholder="快來訂閱吧 !" aria-label="Recipient's username"
+            <input type="text" class="form-control" placeholder="快來訂閱吧 !" aria-label="請輸入信箱"
               aria-describedby="button-addon2">
             <div class="input-group-append">
               <button class="btn btn-submit" type="button" id="button-addon2">
@@ -305,7 +438,7 @@
       <!-- mobile -->
       <div class="container d-sm-block d-md-none">
         <div class="input-group py-3 mx-auto ">
-          <input type="text" class="form-control" placeholder="訂閱我們，活動享優惠" aria-label="Recipient's username"
+          <input type="text" class="form-control" placeholder="訂閱我們，活動享優惠" aria-label="請輸入信箱"
             aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-submit" type="button" id="button-addon2">
@@ -368,23 +501,23 @@
 
   <script>
     // FIXME: 切換商品淡入淡出
-    $('#list-home-list').on('click', function (e) {
+    $('#list-today-list').on('click', function (e) {
       e.preventDefault()
-      $('#list-home').addClass("show").addClass("active");
+      $('#list-today').addClass("show").addClass("active");
       $('#list-profile').removeClass("show").removeClass("active");
       $('#list-messages').removeClass("show").removeClass("active");
     })
     $('#list-profile-list').on('click', function (e) {
       e.preventDefault()
       $('#list-profile').addClass("show").addClass("active");
-      $('#list-home').removeClass("show").removeClass("active");
+      $('#list-today').removeClass("show").removeClass("active");
       $('#list-messages').removeClass("show").removeClass("active");
       // $(this).tab('show')
     })
     $('#list-messages-list').on('click', function (e) {
       e.preventDefault()
       $('#list-messages').addClass("show").addClass("active");
-      $('#list-home').removeClass("show").removeClass("active");
+      $('#list-today').removeClass("show").removeClass("active");
       $('#list-profile').removeClass("show").removeClass("active");
       // $(this).tab('show')
     })
