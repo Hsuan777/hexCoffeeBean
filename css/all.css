@@ -11189,13 +11189,9 @@ body::after {
 
 .innerProduct__item__like {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   color: #f8f9fa;
-}
-
-.innerProduct__item__like:hover {
-  color: red;
 }
 
 .innerAbout__item {
@@ -11210,7 +11206,7 @@ body::after {
 }
 
 .innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
-  background-image: url("../img/tyler-nix-jE-27l7V3NU-unsplash-md.jpg");
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-md.jpg");
 }
 
 .innerAbout__item__title {
@@ -11302,7 +11298,7 @@ body::after {
 }
 
 .innerAbout__item__img {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-md.jpg");
+  background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-md.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11387,5 +11383,10 @@ body::after {
 
 footer .btn-submit {
   border-radius: 0 3px 3px 0;
+}
+
+a[href="mailto:sweetaste@email.com"] {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
 }
 /*# sourceMappingURL=all.css.map */
