@@ -11096,8 +11096,6 @@ body::after {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 120px 120px  100px 100px;
-  -webkit-filter: blur(1.3px);
-  filter: blur(1.3px);
 }
 
 .innerBanner__index__item:nth-child(1)::before {
@@ -11131,8 +11129,6 @@ body::after {
 }
 
 .innerBanner__index__item:hover::before {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
   -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
