@@ -47,7 +47,35 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link " href="product.html">買豆子</a>
             <a class="nav-item nav-link" href="login.html">Login</a>
-            <a class="nav-item nav-link" href="cart.html">購物車</a>
+            <div class="nav-item nav-link dropdown pt-1">
+              <button type="button" class="btn btn-sm pl-0" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-shopping-cart">
+                  <span class="badge badge-danger ">0</span>
+                </i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg-right p-0 m-0">
+                <form action="">
+                <div class="table-responsive px-2">
+                  <table class="table table-sm table-borderless table-hover text-nowrap m-0" data-stopPropagation="true">
+                    <thead >
+                      <tr>
+                        <th scope="row" colspan="4" class="h5 text-center border-bottom py-2">已選商品</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr >
+                        <td class="align-middle text-center">
+                          未採購豆子喔!
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a href="product.html" class="btn btn-primary w-100 ">購物去</a>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
