@@ -1,4 +1,4 @@
-// TODO: SASS / CSS 架構管理檢核表 
+// TODO: SASS / CSS 架構管理檢核表 最少七項，或者自行新增
 // 類別階層不超過四層為原則
 // 不使用 ID，一律使用 class
 // 使用 OOCSS 建立類別工具庫
@@ -15,7 +15,6 @@
 // .inner-banner不同頁面可做圖片設定
 // 同一頁面只有一個主要區塊與多個次要區塊
 // 區塊在 base.scss預先處理子區域
-// 區塊子區域可無限擴增，若重複性高寫在 base.scss
 
 .fa-shopping-cart{
   position: relative;

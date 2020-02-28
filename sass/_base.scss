@@ -1,5 +1,4 @@
 body{
-  // color:theme-color("secondary");
   position: relative;
   &::before{
     position: absolute;
@@ -25,9 +24,7 @@ body{
   }
 }
 
-footer{
-  // margin-top: 50vh;
-}
+
 .punctuation{
   writing-mode: horizontal-tb;
   line-height: 1;
