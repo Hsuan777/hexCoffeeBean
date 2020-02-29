@@ -11165,10 +11165,11 @@ body::after {
 .innerProduct__item::before {
   position: absolute;
   content: "本日精選";
+  text-align: center;
+  width: 28px;
+  padding: 5px 0px 5px 0px;
   top: 0;
   left: 20px;
-  width: 26px;
-  padding: 5px;
   color: white;
   background-color: rgba(32, 22, 3, 0.8);
   border-radius: 0 0 3px 3px;
