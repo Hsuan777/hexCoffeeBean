@@ -1,20 +1,20 @@
 // TODO: SASS / CSS 架構管理檢核表 最少七項，或者自行新增
-// 類別階層不超過四層為原則
-// 不使用 ID，一律使用 class
-// 使用 OOCSS 建立類別工具庫
-// 使用 SMACSS 來建立 Sass 結構
-// 排版結構以 BEM 來開發
-// 導入 BS4 的 Grid System
-// 使用 Sass for 來管理擴充元件
-// 一率採用小駝峰式命名
-// 導入第三方插件在 Sass import vendor
-// 使用 REM 單位
-// 佈局使用 flexbox 進行元件設計
+// 類別階層不超過四層為原則                 -> OK
+// 不使用 ID，一律使用 class                -> modal 轉換時需要
+// 使用 OOCSS 建立類別工具庫                -> 套用 bootstrap
+// 使用 SMACSS 來建立 Sass 結構             -> 套用 bootstrap
+// 排版結構以 BEM 來開發                    -> OK
+// 導入 BS4 的 Grid System                 -> 套用 bootstrap
+// 使用 Sass for 來管理擴充元件 
+// 一率採用小駝峰式命名                     -> OK
+// 導入第三方插件在 Sass import vendor      -> 套用 bootstrap
+// 使用 REM 單位                           -> 文字使用，裝飾類、微調使用px
+// 佈局使用 flexbox 進行元件設計            -> OK
 
-// TODO:檢視架構與命名
-// .inner-banner不同頁面可做圖片設定
-// 同一頁面只有一個主要區塊與多個次要區塊
-// 區塊 不與 文字標籤混用 ?
+// TODO: 寫法說明
+// .inner-banner 不同頁面5置換圖片
+// 不同大區塊不同名稱，但文字圖片區塊統一命名
+
 
 .fa-shopping-cart{
   position: relative;
@@ -71,8 +71,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         border-radius:120px 120px  100px 100px;
-        // -webkit-filter:blur(1.3px);
-        // filter:blur(1.3px);
+        -webkit-filter:blur(0.8px);
+        filter:blur(0.8px);
       }
 
       // Thank you All Author of Unsplash 
@@ -109,22 +109,16 @@
         
       }
       &:hover{
+        .innerBanner__index__item__link{
+          color: theme-color("primary");
+        }
         &::before{
-          // -webkit-filter:blur(0px);
-          // filter:blur(0px);
+          -webkit-filter:blur(0px);
+          filter:blur(0px);
           box-shadow:0 0 3px 3px rgba(0, 0, 0,0.3);
         }
         &::after{
           background-color: rgba(255, 255, 255,0.8);
-          -webkit-transform: scale(0.7);
-          -ms-transform: scale(0.7);
-          transform: scale(0.7);
-          @include media-breakpoint-down(sm){
-          -webkit-transform: scale(0.7);
-          -ms-transform: scale(0.85);
-          transform: scale(0.85);
-
-          }
         }
       }
     }
@@ -195,8 +189,6 @@
 .innerAbout{
   &__item{
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
     background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
     // &:nth-child(2){
     //   background-image:linear-gradient(-60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
@@ -210,7 +202,8 @@
     
     &__title{
       writing-mode:vertical-rl;
-      // line-height: 0;
+      -ms-line-height: 1.3;
+      line-height: 1.3;
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
         z-index: -1;
@@ -226,7 +219,7 @@
           height: 50px;
           background-color:theme-color("primary");
           top: 25px;
-          left:50%;
+          right: 45%;
           @include media-breakpoint-down(sm){
             width: 50px;
             height: 2px;
@@ -350,16 +343,13 @@ footer{
 a[href="mailto:sweetaste@email.com"]{
   transform: translateX(-3px);
 }
+.top{
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
+}
 
-
-// .innerFooter{
-//   &__logo{
-//     @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
-//   }
-// }
-// .navbar-brand{
-//   @include hidden_text(220px,40px,url('../img/tina-guina-obV_LM0KjxY-unsplash.jpg'));
-// }
 
 
 

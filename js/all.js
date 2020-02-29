@@ -6,5 +6,11 @@ $(document).ready(function() {
   $('.btn-outline-danger').on('click',  function(){
       $(".far").removeClass('fas text-danger');
   });
-    
+  $('.top').on('click',  function(){
+    event.preventDefault();
+    $('html,body').animate({ scrollTop: 0 }, 1000);
+  });
+  
+  
+
 });

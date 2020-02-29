@@ -27,31 +27,11 @@ body{
 
 .punctuation{
   writing-mode: horizontal-tb;
-  line-height: 1;
 }
 
-// 如何客製主要背景顏色，bg-主要、bg-次要 ? --已完成
-// 主要次要區塊太模糊，login主要區塊會是甚麼? 次要區塊會是甚麼?
-// 區塊目的 -> 讓不同 inner-? 識別區塊
-// OOCSS  -> bg-? 、btn-大小 、btn-顏色 
-// SMACSS -> btn-primary git
 
 
-// 以前區塊架構
-// .primary-block{
-//   &__item, &__title{
-    
-//   }
-// }
-// .secondary-block{
-//   &__item, 
-//   &__title{
-    
-//   }
-//   &__text{
-    
-//   }
-// }
+
 
 
 

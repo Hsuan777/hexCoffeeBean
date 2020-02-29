@@ -11005,7 +11005,6 @@ body::after {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
-  line-height: 1;
 }
 
 .fa-shopping-cart {
@@ -11096,6 +11095,8 @@ body::after {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 120px 120px  100px 100px;
+  -webkit-filter: blur(0.8px);
+  filter: blur(0.8px);
 }
 
 .innerBanner__index__item:nth-child(1)::before {
@@ -11128,22 +11129,19 @@ body::after {
   transition: 0.3s;
 }
 
+.innerBanner__index__item:hover .innerBanner__index__item__link {
+  color: #a55c1b;
+}
+
 .innerBanner__index__item:hover::before {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
   -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .innerBanner__index__item:hover::after {
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transform: scale(0.7);
-  transform: scale(0.7);
-}
-
-@media (max-width: 767.98px) {
-  .innerBanner__index__item:hover::after {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.85);
-  }
 }
 
 .innerBanner__product {
@@ -11206,8 +11204,6 @@ body::after {
 
 .innerAbout__item {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
   background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
@@ -11223,6 +11219,8 @@ body::after {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  -ms-line-height: 1.3;
+  line-height: 1.3;
   font-size: 2rem;
 }
 
@@ -11259,7 +11257,7 @@ body::after {
   height: 50px;
   background-color: #a55c1b;
   top: 25px;
-  left: 50%;
+  right: 45%;
 }
 
 @media (max-width: 767.98px) {
@@ -11397,5 +11395,12 @@ footer .btn-submit {
 a[href="mailto:sweetaste@email.com"] {
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
+}
+
+.top {
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
 }
 /*# sourceMappingURL=all.css.map */

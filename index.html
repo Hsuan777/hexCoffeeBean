@@ -111,7 +111,7 @@
     <div class="innerBanner innerBanner__index  ">
       <div class="container">
         <div class="innerBanner__index__title p-4 text-white rounded ">
-          <h1 class=" display-4 mr-5 ">六角</br>咖啡店</h1>
+          <h1 class=" display-4 mr-5 ">六角<br>咖啡店</h1>
           <p class="lead text-right d-none d-lg-block ml-5">烘出幸福的味道~</p>
         </div>
 
@@ -206,7 +206,8 @@
             <div class="col-5 ">
               <div class="innerAbout__item__img  "></div>
             </div>
-            <div class="col-7 d-flex  ml-auto ">
+            <div class="col-7 d-flex justify-content-end">
+              <!-- 各瀏覽器會有不同結果，尋找通用方式 -->
               <!-- <h2 class="innerAbout__item__title  order-2 text-primary">為什麼
                 <span class="innerAbout__item__title--dash"></span>
               </h2>
@@ -219,32 +220,32 @@
                 <p>就是我的選擇。</p>
               </div> -->
               
-              <div class="innerAbout__item__title order-1 text-primary">
+              <!-- .innerAbout__item__title 擺到 edge會產生多餘的空白?! -->
+              <div class=" innerAbout__item__title  text-primary order-1">
                 <h2 >為什麼
                   <span class="innerAbout__item__title--dash"></span>
-                  </br>
-                  <span class="mt-5" >選擇了烘咖啡 <span class="punctuation">? </span> </span>
+                <br>
+                  <span class="mt-5" >選擇了烘咖啡  </span><span class="punctuation">? </span>
                 </h2>
               </div>
-              <div class="innerAbout__item__text ml-auto py-5">
-                <p>當你喝到咖啡時，剎那間露出的微笑，</br> 就是我的選擇。</p>
+              <div class="innerAbout__item__text  py-5">
+                <p>當你喝到咖啡時，剎那間露出的微笑，<br> 就是我的選擇。</p>
               </div>
-            
-             
-              
             </div>
           </div>
         </div>
       </section>
       <!-- 次要區塊一 mobile -->
-      <section class="innerAbout__item d-sm-block d-md-none text-primary">
+      <section class="innerAbout__item d-sm-block d-md-none text-primary my-3">
         <div class=" container-fluid innerAbout__item__img text-center " style="position: relative;">
-          <h2 class="innerAbout__item__title mt-5 mr-5 pr-3 ">為什麼<span class="innerAbout__item__title--dash"></span>
+          <h2 class="innerAbout__item__title mt-5 mr-5 pr-3 ">為什麼
+            <span class="innerAbout__item__title--dash"></span>
           </h2>
           <h2 class="innerAbout__item__title "> 選擇了烘咖啡 ? </h2>
           <div class="innerAbout__item__text  text-white  mt-5">
-            <p>當你喝到咖啡時，剎那間露出的微笑，</p>
-            <p>就是我的選擇。</p>
+            <p>當你喝到咖啡時，剎那間露出的微笑，
+              <br>就是我的選擇。
+            </p>
           </div>
         </div>
       </section>
@@ -268,23 +269,22 @@
               </div> -->
 
               <div class="innerAbout__item__title order-1 text-primary">
-                <h2 >為什麼
+                <h2 class="">為什麼
                   <span class="innerAbout__item__title--dash"></span>
-                  </br>
-                  <span class="mt-5" >要喝咖啡 <span class="punctuation">? </span> </span>
+                  <br>
+                  <span class="mt-5" >要喝咖啡  </span><span class="punctuation"> ? </span>
                 </h2>
               </div>
               <div class="innerAbout__item__text py-5">
                 <p>咖啡能轉化成任何東西，
-                  </br> 可能是想法，
-                  </br> 可能是文字，
-                  </br> 無論是甚麼，咖啡都能帶給人前進的力量。
+                  <br> 可能是想法，
+                  <br> 可能是文字，
+                  <br> 無論是甚麼，咖啡都能帶給人前進的力量。
                 </p>
               </div>
-
             </div>
             <div class="col-5">
-              <div class="innerAbout__item__img  "></div>
+              <div class="innerAbout__item__img"></div>
             </div>
           </div>
         </div>
@@ -294,14 +294,15 @@
         <div class=" container-fluid innerAbout__item__img text-center" style="position: relative;">
           <h2 class="innerAbout__item__title  mt-5 mr-5 pr-3 ">為什麼
             <span class="innerAbout__item__title--dash"></span>
-            
+            <br>
+            <span class="">要喝咖啡 ?</span> 
           </h2>
-          <h2 class="innerAbout__item__title  "> 要喝咖啡 ? </h2>
           <div class="innerAbout__item__text text-right text-white mt-5">
-            <p>咖啡能轉化成任何東西，</p>
-            <p>可能是想法，可能是文字，</p>
-            <p>無論那是甚麼，</p>
-            <p>咖啡都能帶給人前進的力量。</p>
+            <p>咖啡能轉化成任何東西，
+              <br>可能是想法，可能是文字，
+              <br>無論那是甚麼，
+              <br>咖啡都能帶給人前進的力量。
+            </p>
           </div>
         </div>
       </section>
@@ -309,24 +310,30 @@
       <!-- 次要區塊三 -->
       <section class="innerAbout__item d-none d-md-block py-5 m-0">
         <div class=" container">
-          <div class="  d-flex justify-content-center ">
-            <h2 class="innerAbout__item__title text-primary ml-4 order-1">喝咖啡
-              <span class="innerAbout__item__title--dash"></span></h2>
-            <h2 class="innerAbout__item__title text-primary text-center mt-5"> 是種生活態度。 </h2>
+          <!-- <div class="innerAbout__item__title  mx-auto text-primary">
+            <h2 >喝咖啡
+              <span class="innerAbout__item__title--dash"></span>
+              <br>
+              <span class="mt-5">是種生活態度。</span>
+            </h2>
+          </div> -->
+          <div class=" d-flex justify-content-center">
+            <h2 class="innerAbout__item__title text-primary ">喝咖啡
+              <span class="innerAbout__item__title--dash"></span>
+              <br>
+              <span class="mt-5">是種生活態度。</span>
+            </h2>
           </div>
         </div>
       </section>
-      <!-- 次要區塊三 mobile -->
-      <!-- <section class="innerAbout__item d-sm-block d-md-none m-0 text-primary p-5">
-        <div class=" container text-center" style="position: relative;">
-          <h2 class="innerAbout__item__title  mr-5 pr-3">喝咖啡<span class="innerAbout__item__title--dash"></span></h2>
-          <h2 class="innerAbout__item__title  "> 是種生活態度。 </h2>
-        </div>
-      </section> -->
     </div>
+
+
+    <button type="button" class="btn btn-primary rounded-circle py-3 top">TOP</button>
   </main>
 
 
+  
 
 
   <footer class="bg-light">
@@ -347,7 +354,7 @@
         </div>
       </div>
       <!-- mobile -->
-      <div class="container d-sm-block d-md-none">
+      <div class="container d-sm-block d-md-none my-3">
         <div class="input-group py-3 mx-auto ">
           <input type="email" class="form-control" placeholder="訂閱我們，活動享優惠" aria-label="請輸入信箱"
             aria-describedby="button-addon2">
@@ -378,10 +385,11 @@
         </div>
         <div class="col-md-6 d-md-block d-none mt-3">
           <div class=" d-flex justify-content-end">
-            <h2 class="innerAbout__item__title text-primary order-1">每天都是
+            <h2 class="innerAbout__item__title text-primary ">每天都是
               <span class="innerAbout__item__title--dash"></span>
+              <br>
+              <span class="mt-5">喝咖啡的好日子。</span>
             </h2>
-            <h2 class="innerAbout__item__title text-primary mt-3">喝咖啡的好日子。</h2>
           </div>
         </div>
       </div>
@@ -614,6 +622,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
