@@ -11136,13 +11136,13 @@ body::after {
 .innerBanner__index__item:hover::after {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 @media (max-width: 767.98px) {
   .innerBanner__index__item:hover::after {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.85);
   }
 }
 
@@ -11220,10 +11220,9 @@ body::after {
 }
 
 .innerAbout__item__title {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  line-height: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-size: 2rem;
 }
 

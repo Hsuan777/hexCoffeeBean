@@ -14,7 +14,7 @@
 // TODO:檢視架構與命名
 // .inner-banner不同頁面可做圖片設定
 // 同一頁面只有一個主要區塊與多個次要區塊
-// 區塊在 base.scss預先處理子區域
+// 區塊 不與 文字標籤混用 ?
 
 .fa-shopping-cart{
   position: relative;
@@ -116,8 +116,12 @@
         }
         &::after{
           background-color: rgba(255, 255, 255,0.8);
+          -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
           transform: scale(0.7);
           @include media-breakpoint-down(sm){
+          -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.85);
           transform: scale(0.85);
 
           }
@@ -205,8 +209,8 @@
     }
     
     &__title{
-      writing-mode:vertical-lr;
-      line-height: 0;
+      writing-mode:vertical-rl;
+      // line-height: 0;
       @include responsiveFontSize__title;
       @include media-breakpoint-down(sm){
         z-index: -1;
