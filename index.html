@@ -619,9 +619,6 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -668,3 +665,44 @@
 </body>
 
 </html>
+
+<!-- 畫面：
+
+- 產品卡片的互動應與行為一致（不應整個卡片都有 hover 效果）
+
+- 中英文字體運用應一致（不建議套用手寫字） 
+-> 已更改
+
+- 另外文字色彩，無論是否 hover 都可注意下可讀性，https://wcc723.github.io/design/2018/10/22/accessibility/
+
+- 圖片尺寸過大，這會大幅降低效能，圖片尺寸應不超過顯示區域的兩倍
+
+- 背景圖片建議單純，不應該影響閱讀（咖啡豆深淺差異過大，不建議作為背景）
+
+- 陰影可以淡一些
+
+
+
+原始碼：
+
+- 互動部分應使用 button、a 標籤，刪除應使用 a 標籤
+
+- jQuery 僅需要載入其中一個
+-> 已更改
+
+- 部分 input type 使用錯誤，如：密碼應使用 password
+-> 已更改，部分姓名、信用卡、地址無對應 type
+
+
+
+CSS
+
+- 檔案拆分要明確，mixin 內不應有不相干的模組（index 內也是相同的問題）
+-> 不相干模組是指? 無參數模組已分開至base.scss
+
+- 不建議直接使用標籤做第一層選取器（footer 並非只能用在頁面底部）
+->圓角按鈕需要重新命名，部分圓角或全圓角
+
+- 可用性命名上，可以使用外觀而不是功能（這個問題很困難，可以思考看看，不一定要解決）
+
+ ex: about 來說是功能，那麼這樣的排版就無法運用的類似的區塊上 -->

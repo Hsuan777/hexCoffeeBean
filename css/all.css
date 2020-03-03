@@ -33,7 +33,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Sriracha", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -57,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Sriracha", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6668,7 +6668,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Sriracha", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6781,7 +6781,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Sriracha", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10929,6 +10929,40 @@ a.text-submit:hover, a.text-submit:focus {
   }
 }
 
+body {
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash-md.jpg");
+  background-position: center center;
+  background-size: contain;
+  z-index: -1;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: rgba(248, 248, 248, 0.6);
+  z-index: -1;
+}
+
+.punctuation {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+}
+
 .progress-round__list li {
   position: relative;
   width: 15px;
@@ -10973,38 +11007,11 @@ a.text-submit:hover, a.text-submit:focus {
           transform: translate(2px, 1px);
 }
 
-body {
-  position: relative;
-}
-
-body::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash-md.jpg");
-  background-position: center center;
-  background-size: contain;
-  z-index: -1;
-}
-
-body::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  background-color: rgba(248, 248, 248, 0.6);
-  z-index: -1;
-}
-
-.punctuation {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+.top {
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
 }
 
 .fa-shopping-cart {
@@ -11396,12 +11403,5 @@ footer .btn-submit {
 a[href="mailto:sweetaste@email.com"] {
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
-}
-
-.top {
-  position: fixed;
-  z-index: 99;
-  bottom: 25px;
-  right: 25px;
 }
 /*# sourceMappingURL=all.css.map */
