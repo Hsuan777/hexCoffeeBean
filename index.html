@@ -36,7 +36,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           HexCoffeeBean
@@ -336,7 +336,7 @@
   
 
 
-  <footer class="bg-light">
+  <footer >
     <div class="container-fluid bg-primary mb-3">
       <!-- PC -->
       <div class="container d-md-block d-none">
@@ -666,37 +666,42 @@
 
 </html>
 
-<!-- 畫面：
-
+<!-- 
+畫面：
+‧未更改
 - 產品卡片的互動應與行為一致（不應整個卡片都有 hover 效果）
 
-- 中英文字體運用應一致（不建議套用手寫字） 
--> 已更改
-
 - 另外文字色彩，無論是否 hover 都可注意下可讀性，https://wcc723.github.io/design/2018/10/22/accessibility/
+-> 安裝  Color contrast checker 可檢查對比程度
+-> 上面"詳細按鈕"對比不足
 
 - 圖片尺寸過大，這會大幅降低效能，圖片尺寸應不超過顯示區域的兩倍
-
-- 背景圖片建議單純，不應該影響閱讀（咖啡豆深淺差異過大，不建議作為背景）
 
 - 陰影可以淡一些
 
 
+‧已更改
+- 中英文字體運用應一致（不建議套用手寫字） 
+-> 套用 'Noto Sans TC' 字型
+
+- 背景圖片建議單純，不應該影響閱讀（咖啡豆深淺差異過大，不建議作為背景）
+-> 背景更改為 "light" 顏色 
+-> footer bg-light就不需要了
+
 
 原始碼：
-
+‧未更改
 - 互動部分應使用 button、a 標籤，刪除應使用 a 標籤
 
+‧已更改
 - jQuery 僅需要載入其中一個
--> 已更改
-
 - 部分 input type 使用錯誤，如：密碼應使用 password
 -> 已更改，部分姓名、信用卡、地址無對應 type
 
 
 
-CSS
-
+CSS ：
+‧未更改
 - 檔案拆分要明確，mixin 內不應有不相干的模組（index 內也是相同的問題）
 -> 不相干模組是指? 無參數模組已分開至base.scss
 
@@ -705,4 +710,9 @@ CSS
 
 - 可用性命名上，可以使用外觀而不是功能（這個問題很困難，可以思考看看，不一定要解決）
 
- ex: about 來說是功能，那麼這樣的排版就無法運用的類似的區塊上 -->
+ ex: about 來說是功能，那麼這樣的排版就無法運用的類似的區塊上
+ 
+ ‧已更改
+
+
+-->

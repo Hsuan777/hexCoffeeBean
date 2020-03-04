@@ -10930,31 +10930,7 @@ a.text-submit:hover, a.text-submit:focus {
 }
 
 body {
-  position: relative;
-}
-
-body::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash-md.jpg");
-  background-position: center center;
-  background-size: contain;
-  z-index: -1;
-}
-
-body::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  background-color: rgba(248, 248, 248, 0.6);
-  z-index: -1;
+  background-color: #f8f9fa;
 }
 
 .punctuation {
