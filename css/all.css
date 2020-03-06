@@ -11008,7 +11008,7 @@ body {
 }
 
 .innerBanner__index {
-  background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-md.jpg");
+  background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-25.jpg");
   margin-bottom: 230px;
 }
 
@@ -11083,15 +11083,15 @@ body {
 }
 
 .innerBanner__index__item:nth-child(1)::before {
-  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-md.jpg");
+  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
 }
 
 .innerBanner__index__item:nth-child(2)::before {
-  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-md.jpg");
+  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
 }
 
 .innerBanner__index__item:nth-child(3)::before {
-  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-md.jpg");
+  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
 }
 
 .innerBanner__index__item__link {
@@ -11128,11 +11128,11 @@ body {
 }
 
 .innerBanner__product {
-  background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-md.jpg");
+  background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-25.jpg");
 }
 
 .innerBanner__success {
-  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-md.jpg");
+  background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
 }
 
 .innerProduct {
@@ -11166,9 +11166,9 @@ body {
   }
 }
 
-.innerProduct__item:hover {
-  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+.innerProduct__item__active:hover {
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .innerProduct__item__popularity::before {
@@ -11181,9 +11181,13 @@ body {
 
 .innerProduct__item__like {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   color: #f8f9fa;
+}
+
+.innerProduct__item__like:hover {
+  color: #dc3545;
 }
 
 .innerAbout__item {
@@ -11196,7 +11200,7 @@ body {
 }
 
 .innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-md.jpg");
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-25.jpg");
 }
 
 .innerAbout__item__title {
@@ -11289,7 +11293,7 @@ body {
 }
 
 .innerAbout__item__img {
-  background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-md.jpg");
+  background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-25.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

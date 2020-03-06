@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  
+
   <!-- 自動符合各種裝置 -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
   <!-- 為了 i 系列 viewport-fit -->
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="robots" content="HTML，CSS，RWD，前端，線上課程，網頁設計，響應式設計，咖啡，咖啡豆">
-	<meta name="description" content="HexCoffeeBean | HexSchool BootStrap4 Fin." >
+  <meta name="robots" content="HTML，CSS，RWD，前端，線上課程，網頁設計，響應式設計，咖啡，咖啡豆">
+  <meta name="description" content="HexCoffeeBean | HexSchool BootStrap4 Fin.">
 
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -69,8 +70,10 @@
                       <tbody>
                         <tr>
                           <td class="align-middle py-2" width="50px">
-                            <i class="far fa-trash-alt px-2" data-toggle="modal" data-target="#delModal"
-                              data-title="肯亞 恩布產區" data-backdrop="static"></i>
+                            <a href="#" data-toggle="modal" data-target="#delModal" data-title="肯亞 恩布產區"
+                              data-backdrop="static" class="text-dark">
+                              <i class="far fa-trash-alt px-2"></i>
+                            </a>
                           </td>
                           <td width="100px" class="d-flex">
                             <img class="img-fluid img-thumbnail " src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" alt="">
@@ -80,8 +83,10 @@
                         </tr>
                         <tr>
                           <td class="align-middle">
-                            <i class="far fa-trash-alt px-2" data-toggle="modal" data-target="#delModal"
-                              data-title="耶加雪菲 G1" data-backdrop="static"></i>
+                            <a href="#" data-toggle="modal" data-target="#delModal" data-title="耶加雪菲 G1"
+                              data-backdrop="static" class="text-dark">
+                              <i class="far fa-trash-alt px-2"></i>
+                            </a>
                           </td>
                           <td width="100px">
                             <img class="img-fluid img-thumbnail " src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" alt="">
@@ -136,12 +141,14 @@
                 <div class="row justify-content-center">
                   <div class="col-lg-4 col-6 mt-3">
                     <div class="card innerProduct__item">
-                      <i class="innerProduct__item__like far fa-heart"></i>
+                      <button type="button" class="innerProduct__item__like btn btn-sm btn-link">
+                        <i class=" far fa-heart"></i>
+                      </button>
                       <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
                           <p class="card-text pt-3 mx-auto innerProduct__item__text">肯亞 恩布產區</p>
-                          <button class="btn  btn-light  text-nowrap text-secondary" data-toggle="modal"
+                          <button class="btn  btn-light  text-nowrap text-secondary rounded-0" data-toggle="modal"
                             data-target="#kenyaEmbu">詳細</button>
                         </div>
                       </div>
@@ -150,12 +157,14 @@
                   </div>
                   <div class="col-lg-4 col-6 mt-3">
                     <div class="card innerProduct__item">
-                      <i class="innerProduct__item__like far fa-heart"></i>
+                      <button type="button" class="innerProduct__item__like btn btn-sm btn-link">
+                        <i class=" far fa-heart"></i>
+                      </button>
                       <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
                           <p class="card-text pt-3 mx-auto innerProduct__item__text">巴西‧喜拉朵</p>
-                          <button class="btn btn-light  text-nowrap text-secondary" data-toggle="modal"
+                          <button class="btn btn-light  text-nowrap text-secondary rounded-0" data-toggle="modal"
                             data-target="#cerrado">詳細</button>
                         </div>
                       </div>
@@ -164,12 +173,14 @@
                   </div>
                   <div class="col-lg-4 col-6 mt-3">
                     <div class="card innerProduct__item">
-                      <i class="innerProduct__item__like far fa-heart"></i>
+                      <button type="button" class="innerProduct__item__like btn btn-sm btn-link">
+                        <i class=" far fa-heart"></i>
+                      </button>
                       <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
                           <p class="card-text pt-3 mx-auto innerProduct__item__text">耶加雪菲 G1</p>
-                          <button class="btn btn-light text-nowrap text-secondary" data-toggle="modal"
+                          <button class="btn btn-light text-nowrap text-secondary rounded-0" data-toggle="modal"
                             data-target="#yirgacheffe">詳細</button>
                         </div>
                       </div>
@@ -184,12 +195,14 @@
                 <div class="row justify-content-center">
                   <div class="col-lg-4 col-6 mt-3">
                     <div class="card innerProduct__item innerProduct__item__popularity">
-                      <i class="innerProduct__item__like far fa-heart"></i>
+                      <button type="button" class="innerProduct__item__like btn btn-sm btn-link">
+                        <i class=" far fa-heart"></i>
+                      </button>
                       <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
                           <p class="card-text pt-3 mx-auto innerProduct__item__text">耶加雪菲 G1</p>
-                          <button class="btn btn-light text-nowrap text-secondary" data-toggle="modal"
+                          <button class="btn btn-light text-nowrap text-secondary rounded-0" data-toggle="modal"
                             data-target="#yirgacheffe">詳細</button>
                         </div>
                       </div>
@@ -203,12 +216,14 @@
                 <div class="row justify-content-center">
                   <div class="col-lg-4 col-6 mt-3">
                     <div class="card innerProduct__item innerProduct__item__new">
-                      <i class="innerProduct__item__like far fa-heart"></i>
+                      <button type="button" class="innerProduct__item__like btn btn-sm btn-link">
+                        <i class=" far fa-heart"></i>
+                      </button>
                       <img src="img/jo-lanta-68KjM0kfsVo-unsplash.jpg" class="card-img-top" alt="...">
                       <div class="card-body p-0 border-bottom">
                         <div class="d-flex ">
                           <p class="card-text pt-3 mx-auto innerProduct__item__text">巴西‧喜拉朵</p>
-                          <button class="btn btn-light  text-nowrap text-secondary" data-toggle="modal"
+                          <button class="btn btn-light  text-nowrap text-secondary rounded-0" data-toggle="modal"
                             data-target="#cerrado">詳細</button>
                         </div>
                       </div>
@@ -507,9 +522,15 @@
       </div>
       <div class="row mt-5 text-primary">
         <div class="col-md-6 ">
-          <i class="fab fa-youtube fa-2x"></i>
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
+          <a href="https://www.youtube.com/channel/UC-b2nGm0xLzic38Byti0VjA">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/hexschool">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
         </div>
         <div class="col-md-6">
           <p class="d-none d-md-block text-right">© 2020 H.C.B All Rights Reserved</p>
@@ -522,7 +543,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>

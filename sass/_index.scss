@@ -32,7 +32,7 @@
   background-size: cover;
   position: relative;
   &__index{
-    background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-md.jpg");
+    background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-25.jpg");
     margin-bottom: 230px;
     @include media-breakpoint-down(md){
       margin-bottom: 250px;
@@ -78,18 +78,18 @@
       // Thank you All Author of Unsplash 
       &:nth-child(1){
         &::before{
-          background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-md.jpg");
+          background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
         }
       }
       &:nth-child(2){
         &::before{
           // background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
-          background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-md.jpg");
+          background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
         }
       }
       &:nth-child(3){
         &::before{
-          background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-md.jpg");
+          background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
         }
       }
       &__link{
@@ -124,11 +124,11 @@
     }
   }
   &__product{
-    background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-md.jpg");
+    background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-25.jpg");
     
   }
   &__success{
-    background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-md.jpg");
+    background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
   }
 }
 
@@ -160,9 +160,12 @@
         padding: 3px;
       }
     }
-    &:hover{
-      box-shadow:0 0 3px 3px rgba(0, 0, 0,0.3);
+    &__active{
+      &:hover{
+        box-shadow:0 0 2px 2px rgba(0, 0, 0,0.1);
+      }
     }
+    
     &__popularity{
       &::before{
         content: "人氣推薦";
@@ -175,9 +178,12 @@
     }
     &__like{
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 5px;
+      right: 5px;
       color: theme-color("light");
+      &:hover{
+        color: theme-color("danger")
+      }
       
     }
   }
@@ -197,7 +203,7 @@
     &:nth-child(3),&:nth-child(4){
       background-image:linear-gradient(60deg,theme-color("primary"),rgba(218, 213, 213,0.2),transparent 30%);
       .innerAbout__item__img{
-        background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-md.jpg");
+        background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-25.jpg");
       }
     }
     
@@ -240,7 +246,7 @@
       }
     }
     &__img{
-      background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-md.jpg");
+      background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-25.jpg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
