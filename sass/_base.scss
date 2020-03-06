@@ -1,28 +1,5 @@
 body{
   background-color: theme-color("light");
-  // position: relative;
-  // &::before{
-  //   position: absolute;
-  //   content: "";
-  //   top: 0;
-  //   bottom: 0px;
-  //   left: 0;
-  //   right: 0;
-  //   background-image: url("../img/nordwood-themes-ivP3TYdLvw0-unsplash-md.jpg");
-  //   background-position: center center;
-  //   background-size: contain;
-  //   z-index: -1;
-  // }
-  // &::after{
-  //   position: absolute;
-  //   content: "";
-  //   top: 0;
-  //   bottom: 0px;
-  //   left: 0;
-  //   right: 0;
-  //   background-color: rgba(248, 248, 248, 0.6);
-  //   z-index: -1;
-  // }
 }
 
 // RWD文字大小__標題
@@ -36,7 +13,7 @@ body{
   }
 }
 
-// RWD文字大小__通用文字
+// RWD文字大小__內容文字
 @mixin responsiveFontSize__info{
   font-size: 1.3rem;
   @include media-breakpoint-down(md){
@@ -49,12 +26,15 @@ body{
     font-size: 1rem;
   }
 }
+.rounded-top-0{
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
 
-
+// 文字上至下
 .punctuation{
   writing-mode: horizontal-tb;
 }
-
 
 // 圓形進度條
 .progress-round{
@@ -101,8 +81,7 @@ body{
   }
 }
 
-
-
+// 點擊回頂部
 .top{
   position: fixed;
   z-index: 99;
@@ -110,17 +89,6 @@ body{
   right: 25px;
 }
 
-// 三角形裝飾
-// &::before{
-//   position: absolute;
-//   content: "";
-//   right:0;
-//   bottom: -1px;
-//   border-left:30px solid  transparent;
-//   border-right:30px solid  transparent;
-//   border-bottom:30px solid  $active-color;
-//   z-index: 99;
-// }
 
 
 

@@ -102,7 +102,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <a href="cart.html" class="btn btn-primary w-100 ">結帳</a>
+                  <a href="cart.html" class="btn btn-primary w-100 rounded-top-0">結帳</a>
                 </form>
               </div>
             </div>
@@ -162,7 +162,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="btn btn-primary py-2 w-100">加入購物車</button>
+                  <button class="btn btn-primary py-2 w-100 rounded-top-0">加入購物車</button>
                 </div>
               </div>
               <div class=" col-lg-4 col-6 mt-3">
@@ -178,7 +178,7 @@
                         data-target="#cerrado">詳細</button>
                     </div>
                   </div>
-                  <button class="btn  btn-primary py-2">加入購物車</button>
+                  <button class="btn  btn-primary py-2 rounded-top-0">加入購物車</button>
                 </div>
               </div>
               <div class=" col-lg-4 col-6 mt-3">
@@ -194,7 +194,7 @@
                         data-target="#yirgacheffe">詳細</button>
                     </div>
                   </div>
-                  <button class="btn  btn-primary py-2">加入購物車</button>
+                  <button class="btn  btn-primary py-2 rounded-top-0">加入購物車</button>
                 </div>
               </div>
             </div>
@@ -358,7 +358,7 @@
             <input type="email" class="form-control" id="subscription" placeholder="快來訂閱吧 !" aria-label="請輸入信箱"
               aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-submit" type="button" id="button-addon2">
+              <button class="btn btn-submit " type="button" id="button-addon2">
                 <i class="far fa-envelope text-light"></i>
               </button>
             </div>
@@ -679,7 +679,7 @@
 </html>
 
 <!-- 
-畫面：
+畫面:
 ‧未更改
 - 另外文字色彩，無論是否 hover 都可注意下可讀性，https://wcc723.github.io/design/2018/10/22/accessibility/
 -> 安裝  Color contrast checker 可檢查對比程度
@@ -690,8 +690,7 @@
 ‧已更改
 - 產品卡片的互動應與行為一致（不應整個卡片都有 hover 效果）
 -> 加入jQuery控制 img 與文字 hover行為，其與卡片內 button效果分開
-
-TODO:但偽類元素如何控制 ?
+TODO: 但偽類元素如何控制 ?
 
 - 中英文字體運用應一致（不建議套用手寫字） 
 -> 套用 'Noto Sans TC' 字型
@@ -725,16 +724,16 @@ TODO:但偽類元素如何控制 ?
 CSS ：
 ‧未更改
 - 檔案拆分要明確，mixin 內不應有不相干的模組（index 內也是相同的問題）
--> 不相干模組是指? 無參數模組已分開至base.scss
-
-- 不建議直接使用標籤做第一層選取器（footer 並非只能用在頁面底部）
-->圓角按鈕需要重新命名，部分圓角或全圓角
+-> 已刪除 mixin 無關模組
+-> index ?
+-> 檔案拆分要明確，回課程尋找章節
 
 - 可用性命名上，可以使用外觀而不是功能（這個問題很困難，可以思考看看，不一定要解決）
-
  ex: about 來說是功能，那麼這樣的排版就無法運用的類似的區塊上
  
- ‧已更改
+‧已更改
+- 不建議直接使用標籤做第一層選取器（footer 並非只能用在頁面底部）
+-> _base.scss 加入 rounded-top-0 
 
 
 -->
