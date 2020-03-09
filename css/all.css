@@ -11030,7 +11030,7 @@ body {
 }
 
 .innerBanner__index__title {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(105, 81, 59, 0.5);
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
@@ -11112,7 +11112,7 @@ body {
   bottom: 0;
   right: 0;
   border-radius: 120px 120px  100px 100px;
-  background-color: rgba(214, 163, 116, 0.4);
+  background-color: rgba(105, 81, 59, 0.6);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -11124,8 +11124,8 @@ body {
 .innerBanner__index__item:hover::before {
   -webkit-filter: blur(0px);
   filter: blur(0px);
-  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .innerBanner__index__item:hover::after {
@@ -11171,7 +11171,7 @@ body {
   }
 }
 
-.innerProduct__item__active:hover {
+.innerProduct__item--active:hover {
   -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
 }
@@ -11192,23 +11192,27 @@ body {
 }
 
 .innerProduct__item__like:hover {
+  color: #f8f9fa;
+}
+
+.innerProduct__item__like--active {
   color: #dc3545;
 }
 
-.innerAbout__item {
+.innerContent__index__item {
   position: relative;
   background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
-.innerAbout__item:nth-child(3), .innerAbout__item:nth-child(4) {
+.innerContent__index__item:nth-child(3), .innerContent__index__item:nth-child(4) {
   background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
 }
 
-.innerAbout__item:nth-child(3) .innerAbout__item__img, .innerAbout__item:nth-child(4) .innerAbout__item__img {
+.innerContent__index__item:nth-child(3) .innerContent__index__item__img, .innerContent__index__item:nth-child(4) .innerContent__index__item__img {
   background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-25.jpg");
 }
 
-.innerAbout__item__title {
+.innerContent__index__item__title {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -11218,19 +11222,19 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .innerAbout__item__title {
+  .innerContent__index__item__title {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerAbout__item__title {
+  .innerContent__index__item__title {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerAbout__item__title {
+  .innerContent__index__item__title {
     z-index: -1;
     line-height: 1.5;
     -webkit-writing-mode: horizontal-tb;
@@ -11239,11 +11243,11 @@ body {
   }
 }
 
-.innerAbout__item__title--dash {
+.innerContent__index__item__title--dash {
   position: relative;
 }
 
-.innerAbout__item__title--dash::after {
+.innerContent__index__item__title--dash::after {
   position: absolute;
   content: "";
   width: 2px;
@@ -11254,7 +11258,7 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .innerAbout__item__title--dash::after {
+  .innerContent__index__item__title--dash::after {
     width: 50px;
     height: 2px;
     top: 50%;
@@ -11263,7 +11267,7 @@ body {
   }
 }
 
-.innerAbout__item__text {
+.innerContent__index__item__text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -11272,32 +11276,32 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .innerAbout__item__text {
+  .innerContent__index__item__text {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerAbout__item__text {
+  .innerContent__index__item__text {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .innerAbout__item__text {
+  .innerContent__index__item__text {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerAbout__item__text {
+  .innerContent__index__item__text {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
   }
 }
 
-.innerAbout__item__img {
+.innerContent__index__item__img {
   background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash-25.jpg");
   background-repeat: no-repeat;
   background-position: center center;

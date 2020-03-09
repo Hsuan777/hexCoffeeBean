@@ -8,20 +8,10 @@ $(document).ready(function() {
     $('html,body').animate({ scrollTop: 0 }, 1000);
   });
   $('.card-img-top, .card-body, .innerProduct__item::before').hover(function(){
-    $(this).parent().toggleClass('innerProduct__item__active');
+    $(this).parent().toggleClass('innerProduct__item--active');
   });
   $('.card-body .btn').hover(function(){
-    $('.card-body').parent().toggleClass('innerProduct__item__active');
+    $('.card-body').parent().toggleClass('innerProduct__item--active');
   });
-  
-  
-
-
-  
-  // $('.card-img-top').on('click',  function(){
-  //   $(this).parent().toggleClass('innerProduct__item__active').siblings()
-	// 	.removeClass('innerProduct__item__active').find().toggleClass('innerProduct__item__active');
-    
-  // });
 
 });
