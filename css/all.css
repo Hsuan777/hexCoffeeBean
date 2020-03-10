@@ -10933,14 +10933,9 @@ body {
   background-color: #f8f9fa;
 }
 
-.fa-shopping-cart {
-  position: relative;
-}
-
-.fa-shopping-cart .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
+a[href="mailto:sweetaste@email.com"] {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
 }
 
 .punctuation {
@@ -10954,60 +10949,14 @@ body {
   border-top-left-radius: 0px;
 }
 
-.top {
-  position: fixed;
-  z-index: 99;
-  bottom: 25px;
-  right: 25px;
-}
-
-a[href="mailto:sweetaste@email.com"] {
-  -webkit-transform: translateX(-3px);
-          transform: translateX(-3px);
-}
-
-.progress-round__list li {
+.fa-shopping-cart {
   position: relative;
-  width: 15px;
-  height: 15px;
-  font-size: 10px;
-  color: white;
-  border-radius: 50%;
-  border: 1px solid #a55c1b;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px  0px 1px white;
-          box-shadow: 0px 0px  0px 1px white;
 }
 
-.progress-round__list li + li::before {
+.fa-shopping-cart .badge {
   position: absolute;
-  content: "";
-  top: 50%;
-  left: -48px;
-  width: 46px;
-  height: 1px;
-  border: 1px solid #a18367;
-  background-color: #a18367;
-}
-
-.progress-round__list li.active ~ li {
-  -webkit-box-shadow: 0px 0px 0px 1px #a18367;
-          box-shadow: 0px 0px 0px 1px #a18367;
-  background-color: transparent;
-}
-
-.progress-round__list li.active ~ li::before {
-  background-color: #a18367;
-}
-
-.progress-round__list li.check {
-  border: none;
-  color: #a55c1b;
-}
-
-.progress-round__list li.check .fa-check {
-  -webkit-transform: translate(2px, 1px);
-          transform: translate(2px, 1px);
+  top: -10px;
+  right: -10px;
 }
 
 .innerBanner {
@@ -11143,65 +11092,6 @@ a[href="mailto:sweetaste@email.com"] {
 
 .innerBanner__success {
   background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
-}
-
-.innerProduct {
-  margin-bottom: 100px;
-}
-
-.innerProduct__item {
-  position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.innerProduct__item::before {
-  position: absolute;
-  content: "本日精選";
-  text-align: center;
-  width: 28px;
-  padding: 5px 0px 5px 0px;
-  top: 0;
-  left: 20px;
-  color: white;
-  background-color: rgba(32, 22, 3, 0.8);
-  border-radius: 0 0 3px 3px;
-}
-
-@media (max-width: 767.98px) {
-  .innerProduct__item::before {
-    font-size: 0.8rem;
-    width: 19px;
-    padding: 3px;
-  }
-}
-
-.innerProduct__item--active:hover {
-  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.innerProduct__item__popularity::before {
-  content: "人氣推薦";
-}
-
-.innerProduct__item__new::before {
-  content: "新品上市";
-}
-
-.innerProduct__item__like {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: #f8f9fa;
-}
-
-.innerProduct__item__like:hover {
-  color: #f8f9fa;
-}
-
-.innerProduct__item__like--active {
-  color: #dc3545;
 }
 
 .innerContent__index__item {
@@ -11378,5 +11268,115 @@ a[href="mailto:sweetaste@email.com"] {
   -webkit-transform: translateY(18px);
           transform: translateY(18px);
   border-radius: 0 0 0 3px;
+}
+
+.innerProduct {
+  margin-bottom: 100px;
+}
+
+.innerProduct__item {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.innerProduct__item::before {
+  position: absolute;
+  content: "本日精選";
+  text-align: center;
+  width: 28px;
+  padding: 5px 0px 5px 0px;
+  top: 0;
+  left: 20px;
+  color: white;
+  background-color: rgba(32, 22, 3, 0.8);
+  border-radius: 0 0 3px 3px;
+}
+
+@media (max-width: 767.98px) {
+  .innerProduct__item::before {
+    font-size: 0.8rem;
+    width: 19px;
+    padding: 3px;
+  }
+}
+
+.innerProduct__item--active:hover {
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.innerProduct__item__popularity::before {
+  content: "人氣推薦";
+}
+
+.innerProduct__item__new::before {
+  content: "新品上市";
+}
+
+.innerProduct__item__like {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #f8f9fa;
+}
+
+.innerProduct__item__like:hover {
+  color: #f8f9fa;
+}
+
+.innerProduct__item__like--active {
+  color: #dc3545;
+}
+
+.progress-round__list li {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #a55c1b;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px  0px 1px white;
+          box-shadow: 0px 0px  0px 1px white;
+}
+
+.progress-round__list li + li::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -48px;
+  width: 46px;
+  height: 1px;
+  border: 1px solid #a18367;
+  background-color: #a18367;
+}
+
+.progress-round__list li.active ~ li {
+  -webkit-box-shadow: 0px 0px 0px 1px #a18367;
+          box-shadow: 0px 0px 0px 1px #a18367;
+  background-color: transparent;
+}
+
+.progress-round__list li.active ~ li::before {
+  background-color: #a18367;
+}
+
+.progress-round__list li.check {
+  border: none;
+  color: #a55c1b;
+}
+
+.progress-round__list li.check .fa-check {
+  -webkit-transform: translate(2px, 1px);
+          transform: translate(2px, 1px);
+}
+
+.top {
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
 }
 /*# sourceMappingURL=all.css.map */

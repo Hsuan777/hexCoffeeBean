@@ -1,0 +1,54 @@
+.innerProduct{
+    margin-bottom: 100px;
+    &__item{
+      position: relative;
+      transition: 0.3s;
+      // innerProduct__today
+      &::before{
+        position: absolute;
+        content: "本日精選";
+        text-align: center;
+        width: 28px;
+        padding:5px 0px 5px 0px;
+        top: 0;
+        left: 20px;
+        color: white;
+        background-color: rgba(32, 22, 3,0.8);
+        border-radius: 0 0 3px 3px;
+        @include media-breakpoint-down(sm){
+          font-size: 0.8rem;
+          width: 19px;
+          padding: 3px;
+        }
+      }
+      &--active{
+        &:hover{
+          box-shadow:0 0 2px 2px rgba(0, 0, 0,0.1);
+        }
+      }
+      
+      &__popularity{
+        &::before{
+          content: "人氣推薦";
+        }
+      }
+      &__new{
+        &::before{
+          content: "新品上市";
+        }
+      }
+      &__like{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: theme-color("light");
+        &:hover{
+          color: theme-color("light")
+        }
+        &--active{
+          color: theme-color("danger")
+        }
+        
+      }
+    }
+  } 
