@@ -10933,15 +10933,37 @@ body {
   background-color: #f8f9fa;
 }
 
-.rounded-top-0 {
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+.fa-shopping-cart {
+  position: relative;
+}
+
+.fa-shopping-cart .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .punctuation {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
+}
+
+.rounded-top-0 {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.top {
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
+}
+
+a[href="mailto:sweetaste@email.com"] {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
 }
 
 .progress-round__list li {
@@ -10986,23 +11008,6 @@ body {
 .progress-round__list li.check .fa-check {
   -webkit-transform: translate(2px, 1px);
           transform: translate(2px, 1px);
-}
-
-.top {
-  position: fixed;
-  z-index: 99;
-  bottom: 25px;
-  right: 25px;
-}
-
-.fa-shopping-cart {
-  position: relative;
-}
-
-.fa-shopping-cart .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
 }
 
 .innerBanner {
@@ -11373,10 +11378,5 @@ body {
   -webkit-transform: translateY(18px);
           transform: translateY(18px);
   border-radius: 0 0 0 3px;
-}
-
-a[href="mailto:sweetaste@email.com"] {
-  -webkit-transform: translateX(-3px);
-          transform: translateX(-3px);
 }
 /*# sourceMappingURL=all.css.map */

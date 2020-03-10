@@ -48,5 +48,8 @@
     z-index: 99;
     bottom: 25px;
     right: 25px;
-  }
-  
+}
+
+a[href="mailto:sweetaste@email.com"]{
+  transform: translateX(-3px);
+}
