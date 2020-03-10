@@ -1,0 +1,52 @@
+// RWD文字大小__標題
+@mixin responsiveFontSize__title{
+    font-size: 2rem;
+    @include media-breakpoint-down(md){
+      font-size: 1.6rem;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 1.8rem;
+    }
+  }
+  
+// RWD文字大小__內容文字
+@mixin responsiveFontSize__info{
+  font-size: 1.3rem;
+  @include media-breakpoint-down(md){
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 1.1rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 1rem;
+  }
+}
+// 右上購物車數量
+.fa-shopping-cart{
+  position: relative;
+  .badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+// 文字上至下
+.punctuation{
+    writing-mode: horizontal-tb;
+}
+
+.rounded-top-0{
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+  
+// 點擊回頂部
+.top{
+    position: fixed;
+    z-index: 99;
+    bottom: 25px;
+    right: 25px;
+  }
+  
