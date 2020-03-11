@@ -7,13 +7,10 @@
     right: -10px;
   }
 }
-a[href="mailto:sweetaste@email.com"]{
+a[href*="mailto:"]{
   transform: translateX(-3px);
-  &:hover{
-    text-decoration: underline;
-  }
 }
-a[href*="http://maps.google.com"]{
+a[href*="tel:"], a[href*="mailto:"], a[href*="http://maps.google.com"]{
   &:hover{
     text-decoration: underline;
   }

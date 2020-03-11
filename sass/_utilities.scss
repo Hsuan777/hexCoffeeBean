@@ -1,7 +1,14 @@
 // 文字上至下
-.punctuation{
-    writing-mode: horizontal-tb;
+.writing-htb{
+  writing-mode: horizontal-tb;
 }
+.writing-vrl{
+  writing-mode: vertical-rl; 
+}
+.writing-vlr{
+  writing-mode: vertical-lr;
+}
+
 
 .rounded-top-0{
   border-top-right-radius: 0px;

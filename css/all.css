@@ -10947,16 +10947,12 @@ a:hover {
   right: -10px;
 }
 
-a[href="mailto:sweetaste@email.com"] {
+a[href*="mailto:"] {
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
 }
 
-a[href="mailto:sweetaste@email.com"]:hover {
-  text-decoration: underline;
-}
-
-a[href*="http://maps.google.com"]:hover {
+a[href*="tel:"]:hover, a[href*="mailto:"]:hover, a[href*="http://maps.google.com"]:hover {
   text-decoration: underline;
 }
 
@@ -10968,10 +10964,22 @@ a[href*="https://www.facebook.com"]:hover {
   color: #3b5998;
 }
 
-.punctuation {
+.writing-htb {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
+}
+
+.writing-vrl {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.writing-vlr {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
 }
 
 .rounded-top-0 {
@@ -11115,10 +11123,6 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .innerContent__title {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -ms-line-height: 1.3;
   line-height: 1.3;
   font-size: 2rem;
 }
@@ -11137,11 +11141,7 @@ a[href*="https://www.facebook.com"]:hover {
 
 @media (max-width: 767.98px) {
   .innerContent__title {
-    z-index: -1;
     line-height: 1.5;
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
   }
 }
 
@@ -11170,9 +11170,6 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .innerContent__text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   line-height: 2;
   font-size: 1.3rem;
 }
@@ -11192,14 +11189,6 @@ a[href*="https://www.facebook.com"]:hover {
 @media (max-width: 575.98px) {
   .innerContent__text {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .innerContent__text {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
   }
 }
 
