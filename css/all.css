@@ -10933,9 +10933,39 @@ body {
   background-color: #f8f9fa;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.fa-shopping-cart {
+  position: relative;
+}
+
+.fa-shopping-cart .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
 a[href="mailto:sweetaste@email.com"] {
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
+}
+
+a[href="mailto:sweetaste@email.com"]:hover {
+  text-decoration: underline;
+}
+
+a[href*="http://maps.google.com"]:hover {
+  text-decoration: underline;
+}
+
+a[href*="https://www.youtube.com"]:hover {
+  color: red;
+}
+
+a[href*="https://www.facebook.com"]:hover {
+  color: #3b5998;
 }
 
 .punctuation {
@@ -10947,16 +10977,6 @@ a[href="mailto:sweetaste@email.com"] {
 .rounded-top-0 {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
-}
-
-.fa-shopping-cart {
-  position: relative;
-}
-
-.fa-shopping-cart .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
 }
 
 .innerBanner {
@@ -11009,7 +11029,7 @@ a[href="mailto:sweetaste@email.com"] {
   background-size: cover;
   background-position: center center;
   position: relative;
-  border-radius: 120px 120px  100px 100px;
+  border-radius: 120px 120px 100px 100px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -11036,7 +11056,7 @@ a[href="mailto:sweetaste@email.com"] {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  border-radius: 120px 120px  100px 100px;
+  border-radius: 120px 120px 100px 100px;
   -webkit-filter: blur(0.8px);
   filter: blur(0.8px);
 }
@@ -11065,7 +11085,7 @@ a[href="mailto:sweetaste@email.com"] {
   left: 0;
   bottom: 0;
   right: 0;
-  border-radius: 120px 120px  100px 100px;
+  border-radius: 120px 120px 100px 100px;
   background-color: rgba(105, 81, 59, 0.6);
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -11217,7 +11237,8 @@ a[href="mailto:sweetaste@email.com"] {
   padding-bottom: 15px;
 }
 
-.innerCart__item + tr.innerCart__item, .innerCart__item + li.innerCart__item {
+.innerCart__item + tr.innerCart__item,
+.innerCart__item + li.innerCart__item {
   padding-top: 15px;
   border-top: 1px solid #dee2e6;
 }
@@ -11338,8 +11359,8 @@ a[href="mailto:sweetaste@email.com"] {
   border-radius: 50%;
   border: 1px solid #a55c1b;
   background-color: white;
-  -webkit-box-shadow: 0px 0px  0px 1px white;
-          box-shadow: 0px 0px  0px 1px white;
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white;
 }
 
 .progress-round__list li + li::before {

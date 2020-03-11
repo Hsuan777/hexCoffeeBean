@@ -407,13 +407,13 @@
       </div>
       <div class="row mt-5 text-primary">
         <div class="col-md-6 ">
-          <a href="https://www.youtube.com/channel/UC-b2nGm0xLzic38Byti0VjA">
+          <a href="https://www.youtube.com/channel/UC-b2nGm0xLzic38Byti0VjA" >
             <i class="fab fa-youtube fa-2x"></i>
           </a>
-          <a href="https://www.facebook.com/hexschool">
+          <a href="https://www.facebook.com/hexschool" >
             <i class="fab fa-facebook-square fa-2x"></i>
           </a>
-          <a href="#">
+          <a href="#" class="text-decoration-none">
             <i class="fab fa-instagram fa-2x"></i>
           </a>
         </div>
@@ -726,10 +726,7 @@
 
 CSS ：
 ‧未更改
-- 檔案拆分要明確，mixin 內不應有不相干的模組（index 內也是相同的問題）
--> 已刪除 mixin 無關模組
--> index ?
-TODO: 檔案拆分要明確，回課程尋找章節 SASS 第七節 無字幕
+
 
 - 可用性命名上，可以使用外觀而不是功能（這個問題很困難，可以思考看看，不一定要解決）
  ex: about 來說是功能，那麼這樣的排版就無法運用的類似的區塊上
@@ -740,7 +737,12 @@ ex: innerBanner__index、innerBanner__product、innerContent__index、innerConte
  
 ‧已更改
 - 不建議直接使用標籤做第一層選取器（footer 並非只能用在頁面底部）
--> _base.scss 加入 rounded-top-0 
+-> 使用 footer標籤已刪除，icon.scss內 a 標籤仍然使用
+
+- 檔案拆分要明確，mixin 內不應有不相干的模組（index 內也是相同的問題）
+-> 已刪除 mixin 無關模組
+-> index.scss 拆分至各元件
+-> 檔案拆分要明確，回課程尋找章節 SASS 第七節、7+1結構
 
 ‧額外修正
 -具互動特效 class，統一更改為 "--active"

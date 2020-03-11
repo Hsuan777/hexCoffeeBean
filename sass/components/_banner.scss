@@ -1,107 +1,105 @@
 // inner-banner 不同頁面5置換圖片
 // 不同大區塊不同名稱，但文字圖片區塊統一命名
-.innerBanner{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    &__index{
-      background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-25.jpg");
-      margin-bottom: 230px;
-      @include media-breakpoint-down(md){
-        margin-bottom: 250px;
+.innerBanner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  &__index {
+    background-image: url("../img/yanapi-senaud-6HR8vpjYUHo-unsplash-25.jpg");
+    margin-bottom: 230px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 250px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 200px;
+    }
+    &__title {
+      background-color: rgba(105, 81, 59, 0.5);
+      // background-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(50px);
+    }
+    &__list {
+      transform: translateY(60%);
+      @include media-breakpoint-down(md) {
+        transform: translateY(105%);
       }
-      @include media-breakpoint-down(sm){
-        margin-bottom: 200px;
-      }
-      &__title{
-        background-color: rgba(105, 81, 59, 0.5);
-        // background-color: rgba(255, 255, 255, 0.5);
-        transform: translateY(50px);
-      }
-      &__list{
-        transform: translateY(60%);
-        @include media-breakpoint-down(md){
-          transform: translateY(105%);
-        }
-      }
-      &__item{
-        //writing-mode也會改變方向軸
-        writing-mode:vertical-lr;
-        @include responsiveFontSize__title;
+    }
+    &__item {
+      //writing-mode也會改變方向軸
+      writing-mode: vertical-lr;
+      @include responsiveFontSize__title;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      border-radius: 120px 120px 100px 100px;
+      transition: 0.3s;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-size: cover;
         background-position: center center;
-        position: relative;
-        border-radius:120px 120px  100px 100px;
+        background-repeat: no-repeat;
+        border-radius: 120px 120px 100px 100px;
+        -webkit-filter: blur(0.8px);
+        filter: blur(0.8px);
+      }
+
+      // Thank you All Author of Unsplash
+      &:nth-child(1) {
+        &::before {
+          background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          // background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
+          background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
+        }
+      }
+      &__link {
+        z-index: 9;
+        color: white;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 120px 120px 100px 100px;
+        background-color: rgba(105, 81, 59, 0.6);
         transition: 0.3s;
-        &::before{
-          position: absolute;
-          content: "";
-          top:0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          border-radius:120px 120px  100px 100px;
-          -webkit-filter:blur(0.8px);
-          filter:blur(0.8px);
+      }
+      &:hover {
+        .innerBanner__index__item__link {
+          color: theme-color("primary");
         }
-  
-        // Thank you All Author of Unsplash 
-        &:nth-child(1){
-          &::before{
-            background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
-          }
+        &::before {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
         }
-        &:nth-child(2){
-          &::before{
-            // background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
-            background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
-          }
-        }
-        &:nth-child(3){
-          &::before{
-            background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
-          }
-        }
-        &__link{
-          z-index: 9;
-          color: white;
-        }
-        &::after{
-          position: absolute;
-          content: "";
-          top: 0;
-          left:0;
-          bottom: 0;
-          right: 0;
-          border-radius:120px 120px  100px 100px;
-          background-color: rgba(105, 81, 59, 0.6);
-          transition: 0.3s;
-          
-        }
-        &:hover{
-          .innerBanner__index__item__link{
-            color: theme-color("primary");
-          }
-          &::before{
-            -webkit-filter:blur(0px);
-            filter:blur(0px);
-            box-shadow:0 0 3px 3px rgba(0, 0, 0,0.1);
-          }
-          &::after{
-            background-color: rgba(255, 255, 255,0.8);
-          }
+        &::after {
+          background-color: rgba(255, 255, 255, 0.8);
         }
       }
     }
-    &__product{
-      background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-25.jpg");
-      
-    }
-    &__success{
-      background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
-    }
   }
+  &__product {
+    background-image: url("../img/mike-kenneally-TD4DBagg2wE-unsplash-25.jpg");
+  }
+  &__success {
+    background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
+  }
+}

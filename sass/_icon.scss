@@ -1,0 +1,26 @@
+// 右上購物車數量 -微調位置
+.fa-shopping-cart{
+  position: relative;
+  .badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+a[href="mailto:sweetaste@email.com"]{
+  transform: translateX(-3px);
+  &:hover{
+    text-decoration: underline;
+  }
+}
+a[href*="http://maps.google.com"]{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+a[href*="https://www.youtube.com"]:hover{
+  color: red;
+}  
+a[href*="https://www.facebook.com"]:hover{
+  color: #3b5998;
+}  
