@@ -11192,6 +11192,12 @@ a[href*="https://www.facebook.com"]:hover {
   }
 }
 
+@media (max-width: 767.98px) {
+  .innerContent__text {
+    line-height: 2.5;
+  }
+}
+
 .innerContent__index__item {
   position: relative;
   border-radius: 0 30px 30px 0;
@@ -11304,7 +11310,7 @@ a[href*="https://www.facebook.com"]:hover {
 @media (max-width: 767.98px) {
   .innerProduct__item::before {
     font-size: 0.8rem;
-    width: 19px;
+    width: 22px;
     padding: 3px;
   }
 }
@@ -11383,7 +11389,8 @@ a[href*="https://www.facebook.com"]:hover {
 
 .top {
   border: 0px;
-  background-color: rgba(105, 81, 59, 0.2);
+  background-color: rgba(240, 232, 225, 0.5);
+  color: #a55c1b;
   position: fixed;
   z-index: 99;
   bottom: 25px;

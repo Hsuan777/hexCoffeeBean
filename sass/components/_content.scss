@@ -28,6 +28,9 @@
   &__text {
     line-height: 2;
     @include responsiveFontSize__info;
+    @include media-breakpoint-down(sm) {
+      line-height: 2.5;
+    }
   }
   
   &__index {
@@ -57,6 +60,7 @@
         border: 1px solid white;
         transition: 0.3s;
         position: relative;
+        
       }
     }
   }
