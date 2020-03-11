@@ -15,8 +15,8 @@
       margin-bottom: 200px;
     }
     &__title {
-      background-color: rgba(105, 81, 59, 0.5);
-      // background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(105, 81, 59, 0.4);
+      // background-color: rgba(0, 0, 0, 0.2);
       transform: translateY(50px);
     }
     &__list {
@@ -52,13 +52,14 @@
       // Thank you All Author of Unsplash
       &:nth-child(1) {
         &::before {
-          background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
+          // background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
+          background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
         }
       }
       &:nth-child(2) {
         &::before {
-          // background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg");
-          background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
+          // background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
+          background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
         }
       }
       &:nth-child(3) {
@@ -78,7 +79,7 @@
         bottom: 0;
         right: 0;
         border-radius: 120px 120px 100px 100px;
-        background-color: rgba(105, 81, 59, 0.6);
+        background-color: rgba(105, 81, 59, 0.8);
         transition: 0.3s;
       }
       &:hover {

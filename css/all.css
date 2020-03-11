@@ -11004,7 +11004,7 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .innerBanner__index__title {
-  background-color: rgba(105, 81, 59, 0.5);
+  background-color: rgba(105, 81, 59, 0.4);
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
@@ -11062,11 +11062,11 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .innerBanner__index__item:nth-child(1)::before {
-  background-image: url("../img/tyler-nix-6sfy2ENBODc-unsplash-25.jpg");
+  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
 }
 
 .innerBanner__index__item:nth-child(2)::before {
-  background-image: url("../img/najib-kalil-ys0rBJK-k6Q-unsplash-25.jpg");
+  background-image: url("../img/afrah-0x-_TV1zQFU-unsplash-25.jpg");
 }
 
 .innerBanner__index__item:nth-child(3)::before {
@@ -11086,7 +11086,7 @@ a[href*="https://www.facebook.com"]:hover {
   bottom: 0;
   right: 0;
   border-radius: 120px 120px 100px 100px;
-  background-color: rgba(105, 81, 59, 0.6);
+  background-color: rgba(105, 81, 59, 0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -11114,20 +11114,7 @@ a[href*="https://www.facebook.com"]:hover {
   background-image: url("../img/jessica-lewis-Am2kjOEKADs-unsplash-25.jpg");
 }
 
-.innerContent__index__item {
-  position: relative;
-  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
-}
-
-.innerContent__index__item:nth-child(3), .innerContent__index__item:nth-child(4) {
-  background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
-}
-
-.innerContent__index__item:nth-child(3) .innerContent__index__item__img, .innerContent__index__item:nth-child(4) .innerContent__index__item__img {
-  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-25.jpg");
-}
-
-.innerContent__index__item__title {
+.innerContent__title {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -11137,19 +11124,19 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 @media (max-width: 991.98px) {
-  .innerContent__index__item__title {
+  .innerContent__title {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerContent__index__item__title {
+  .innerContent__title {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerContent__index__item__title {
+  .innerContent__title {
     z-index: -1;
     line-height: 1.5;
     -webkit-writing-mode: horizontal-tb;
@@ -11158,11 +11145,11 @@ a[href*="https://www.facebook.com"]:hover {
   }
 }
 
-.innerContent__index__item__title--dash {
+.innerContent__title--dash {
   position: relative;
 }
 
-.innerContent__index__item__title--dash::after {
+.innerContent__title--dash::after {
   position: absolute;
   content: "";
   width: 2px;
@@ -11173,7 +11160,7 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 @media (max-width: 767.98px) {
-  .innerContent__index__item__title--dash::after {
+  .innerContent__title--dash::after {
     width: 50px;
     height: 2px;
     top: 50%;
@@ -11182,7 +11169,7 @@ a[href*="https://www.facebook.com"]:hover {
   }
 }
 
-.innerContent__index__item__text {
+.innerContent__text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -11191,29 +11178,44 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 @media (max-width: 991.98px) {
-  .innerContent__index__item__text {
+  .innerContent__text {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerContent__index__item__text {
+  .innerContent__text {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .innerContent__index__item__text {
+  .innerContent__text {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .innerContent__index__item__text {
+  .innerContent__text {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
   }
+}
+
+.innerContent__index__item {
+  position: relative;
+  border-radius: 0 30px 30px 0;
+  background-image: linear-gradient(-60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
+}
+
+.innerContent__index__item:nth-child(3), .innerContent__index__item:nth-child(4) {
+  border-radius: 30px 0 0 30px;
+  background-image: linear-gradient(60deg, #a55c1b, rgba(218, 213, 213, 0.2), transparent 30%);
+}
+
+.innerContent__index__item:nth-child(3) .innerContent__index__item__img, .innerContent__index__item:nth-child(4) .innerContent__index__item__img {
+  background-image: url("../img/mike-kenneally-tNALoIZhqVM-unsplash-25.jpg");
 }
 
 .innerContent__index__item__img {
@@ -11289,10 +11291,6 @@ a[href*="https://www.facebook.com"]:hover {
   -webkit-transform: translateY(18px);
           transform: translateY(18px);
   border-radius: 0 0 0 3px;
-}
-
-.innerProduct {
-  margin-bottom: 100px;
 }
 
 .innerProduct__item {
@@ -11395,6 +11393,8 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .top {
+  border: 0px;
+  background-color: rgba(105, 81, 59, 0.2);
   position: fixed;
   z-index: 99;
   bottom: 25px;
