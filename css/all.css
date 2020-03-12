@@ -11030,9 +11030,6 @@ a[href*="https://www.facebook.com"]:hover {
 }
 
 .innerBanner__index__item {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   font-size: 2rem;
   background-size: cover;
   background-position: center center;

@@ -27,7 +27,6 @@
     }
     &__item {
       //writing-mode也會改變方向軸
-      writing-mode: vertical-lr;
       @include responsiveFontSize__title;
       background-size: cover;
       background-position: center center;
